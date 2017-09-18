@@ -5,10 +5,11 @@ using UnityEngine.Experimental.UIElements;
 using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour {
-    public Button play;
-	// Use this for initialization
-	void Start () {
-            
+    public List<CanvasGroup> canvasGroup;
+    public GameObject credits;
+    // Use this for initialization
+    void Start () {
+               
 	}
 	
 	// Update is called once per frame
@@ -21,5 +22,48 @@ public class MenuController : MonoBehaviour {
         Debug.Log("Jogar");
         //Application.LoadLevel(1);
         SceneManager.LoadScene(1);
+    }
+
+    void OpenCredits()
+    {
+        Debug.Log("Créditos");
+        SendMessage("ChangeToCredits");
+    }
+
+    void HowToPlay()
+    {
+        Debug.Log("Como Jogar");
+    }
+
+    void ChangeToCredits()
+    {
+        foreach (var item in canvasGroup)
+        {
+            item.alpha = 0;
+            item.blocksRaycasts = false;
+        }
+
+        var cG = credits.GetComponent<CanvasGroup>() as CanvasGroup;
+        cG.alpha = 1;
+        cG.blocksRaycasts = true;
+        var sR = credits.GetComponent<SpriteRenderer>() as SpriteRenderer;
+        sR.enabled = true;
+
+    }
+
+    void ChangeToMenu()
+    {
+        foreach (var item in canvasGroup)
+        {
+            item.alpha = 1;
+            item.blocksRaycasts = true;
+        }
+
+        var cG = credits.GetComponent<CanvasGroup>() as CanvasGroup;
+        cG.alpha = 0;
+        cG.blocksRaycasts = false;
+        var sR = credits.GetComponent<SpriteRenderer>() as SpriteRenderer;
+        sR.enabled = false;
+
     }
 }
