@@ -492,6 +492,7 @@ GameObject:
   - component: {fileID: 685701477}
   - component: {fileID: 685701476}
   - component: {fileID: 685701474}
+  - component: {fileID: 685701475}
   m_Layer: 0
   m_Name: Westeros
   m_TagString: Untagged
@@ -510,6 +511,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44bb7d42493f30647bd57019dd71d0ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultCameraPosition: {x: 202, y: -99.4, z: 155.6}
+  defaultCameraSize: 8
+  isZoomActivated: 0
+  camera: {fileID: 1085541689}
+--- !u!61 &685701475
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685701473}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 14.88}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 14.88}
+  m_EdgeRadius: 0
 --- !u!212 &685701476
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -907,7 +937,7 @@ Camera:
   far clip plane: 933.43
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 7.746483
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
