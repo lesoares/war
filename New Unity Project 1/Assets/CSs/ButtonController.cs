@@ -6,7 +6,7 @@ namespace Assets.CSs
 {
     class ButtonController : MonoBehaviour
     {
-        public List<CanvasGroup> canvasGroup;
+        //public List<CanvasGroup> canvasGroup;
         void Start()
         {
             

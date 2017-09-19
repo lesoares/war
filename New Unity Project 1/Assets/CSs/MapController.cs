@@ -7,11 +7,18 @@ public class MapController : MonoBehaviour
     public Vector3 defaultCameraPosition = new Vector3(202, -99.4f, 155.6f);
     public int defaultCameraSize = 8;
     public bool isZoomActivated = false;
-    public Camera camera;
+    public GameObject cameraGO;
+    PolygonCollider2D[] cp;
     // Use this for initialization
     void Start()
     {
-
+        //pego todos os colliders dos filhos do objeto
+        cp = this.GetComponentsInChildren<PolygonCollider2D>();
+        //seto todos para false de modo que possa clicar no mapa sem clicar em nenhum território específico
+        foreach (var item in cp)
+        {
+            item.enabled = false;
+        }
     }
 
     // Update is called once per frame
@@ -20,23 +27,42 @@ public class MapController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// No evento de clique do mouse, verifico se o zoom já está ativo ou não
+    /// e caso não esteja, aplico o zoom e religo os colliders dos filhos do meu objeto. Depois
+    /// reposiciono a camera e mudo seu FOV.
+    /// Caso esteja, desligo os colliders e volto a camera ao original
+    /// </summary>
     void OnMouseDown()
     {
         Debug.Log("Mouse");
-        
+        var camera = cameraGO.GetComponent<Camera>() as Camera;
         var mouse = Input.mousePosition;
         Debug.Log(mouse);
+
         if (!isZoomActivated)
         {
-            camera.orthographicSize = 2;
-            transform.position = new Vector3 (Camera.main.ScreenToWorldPoint(mouse).x, Camera.main.ScreenToWorldPoint(mouse).y, transform.position.z);
+            
+            cameraGO.transform.position = new Vector3 (Camera.main.ScreenToWorldPoint(mouse).x, Camera.main.ScreenToWorldPoint(mouse).y, cameraGO.transform.position.z);
             isZoomActivated = true;
+            camera.orthographicSize = 2;
+
+            foreach (var item in cp)
+            {
+                item.enabled = true;
+            }
         }
         else
         {
+            foreach (var item in cp)
+            {
+                item.enabled = false;
+            }
+
             camera.orthographicSize = defaultCameraSize;
-            //transform.position = defaultCameraPosition;
+            cameraGO.transform.position = defaultCameraPosition;
             isZoomActivated = false;
+            
         }
     }
 }

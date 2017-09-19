@@ -428,7 +428,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9623860769c998449a1a96c7efc1ff03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neighborhood: []
+  neighborhood:
+  - {fileID: 1038752578}
+  - {fileID: 717163098}
+  - {fileID: 451849810}
+  - {fileID: 1644845426}
+  - {fileID: 115644875}
 --- !u!60 &579962126
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -514,7 +519,7 @@ MonoBehaviour:
   defaultCameraPosition: {x: 202, y: -99.4, z: 155.6}
   defaultCameraSize: 8
   isZoomActivated: 0
-  camera: {fileID: 1085541689}
+  cameraGO: {fileID: 1085541685}
 --- !u!61 &685701475
 BoxCollider2D:
   m_ObjectHideFlags: 0

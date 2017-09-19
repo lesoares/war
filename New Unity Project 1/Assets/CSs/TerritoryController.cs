@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TerritoryController : MonoBehaviour {
 
+    //lista de vizinhos do territorio
     public List<GameObject> neighborhood;
 
     // Use this for initialization
@@ -16,6 +17,9 @@ public class TerritoryController : MonoBehaviour {
 		
 	}
 
+    /// <summary>
+    /// Ao reconhecer o clique do mouse, printo as informações do território
+    /// </summary>
     void OnMouseDown()
     {
         Debug.Log("região " + name + " clicada");
