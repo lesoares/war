@@ -254,7 +254,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e6b0ad86c374e49afee2472e854792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: []
 --- !u!1 &226221236
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e6b0ad86c374e49afee2472e854792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: []
 --- !u!1 &335965191
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,7 +696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e6b0ad86c374e49afee2472e854792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: []
 --- !u!1 &521705972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,8 +1251,8 @@ Camera:
   m_GameObject: {fileID: 1981183355}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.5735294, g: 0.5524438, b: 0.5524438, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0

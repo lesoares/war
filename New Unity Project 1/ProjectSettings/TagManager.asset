@@ -15,6 +15,16 @@ TagManager:
   - Winterfell
   - Dreadfort
   - WidowsWatch
+  - BearIsland
+  - TheGift
+  - Skagos
+  - Karhold
+  - Trident
+  - Riverrun
+  - Harrenhal
+  - StoneySept
+  - MountainsOfTheMoon
+  - TheFingers
   layers:
   - Default
   - TransparentFX

@@ -6,7 +6,7 @@ public class MapController : MonoBehaviour
 {
     public Vector3 defaultCameraPosition = new Vector3(202, -99.4f, 155.6f);
     public int defaultCameraSize = 8;
-    public bool isZoomActivated = false;
+    public static bool isZoomActivated = false;
     public GameObject cameraGO;
     PolygonCollider2D[] cp;
     // Use this for initialization
@@ -24,6 +24,14 @@ public class MapController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isZoomActivated)
+            {
+                SendMessage("OnMouseDown");
+            }
+        }
 
     }
 
@@ -43,9 +51,13 @@ public class MapController : MonoBehaviour
         if (!isZoomActivated)
         {
             
-            cameraGO.transform.position = new Vector3 (Camera.main.ScreenToWorldPoint(mouse).x, Camera.main.ScreenToWorldPoint(mouse).y, cameraGO.transform.position.z);
+            cameraGO.transform.position = new Vector3 (Camera.main.ScreenToWorldPoint(mouse).x,
+                Camera.main.ScreenToWorldPoint(mouse).y,
+                cameraGO.transform.position.z);
             isZoomActivated = true;
             camera.orthographicSize = 2;
+
+            this.GetComponent<BoxCollider2D>().enabled = false;
 
             foreach (var item in cp)
             {
@@ -58,6 +70,8 @@ public class MapController : MonoBehaviour
             {
                 item.enabled = false;
             }
+
+            this.GetComponent<BoxCollider2D>().enabled = true;
 
             camera.orthographicSize = defaultCameraSize;
             cameraGO.transform.position = defaultCameraPosition;
