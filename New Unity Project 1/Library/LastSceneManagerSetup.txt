@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Testes de mapa.unity
+- path: Assets/Scenes/Testes de mapa.unity
   isLoaded: 1
   isActive: 1
