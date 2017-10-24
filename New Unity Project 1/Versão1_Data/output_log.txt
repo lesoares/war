@@ -1,0 +1,175 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 920M (ID=0x1299)
+    Vendor:   NVIDIA
+    VRAM:     2020 MB
+    Driver:   21.21.13.7654
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Flavio\Documents\GitHub\Backup\war\New Unity Project 1\Versão1_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.023 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.917601 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 594 -> priority: 1 
+  Thread -> id: 3090 -> priority: 1 
+Jogar
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 17.385425 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 508.
+Total: 0.679970 ms (FindLiveObjects: 0.088952 ms CreateObjectMapping: 0.039344 ms MarkObjects: 0.506342 ms  DeleteObjects: 0.042337 ms)
+
+Mouse
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(678.0, 487.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+região Barrowlands clicada
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+região pertence a North
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+White Harbor pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The Neck pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Stoney Shore pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Winterfell pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Wolfswood pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+região Winterfell clicada
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+região pertence a North
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Dreadfort pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Widow's Watch pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Wolfswood pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Barrowlands pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+White Harbor pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bear Island pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The Gift pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+região Winterfell clicada
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+região pertence a North
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Dreadfort pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Widow's Watch pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Wolfswood pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Barrowlands pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+White Harbor pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bear Island pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The Gift pertence a sua vizinhança
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Mouse
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(600.0, 440.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Mouse
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(543.0, 647.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.542976 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 304.
+Total: 0.407126 ms (FindLiveObjects: 0.051746 ms CreateObjectMapping: 0.035922 ms MarkObjects: 0.293370 ms  DeleteObjects: 0.024803 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.082820 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 337.
+Total: 0.620526 ms (FindLiveObjects: 0.061154 ms CreateObjectMapping: 0.037633 ms MarkObjects: 0.502065 ms  DeleteObjects: 0.018389 ms)
+

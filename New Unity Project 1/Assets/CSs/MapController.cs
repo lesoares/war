@@ -5,7 +5,7 @@ using UnityEngine;
 public class MapController : MonoBehaviour
 {
     public Vector3 defaultCameraPosition = new Vector3(202, -99.4f, 155.6f);
-    public int defaultCameraSize = 8;
+    public int defaultCameraSize = 350;
     public static bool isZoomActivated = false;
     public GameObject cameraGO;
     PolygonCollider2D[] cp;
@@ -55,7 +55,7 @@ public class MapController : MonoBehaviour
                 Camera.main.ScreenToWorldPoint(mouse).y,
                 cameraGO.transform.position.z);
             isZoomActivated = true;
-            camera.orthographicSize = 2;
+            camera.orthographicSize = 80;
 
             this.GetComponent<BoxCollider2D>().enabled = false;
 

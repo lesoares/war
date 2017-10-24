@@ -19,4 +19,9 @@ public class EndController : MonoBehaviour {
     {
         SceneManager.LoadScene(0);
     }
+
+    void EndGame()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
