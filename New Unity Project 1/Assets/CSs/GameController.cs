@@ -7,10 +7,11 @@ using UnityEngine;
 class GameController : MonoBehaviour
 {
     public static bool isPlayerTurn = true;
-    public static List<GameObject> playerTerritories = new List<GameObject>();
-    public static List<GameObject> iaTerritories = new List<GameObject>();
-    public List<GameObject> Territories = new List<GameObject>();
-    public static Texture2D playerColor = null; 
+    public static List<TerritoryController> playerTerritories = new List<TerritoryController>();
+    public static List<TerritoryController> iaTerritories = new List<TerritoryController>();
+    public List<TerritoryController> Territories = new List<TerritoryController>();
+    public static Texture2D playerColor = null;
+    public GameObject Tropa;
 
     void Start()
     {
@@ -25,6 +26,9 @@ class GameController : MonoBehaviour
         {
             var number = UnityEngine.Random.Range(0, limit);
             playerTerritories.Add(Territories[number]);
+            GameObject t = Instantiate(Tropa, Territories[number].transform.position, Quaternion.identity);
+            t.transform.SetParent(Territories[number].transform);
+            Territories[number].tropasNormais.Add(t);
             Debug.Log("add player " + Territories[number].name);
             Territories.RemoveAt(number);
             usedNumbers.Add(number);
