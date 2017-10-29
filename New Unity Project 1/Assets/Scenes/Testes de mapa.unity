@@ -137,10 +137,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 250461967}
-  - {fileID: 1598681146}
-  - {fileID: 225066306}
-  - {fileID: 1623748098}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -330,11 +330,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1947158350}
-  - {fileID: 1614432575}
-  - {fileID: 327674343}
-  - {fileID: 1791966364}
-  - {fileID: 1307139284}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -428,10 +428,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1780868306}
-  - {fileID: 1644845426}
-  - {fileID: 579962124}
-  - {fileID: 717163098}
+  - {fileID: 1644845428}
+  - {fileID: 1780868308}
+  - {fileID: 579962125}
+  - {fileID: 717163100}
   tropasNormais: []
   tropasGrandes: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
@@ -550,9 +550,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 451849810}
-  - {fileID: 1644845426}
-  - {fileID: 385110625}
+  - {fileID: 451849812}
+  - {fileID: 1644845428}
+  - {fileID: 385110626}
   tropasNormais: []
   tropasGrandes: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
@@ -711,12 +711,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 14073003}
-  - {fileID: 1598681146}
-  - {fileID: 750615036}
-  - {fileID: 615341056}
-  - {fileID: 1542553877}
-  - {fileID: 1623748098}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -788,9 +788,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 677893492}
-  - {fileID: 1038752578}
-  - {fileID: 1503277123}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -895,11 +895,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1791966364}
-  - {fileID: 1307139284}
-  - {fileID: 1598681146}
-  - {fileID: 14073003}
-  - {fileID: 750615036}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -982,8 +982,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1424275373}
-  - {fileID: 1011715969}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -1064,14 +1064,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1947158350}
-  - {fileID: 1614432575}
-  - {fileID: 715937112}
-  - {fileID: 1011715969}
-  - {fileID: 615341056}
-  - {fileID: 750615036}
-  - {fileID: 1307139284}
-  - {fileID: 86495165}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -1155,9 +1155,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 451849810}
-  - {fileID: 579962124}
-  - {fileID: 177865970}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -1249,10 +1249,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 579962124}
-  - {fileID: 1644845426}
-  - {fileID: 177865970}
-  - {fileID: 385110625}
+  - {fileID: 579962125}
+  - {fileID: 1644845428}
+  - {fileID: 177865972}
+  - {fileID: 385110626}
   tropasNormais: []
   tropasGrandes: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
@@ -1457,54 +1457,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Territories:
-  - {fileID: 1620641457}
-  - {fileID: 1780868306}
-  - {fileID: 115644875}
-  - {fileID: 1644845426}
-  - {fileID: 177865970}
-  - {fileID: 451849810}
-  - {fileID: 579962124}
-  - {fileID: 1038752578}
-  - {fileID: 717163098}
-  - {fileID: 385110625}
-  - {fileID: 677893492}
-  - {fileID: 1503277123}
-  - {fileID: 238353228}
-  - {fileID: 2016518033}
-  - {fileID: 1542553877}
-  - {fileID: 225066306}
-  - {fileID: 615341056}
-  - {fileID: 750615036}
-  - {fileID: 598365399}
-  - {fileID: 979883953}
-  - {fileID: 1001898283}
-  - {fileID: 1010775413}
-  - {fileID: 1679474070}
-  - {fileID: 1623748098}
-  - {fileID: 14073003}
-  - {fileID: 1598681146}
-  - {fileID: 250461967}
-  - {fileID: 1307139284}
-  - {fileID: 1791966364}
-  - {fileID: 327674343}
-  - {fileID: 86495165}
-  - {fileID: 1614432575}
-  - {fileID: 1947158350}
-  - {fileID: 981335871}
-  - {fileID: 1878267511}
-  - {fileID: 707068513}
-  - {fileID: 1694094179}
-  - {fileID: 1716380609}
-  - {fileID: 833113284}
-  - {fileID: 692391728}
-  - {fileID: 753788251}
-  - {fileID: 815135054}
-  - {fileID: 969885558}
-  - {fileID: 2147128319}
-  - {fileID: 715937112}
-  - {fileID: 1011715969}
-  - {fileID: 279544126}
-  - {fileID: 1424275373}
+  - {fileID: 1620641459}
+  - {fileID: 1780868308}
+  - {fileID: 115644877}
+  - {fileID: 1644845428}
+  - {fileID: 177865972}
+  - {fileID: 451849812}
+  - {fileID: 579962125}
+  - {fileID: 1038752579}
+  - {fileID: 717163100}
+  - {fileID: 385110626}
+  - {fileID: 677893493}
+  - {fileID: 1503277124}
+  - {fileID: 238353229}
+  - {fileID: 2016518035}
+  - {fileID: 1542553878}
+  - {fileID: 225066308}
+  - {fileID: 615341058}
+  - {fileID: 750615038}
+  - {fileID: 598365400}
+  - {fileID: 979883955}
+  - {fileID: 1001898284}
+  - {fileID: 1010775414}
+  - {fileID: 1679474072}
+  - {fileID: 1623748100}
+  - {fileID: 14073004}
+  - {fileID: 1598681147}
+  - {fileID: 250461968}
+  - {fileID: 1307139285}
+  - {fileID: 1791966365}
+  - {fileID: 327674344}
+  - {fileID: 86495166}
+  - {fileID: 1614432576}
+  - {fileID: 1947158351}
+  - {fileID: 981335872}
+  - {fileID: 1878267512}
+  - {fileID: 707068514}
+  - {fileID: 1694094180}
+  - {fileID: 1716380610}
+  - {fileID: 833113285}
+  - {fileID: 692391729}
+  - {fileID: 753788252}
+  - {fileID: 815135055}
+  - {fileID: 969885559}
+  - {fileID: 2147128320}
+  - {fileID: 715937113}
+  - {fileID: 1011715970}
+  - {fileID: 279544127}
+  - {fileID: 1424275375}
+  Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
 --- !u!1 &490546742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,13 +1565,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1038752578}
-  - {fileID: 717163098}
-  - {fileID: 451849810}
-  - {fileID: 1644845426}
-  - {fileID: 115644875}
-  - {fileID: 385110625}
-  - {fileID: 677893492}
+  - {fileID: 115644877}
+  - {fileID: 451849812}
+  - {fileID: 1644845428}
+  - {fileID: 385110626}
+  - {fileID: 1038752579}
+  - {fileID: 717163100}
+  - {fileID: 677893493}
   tropasNormais: []
   tropasGrandes: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
@@ -1670,11 +1671,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 979883953}
-  - {fileID: 1001898283}
-  - {fileID: 615341056}
-  - {fileID: 1542553877}
-  - {fileID: 2016518033}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -1892,12 +1893,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1011715969}
-  - {fileID: 327674343}
-  - {fileID: 598365399}
-  - {fileID: 1542553877}
-  - {fileID: 225066306}
-  - {fileID: 750615036}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -1967,10 +1968,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 579962124}
-  - {fileID: 1038752578}
-  - {fileID: 238353228}
-  - {fileID: 1503277123}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -2052,11 +2053,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 833113284}
-  - {fileID: 1716380609}
-  - {fileID: 1878267511}
-  - {fileID: 1947158350}
-  - {fileID: 753788251}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -2146,8 +2147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1878267511}
-  - {fileID: 981335871}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -2227,12 +2228,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1011715969}
-  - {fileID: 1424275373}
-  - {fileID: 2147128319}
-  - {fileID: 1614432575}
-  - {fileID: 327674343}
-  - {fileID: 753788251}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -2330,14 +2331,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 579962124}
-  - {fileID: 1038752578}
-  - {fileID: 115644875}
+  - {fileID: 115644877}
+  - {fileID: 579962125}
+  - {fileID: 1038752579}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 1038752578}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
 --- !u!60 &717163101
 PolygonCollider2D:
@@ -2451,12 +2449,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 327674343}
-  - {fileID: 615341056}
-  - {fileID: 225066306}
-  - {fileID: 1598681146}
-  - {fileID: 250461967}
-  - {fileID: 1307139284}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -2528,11 +2526,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 815135054}
-  - {fileID: 692391728}
-  - {fileID: 1947158350}
-  - {fileID: 1614432575}
-  - {fileID: 2147128319}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -2619,9 +2617,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 969885558}
-  - {fileID: 2147128319}
-  - {fileID: 753788251}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -2704,8 +2702,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 692391728}
-  - {fileID: 1716380609}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -2793,8 +2791,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 2147128319}
-  - {fileID: 815135054}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -2887,7 +2885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 598365399}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -3019,9 +3017,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 707068513}
-  - {fileID: 1947158350}
-  - {fileID: 1878267511}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -3102,8 +3100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1010775413}
-  - {fileID: 598365399}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -3190,7 +3188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1001898283}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -3271,10 +3269,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 279544126}
-  - {fileID: 715937112}
-  - {fileID: 327674343}
-  - {fileID: 615341056}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -3356,10 +3354,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 579962124}
-  - {fileID: 717163098}
-  - {fileID: 677893492}
-  - {fileID: 238353228}
+  - {fileID: 717163100}
+  - {fileID: 579962125}
+  - {fileID: 238353229}
+  - {fileID: 677893493}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -3750,11 +3748,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1791966364}
-  - {fileID: 86495165}
-  - {fileID: 327674343}
-  - {fileID: 750615036}
-  - {fileID: 250461967}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -3990,8 +3988,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 279544126}
-  - {fileID: 715937112}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -4058,8 +4056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 677893492}
-  - {fileID: 238353228}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -4142,10 +4140,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 225066306}
-  - {fileID: 615341056}
-  - {fileID: 598365399}
-  - {fileID: 2016518033}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -4230,10 +4228,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 250461967}
-  - {fileID: 750615036}
-  - {fileID: 225066306}
-  - {fileID: 14073003}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -4314,12 +4312,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1947158350}
-  - {fileID: 753788251}
-  - {fileID: 715937112}
-  - {fileID: 2147128319}
-  - {fileID: 327674343}
-  - {fileID: 86495165}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -4419,7 +4417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1780868306}
+  - {fileID: 1780868308}
   tropasNormais: []
   tropasGrandes: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
@@ -4526,8 +4524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1679474070}
-  - {fileID: 225066306}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -4606,11 +4604,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 115644875}
-  - {fileID: 1780868306}
-  - {fileID: 177865970}
-  - {fileID: 579962124}
-  - {fileID: 451849810}
+  - {fileID: 115644877}
+  - {fileID: 1780868308}
+  - {fileID: 177865972}
+  - {fileID: 451849812}
+  - {fileID: 579962125}
   tropasNormais: []
   tropasGrandes: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
@@ -4721,8 +4719,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1780868306}
-  - {fileID: 2016518033}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -4787,7 +4785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1716380609}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -4869,8 +4867,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 833113284}
-  - {fileID: 1694094179}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -4967,12 +4965,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1620641457}
-  - {fileID: 115644875}
-  - {fileID: 1644845426}
-  - {fileID: 2016518033}
-  - {fileID: 1679474070}
-  - {fileID: 598365399}
+  - {fileID: 1620641459}
+  - {fileID: 115644877}
+  - {fileID: 1644845428}
+  - {fileID: 2016518035}
+  - {fileID: 598365400}
+  - {fileID: 1679474072}
   tropasNormais: []
   tropasGrandes: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
@@ -5049,9 +5047,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 86495165}
-  - {fileID: 1307139284}
-  - {fileID: 250461967}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -5175,10 +5173,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 707068513}
-  - {fileID: 981335871}
-  - {fileID: 1947158350}
-  - {fileID: 692391728}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -5260,13 +5258,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 981335871}
-  - {fileID: 1878267511}
-  - {fileID: 692391728}
-  - {fileID: 753788251}
-  - {fileID: 1614432575}
-  - {fileID: 327674343}
-  - {fileID: 86495165}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -5369,10 +5367,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 1542553877}
-  - {fileID: 598365399}
-  - {fileID: 1679474070}
-  - {fileID: 1780868306}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}
@@ -5562,11 +5560,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 715937112}
-  - {fileID: 969885558}
-  - {fileID: 815135054}
-  - {fileID: 753788251}
-  - {fileID: 1614432575}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 1038752578}

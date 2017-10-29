@@ -5,15 +5,17 @@ using UnityEngine;
 public class TerritoryController : MonoBehaviour {
 
     //lista de vizinhos do territorio
-    public List<GameObject> neighborhood;
+    public List<TerritoryController> neighborhood;
     public List<GameObject> tropasNormais;
     public List<GameObject> tropasGrandes;
+    public List<GameObject> tropasSelecionadas;
     public GameObject Tropa;
 
     // Use this for initialization
     void Start () {
         tropasNormais = new List<GameObject>();
         tropasGrandes = new List<GameObject>();
+        tropasSelecionadas = new List<GameObject>();
     }
 	
 	// Update is called once per frame
@@ -26,13 +28,13 @@ public class TerritoryController : MonoBehaviour {
     /// </summary>
     void OnMouseDown()
     {
-        SendMessage("CheckAvailableTerritories", GameController.isPlayerTurn);
         Debug.Log("região " + name + " clicada");
         Debug.Log("região pertence a " + transform.parent.name);
-        foreach (var item in neighborhood)
-        {
-            Debug.Log( item.name +  " pertence a sua vizinhança");
-        }
+        SendMessage("CheckAvailableTerritories", GameController.isPlayerTurn);
+        //foreach (var item in neighborhood)
+        //{
+        //    Debug.Log( item.name +  " pertence a sua vizinhança");
+        //}
     }
 
     void OnMouseOver()
@@ -54,26 +56,31 @@ public class TerritoryController : MonoBehaviour {
         //bool tN;
         //bool tG;
         GameObject t;
-
-        if (tropasNormais.Count < 4)
+        if (GameController.playerTerritories.Contains(this))
         {
-            t = Instantiate(Tropa,position, Quaternion.identity);
-            tropasNormais.Add(t);
-        }
-        else
-        {
-            for (int i = 0; i < 4; i++)
+            if (tropasNormais.Count < 4)
             {
-                t = tropasNormais[0];
-                tropasNormais.Remove(t);
-                t.GetComponent<SpriteRenderer>().enabled = false;
-                Destroy(t);
+                t = Instantiate(Tropa, position, Quaternion.identity);
+                t.transform.SetParent(this.transform);
+                tropasNormais.Add(t);
             }
+            else
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    t = tropasNormais[0];
+                    tropasNormais.Remove(t);
+                    t.GetComponent<SpriteRenderer>().enabled = false;
+                    Destroy(t);
+                }
 
-            var tropaG = Instantiate(Tropa, position, Quaternion.identity);
-            tropaG.transform.localScale += new Vector3(3, 3, 3);
-            tropasGrandes.Add(tropaG);
+                var tropaG = Instantiate(Tropa, position, Quaternion.identity);
+                tropaG.transform.SetParent(this.transform);
+                tropaG.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
+                tropasGrandes.Add(tropaG);
+            }
         }
+        
     }
 
     void OnMousedrag()
@@ -85,7 +92,7 @@ public class TerritoryController : MonoBehaviour {
     {
         if (isPlayer)
         {
-            if (!GameController.playerTerritories.Contains(this.gameObject)) { Debug.Log("não pertence a região"); return; }
+            if (!GameController.playerTerritories.Contains(this)) { Debug.Log("não pertence a região"); return; }
             foreach (var t in neighborhood)
             {
                 if (GameController.playerTerritories.Contains(t))
@@ -96,7 +103,7 @@ public class TerritoryController : MonoBehaviour {
         }
         else
         {
-            if (!GameController.iaTerritories.Contains(this.gameObject)) { Debug.Log("não pertence a região"); return; }
+            if (!GameController.iaTerritories.Contains(this)) { Debug.Log("não pertence a região"); return; }
             foreach (var t in neighborhood)
             {
                 if (GameController.iaTerritories.Contains(t))
