@@ -25,6 +25,7 @@ ExportedObj/
 
 # Unity3D generated meta files
 *.pidb.meta
+!*.*.meta
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
@@ -32,4 +33,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-© 2017 GitHub, Inc.
+Â© 2017 GitHub, Inc.
