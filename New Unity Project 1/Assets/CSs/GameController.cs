@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 class GameController : MonoBehaviour
 {
@@ -16,6 +17,14 @@ class GameController : MonoBehaviour
     void Start()
     {
         DistributeTerritories();
+        if(UnityEngine.Random.Range(0,1) == 0)
+        {
+            isPlayerTurn = true;
+        }
+        else
+        {
+            isPlayerTurn = false;
+        }
     }
 
     void DistributeTerritories()
@@ -46,7 +55,41 @@ class GameController : MonoBehaviour
     {
         if (isPlayerTurn)
         {
-
         }
     }
+
+   void EndTurn()
+    {
+        if (checkObjective())
+        {
+            EndGame();
+        }
+        
+        isPlayerTurn = !isPlayerTurn;
+    }
+
+
+    bool checkObjective()
+    {
+        List<TerritoryController> territories = isPlayerTurn ? playerTerritories : iaTerritories;
+        if (territories.Count >= 20)
+        {
+            //modificar objetivos
+            return true;
+        }
+        return false;
+
+    }
+
+    void EndGame()
+    {
+        if (isPlayerTurn)
+            SceneManager.LoadScene(3);
+        else
+            SceneManager.LoadScene(2);
+          
+    }
+    
 }
+
+

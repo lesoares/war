@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Testes de mapa.unity
     guid: 70f489d2b607a6847936b7cdb0d38190
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Encerramento.unity
     guid: 0ba9d1e5bdd6e4a4eb3ebe9526c0adef
+  - enabled: 1
+    path: Assets/Scenes/FimJogoDerrota.unity
+    guid: 1278e87ffb6a2424c89da92dcb285306
+  - enabled: 1
+    path: Assets/Scenes/FimJogoVitoria.unity
+    guid: 3089436b4240b884d88ecd9eb595ae88
