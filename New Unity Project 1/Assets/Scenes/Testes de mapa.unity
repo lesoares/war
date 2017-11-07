@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3322,14 +3322,17 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.5363033, y: -0.2060841}
-      - {x: 0.42845452, y: -0.31749442}
-      - {x: 0.39857206, y: -0.41935408}
-      - {x: 0.4851695, y: -0.5378225}
-      - {x: 0.48334858, y: -0.7233259}
-      - {x: 0.57597953, y: -0.9192441}
-      - {x: 0.6948995, y: -1.0125327}
-      - {x: 1.6794279, y: -0.31224075}
+    - - {x: 0.5509647, y: 0.16413024}
+      - {x: -0.3518442, y: 0.04132867}
+      - {x: -0.6209411, y: -0.032053173}
+      - {x: -0.48877865, y: -0.14482594}
+      - {x: -0.53046846, y: -0.32463342}
+      - {x: -0.44353294, y: -0.4579003}
+      - {x: -0.4265545, y: -0.54998976}
+      - {x: -0.36448163, y: -0.6081449}
+      - {x: -0.20357877, y: -0.4780947}
+      - {x: -0.11439508, y: -0.47187483}
+      - {x: 0.58587146, y: -0.010373741}
 --- !u!4 &1010775416
 Transform:
   m_ObjectHideFlags: 0
@@ -3337,7 +3340,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1010775413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.997, y: -0.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 724212808}
