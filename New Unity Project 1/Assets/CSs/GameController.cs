@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 class GameController : MonoBehaviour
 {
@@ -57,12 +58,11 @@ class GameController : MonoBehaviour
         }
     }
 
-   public void EndTurn()
+   void EndTurn()
     {
         if (checkObjective())
         {
-            EndController fim = GameObject.FindObjectOfType(typeof(EndController)) as EndController;
-            fim.EndGame();
+            EndGame();
         }
         
         isPlayerTurn = !isPlayerTurn;
@@ -80,6 +80,16 @@ class GameController : MonoBehaviour
         return false;
 
     }
+
+    void EndGame()
+    {
+        if (isPlayerTurn)
+            SceneManager.LoadScene(3);
+        else
+            SceneManager.LoadScene(2);
+          
+    }
+    
 }
 
 
