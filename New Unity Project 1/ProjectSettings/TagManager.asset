@@ -25,6 +25,8 @@ TagManager:
   - StoneySept
   - MountainsOfTheMoon
   - TheFingers
+  - Win
+  - Loss
   layers:
   - Default
   - TransparentFX

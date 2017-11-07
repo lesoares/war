@@ -6,23 +6,21 @@ using UnityEngine.SceneManagement;
 public class EndController : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
-		
-	}
+    void Start()
+    {
+
+    }
+    
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
 
-    void backToStart()
+    void BackToStart()
     {
         SceneManager.LoadScene(0);
     }
 
-    public void EndGame()
-    {
-        //vitória e derrota?
-        SceneManager.LoadScene(2);
-    }
+    
 }
