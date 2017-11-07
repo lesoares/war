@@ -35,6 +35,17 @@ public class MenuController : MonoBehaviour {
         Debug.Log("Como Jogar");
     }
 
+    void ExitGame()
+	{
+	    #if UNITY_EDITOR
+	            UnityEditor.EditorApplication.isPlaying = false;
+	    #elif UNITY_WEBPLAYER
+	                Application.OpenURL(webplayerQuitURL);
+	    #else
+	                Application.Quit();
+	    #endif
+	}
+
     void ChangeToCredits()
     {
         foreach (var item in canvasGroup)

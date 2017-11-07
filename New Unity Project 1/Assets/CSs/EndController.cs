@@ -20,8 +20,9 @@ public class EndController : MonoBehaviour {
         SceneManager.LoadScene(0);
     }
 
-    void EndGame()
+    public void EndGame()
     {
+        //vitória e derrota?
         SceneManager.LoadScene(2);
     }
 }

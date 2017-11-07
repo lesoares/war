@@ -16,6 +16,14 @@ class GameController : MonoBehaviour
     void Start()
     {
         DistributeTerritories();
+        if(UnityEngine.Random.Range(0,1) == 0)
+        {
+            isPlayerTurn = true;
+        }
+        else
+        {
+            isPlayerTurn = false;
+        }
     }
 
     void DistributeTerritories()
@@ -46,7 +54,32 @@ class GameController : MonoBehaviour
     {
         if (isPlayerTurn)
         {
-
         }
     }
+
+   public void EndTurn()
+    {
+        if (checkObjective())
+        {
+            EndController fim = GameObject.FindObjectOfType(typeof(EndController)) as EndController;
+            fim.EndGame();
+        }
+        
+        isPlayerTurn = !isPlayerTurn;
+    }
+
+
+    bool checkObjective()
+    {
+        List<TerritoryController> territories = isPlayerTurn ? playerTerritories : iaTerritories;
+        if (territories.Count >= 20)
+        {
+            //modificar objetivos
+            return true;
+        }
+        return false;
+
+    }
 }
+
+
