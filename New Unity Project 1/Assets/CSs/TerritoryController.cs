@@ -10,6 +10,7 @@ public class TerritoryController : MonoBehaviour {
     public List<GameObject> tropasGrandes;
     public List<GameObject> tropasSelecionadas;
     public GameObject Tropa;
+    public bool isPlayerDono;
 
     // Use this for initialization
     void Start () {
@@ -56,7 +57,7 @@ public class TerritoryController : MonoBehaviour {
         //bool tN;
         //bool tG;
         GameObject t;
-        if (GameController.playerTerritories.Contains(this))
+        if (isPlayerDono)
         {
             if (tropasNormais.Count < 4)
             {
@@ -92,10 +93,10 @@ public class TerritoryController : MonoBehaviour {
     {
         if (isPlayer)
         {
-            if (!GameController.playerTerritories.Contains(this)) { Debug.Log("não pertence a região"); return; }
+            if (!this.isPlayerDono) { Debug.Log("não pertence a região"); return; }
             foreach (var t in neighborhood)
             {
-                if (GameController.playerTerritories.Contains(t))
+                if (t.isPlayerDono)
                 {
                     Debug.Log(t.name);
                 }
@@ -103,10 +104,10 @@ public class TerritoryController : MonoBehaviour {
         }
         else
         {
-            if (!GameController.iaTerritories.Contains(this)) { Debug.Log("não pertence a região"); return; }
+            if (this.isPlayerDono) { Debug.Log("não pertence a região"); return; }
             foreach (var t in neighborhood)
             {
-                if (GameController.iaTerritories.Contains(t))
+                if (!t.isPlayerDono)
                 {
                     Debug.Log(t.name);
                 }
