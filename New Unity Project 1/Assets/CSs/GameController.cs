@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-class GameController : MonoBehaviour
+public class GameController : MonoBehaviour
 {
     public static bool isPlayerTurn = true;
     public static List<TerritoryController> playerTerritories = new List<TerritoryController>();
