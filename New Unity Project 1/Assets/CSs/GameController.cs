@@ -8,8 +8,6 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public static bool isPlayerTurn = true;
-    public static List<TerritoryController> playerTerritories = new List<TerritoryController>();
-    public static List<TerritoryController> iaTerritories = new List<TerritoryController>();
     public List<TerritoryController> Territories = new List<TerritoryController>();
     public static Texture2D playerColor = null;
     public GameObject Tropa;
@@ -34,7 +32,7 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < 24; i++)
         {
             var number = UnityEngine.Random.Range(0, limit);
-            playerTerritories.Add(Territories[number]);
+            Territories[number].isPlayerDono = true;
             GameObject t = Instantiate(Tropa, Territories[number].transform.position, Quaternion.identity);
             t.transform.SetParent(Territories[number].transform);
             Territories[number].tropasNormais.Add(t);
@@ -47,7 +45,7 @@ public class GameController : MonoBehaviour
         foreach (var item in Territories)
         {
             Debug.Log("add ia " + item.name);
-            iaTerritories.Add(item);
+            item.isPlayerDono = false;
         }
     }
 
@@ -71,14 +69,19 @@ public class GameController : MonoBehaviour
 
     bool checkObjective()
     {
-        List<TerritoryController> territories = isPlayerTurn ? playerTerritories : iaTerritories;
-        if (territories.Count >= 20)
+        int contaTerritorio = 0;
+        foreach (var t in Territories)
         {
-            //modificar objetivos
+            if (t.isPlayerDono)
+            {
+                contaTerritorio++;
+            }
+        }
+        if ((isPlayerTurn && contaTerritorio > 25) || (isPlayerTurn && contaTerritorio <= 23)) 
+        {
             return true;
         }
         return false;
-
     }
 
     void EndGame()
