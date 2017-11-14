@@ -137,10 +137,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1598681147}
+  - {fileID: 250461968}
+  - {fileID: 225066308}
+  - {fileID: 1623748100}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -226,11 +226,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &73205364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,16 +237,6 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
 --- !u!223 &73205365
 Canvas:
   m_ObjectHideFlags: 0
@@ -332,11 +317,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1307139285}
+  - {fileID: 1791966365}
+  - {fileID: 327674344}
+  - {fileID: 1947158351}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -734,12 +718,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1542553878}
+  - {fileID: 615341058}
+  - {fileID: 14073004}
+  - {fileID: 1598681147}
+  - {fileID: 1623748100}
+  - {fileID: 750615038}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -829,28 +813,6 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Fim do turno
 --- !u!222 &232320432
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -886,9 +848,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1503277124}
+  - {fileID: 677893493}
+  - {fileID: 1038752579}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -994,11 +956,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1598681147}
+  - {fileID: 14073004}
+  - {fileID: 1307139285}
+  - {fileID: 1791966365}
+  - {fileID: 750615038}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -1082,8 +1044,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1011715970}
+  - {fileID: 1424275375}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -1176,14 +1138,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 86495166}
+  - {fileID: 1614432576}
+  - {fileID: 1947158351}
+  - {fileID: 1307139285}
+  - {fileID: 750615038}
+  - {fileID: 615341058}
+  - {fileID: 1011715970}
+  - {fileID: 715937113}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -1285,9 +1247,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 177865972}
+  - {fileID: 451849812}
+  - {fileID: 579962125}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -1804,11 +1766,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 979883955}
+  - {fileID: 1001898284}
+  - {fileID: 2016518035}
+  - {fileID: 1542553878}
+  - {fileID: 615341058}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -1951,13 +1913,6 @@ MonoBehaviour:
   m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &602231258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1969,9 +1924,6 @@ MonoBehaviour:
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 5
 --- !u!4 &602231259
 Transform:
   m_ObjectHideFlags: 0
@@ -2027,12 +1979,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1542553878}
+  - {fileID: 225066308}
+  - {fileID: 750615038}
+  - {fileID: 598365400}
+  - {fileID: 1011715970}
+  - {fileID: 327674344}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -2103,10 +2055,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 579962125}
+  - {fileID: 1503277124}
+  - {fileID: 238353229}
+  - {fileID: 1038752579}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -2189,11 +2141,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 833113285}
+  - {fileID: 1716380610}
+  - {fileID: 1947158351}
+  - {fileID: 1878267512}
+  - {fileID: 753788252}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -2308,8 +2260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1878267512}
+  - {fileID: 981335872}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -2389,12 +2341,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1011715970}
+  - {fileID: 1424275375}
+  - {fileID: 327674344}
+  - {fileID: 1614432576}
+  - {fileID: 2147128320}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -2638,12 +2589,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 225066308}
+  - {fileID: 225066308}
+  - {fileID: 1598681147}
+  - {fileID: 250461968}
+  - {fileID: 1307139285}
+  - {fileID: 327674344}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -2716,11 +2667,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2147128320}
+  - {fileID: 815135055}
+  - {fileID: 1614432576}
+  - {fileID: 692391729}
+  - {fileID: 1947158351}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -2844,9 +2795,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 753788252}
+  - {fileID: 969885559}
+  - {fileID: 2147128320}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -2960,8 +2911,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1716380610}
+  - {fileID: 692391729}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -3057,8 +3008,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 815135055}
+  - {fileID: 2147128320}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -3159,7 +3110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
+  - {fileID: 598365400}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -3292,9 +3243,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1947158351}
+  - {fileID: 1878267512}
+  - {fileID: 707068514}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -3396,8 +3347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 598365400}
+  - {fileID: 1010775414}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -3509,7 +3460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
+  - {fileID: 1001898284}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -3594,10 +3545,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 279544127}
+  - {fileID: 715937113}
+  - {fileID: 615341058}
+  - {fileID: 327674344}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -3721,47 +3672,6 @@ MonoBehaviour:
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1024814219}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 472287603}
-        m_MethodName: SendMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: EndTurn
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1024814219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3773,22 +3683,6 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
 --- !u!222 &1024814220
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4219,11 +4113,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 250461968}
+  - {fileID: 1791966365}
+  - {fileID: 750615038}
+  - {fileID: 86495166}
+  - {fileID: 327674344}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -4397,28 +4291,6 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Fim
 --- !u!222 &1380831502
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4467,8 +4339,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 279544127}
+  - {fileID: 715937113}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -4542,8 +4414,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 677893493}
+  - {fileID: 238353229}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -4627,10 +4499,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2016518035}
+  - {fileID: 225066308}
+  - {fileID: 615341058}
+  - {fileID: 598365400}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -4716,10 +4588,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 14073004}
+  - {fileID: 250461968}
+  - {fileID: 225066308}
+  - {fileID: 750615038}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -4805,12 +4677,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 327674344}
+  - {fileID: 1947158351}
+  - {fileID: 715937113}
+  - {fileID: 2147128320}
+  - {fileID: 753788252}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -5045,8 +4916,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1679474072}
+  - {fileID: 225066308}
+  - {fileID: 14073004}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -5242,8 +5114,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1623748100}
+  - {fileID: 1780868308}
+  - {fileID: 2016518035}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -5309,7 +5182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
+  - {fileID: 1716380610}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -5417,8 +5290,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1694094180}
+  - {fileID: 833113285}
+  - {fileID: 692391729}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -5599,9 +5473,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1307139285}
+  - {fileID: 250461968}
+  - {fileID: 86495166}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -5741,10 +5615,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 707068514}
+  - {fileID: 981335872}
+  - {fileID: 1947158351}
+  - {fileID: 692391729}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -5852,13 +5726,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 86495166}
+  - {fileID: 327674344}
+  - {fileID: 1614432576}
+  - {fileID: 981335872}
+  - {fileID: 1878267512}
+  - {fileID: 753788252}
+  - {fileID: 692391729}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -5990,10 +5864,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1679474072}
+  - {fileID: 598365400}
+  - {fileID: 1542553878}
+  - {fileID: 1780868308}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
@@ -6096,47 +5970,6 @@ MonoBehaviour:
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2123362920}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 73205367}
-        m_MethodName: SendMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BackToStart
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &2123362920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6148,22 +5981,6 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
 --- !u!222 &2123362921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6199,11 +6016,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 969885559}
+  - {fileID: 815135055}
+  - {fileID: 753788252}
+  - {fileID: 1614432576}
+  - {fileID: 715937113}
   tropasNormais: []
   tropasGrandes:
   - {fileID: 0}
