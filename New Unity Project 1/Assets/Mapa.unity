@@ -142,13 +142,10 @@ MonoBehaviour:
   - {fileID: 225066308}
   - {fileID: 1623748100}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &14073005
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -338,13 +335,10 @@ MonoBehaviour:
   - {fileID: 327674344}
   - {fileID: 1947158351}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &86495167
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -458,7 +452,7 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &115644878
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -581,7 +575,7 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &177865973
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -744,13 +738,10 @@ MonoBehaviour:
   - {fileID: 1623748100}
   - {fileID: 750615038}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &225066309
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -894,13 +885,10 @@ MonoBehaviour:
   - {fileID: 677893493}
   - {fileID: 1038752579}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &238353230
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1005,13 +993,10 @@ MonoBehaviour:
   - {fileID: 1791966365}
   - {fileID: 750615038}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &250461969
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1091,13 +1076,10 @@ MonoBehaviour:
   - {fileID: 1011715970}
   - {fileID: 1424275375}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &279544128
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1192,13 +1174,10 @@ MonoBehaviour:
   - {fileID: 1011715970}
   - {fileID: 715937113}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &327674345
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1297,13 +1276,10 @@ MonoBehaviour:
   - {fileID: 451849812}
   - {fileID: 579962125}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &385110627
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1397,7 +1373,7 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &451849813
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1718,7 +1694,7 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &579962126
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1821,13 +1797,10 @@ MonoBehaviour:
   - {fileID: 1542553878}
   - {fileID: 615341058}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &598365401
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2046,13 +2019,10 @@ MonoBehaviour:
   - {fileID: 1011715970}
   - {fileID: 327674344}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &615341059
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2121,13 +2091,10 @@ MonoBehaviour:
   - {fileID: 238353229}
   - {fileID: 1038752579}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &677893494
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2209,13 +2176,10 @@ MonoBehaviour:
   - {fileID: 1878267512}
   - {fileID: 753788252}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &692391730
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2326,13 +2290,10 @@ MonoBehaviour:
   - {fileID: 1878267512}
   - {fileID: 981335872}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &707068515
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2411,13 +2372,10 @@ MonoBehaviour:
   - {fileID: 1614432576}
   - {fileID: 2147128320}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &715937114
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2542,7 +2500,7 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &717163101
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2662,13 +2620,10 @@ MonoBehaviour:
   - {fileID: 1307139285}
   - {fileID: 327674344}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &750615039
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2740,13 +2695,10 @@ MonoBehaviour:
   - {fileID: 692391729}
   - {fileID: 1947158351}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &753788253
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2867,13 +2819,10 @@ MonoBehaviour:
   - {fileID: 969885559}
   - {fileID: 2147128320}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &815135056
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2983,13 +2932,10 @@ MonoBehaviour:
   - {fileID: 1716380610}
   - {fileID: 692391729}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &833113286
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3081,13 +3027,10 @@ MonoBehaviour:
   - {fileID: 815135055}
   - {fileID: 2147128320}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &969885560
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3183,13 +3126,10 @@ MonoBehaviour:
   neighborhood:
   - {fileID: 598365400}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &979883956
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3319,13 +3259,10 @@ MonoBehaviour:
   - {fileID: 1878267512}
   - {fileID: 707068514}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &981335873
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3423,13 +3360,10 @@ MonoBehaviour:
   - {fileID: 598365400}
   - {fileID: 1010775414}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1001898285
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3536,13 +3470,10 @@ MonoBehaviour:
   neighborhood:
   - {fileID: 1001898284}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1010775415
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3625,13 +3556,10 @@ MonoBehaviour:
   - {fileID: 615341058}
   - {fileID: 327674344}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1011715971
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3845,13 +3773,10 @@ MonoBehaviour:
   - {fileID: 238353229}
   - {fileID: 677893493}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 1038752578}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1038752580
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4228,13 +4153,10 @@ MonoBehaviour:
   - {fileID: 86495166}
   - {fileID: 327674344}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1307139286
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4474,13 +4396,10 @@ MonoBehaviour:
   - {fileID: 279544127}
   - {fileID: 715937113}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1424275376
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4550,13 +4469,10 @@ MonoBehaviour:
   - {fileID: 677893493}
   - {fileID: 238353229}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1503277125
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4638,13 +4554,10 @@ MonoBehaviour:
   - {fileID: 615341058}
   - {fileID: 598365400}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1542553879
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4728,13 +4641,10 @@ MonoBehaviour:
   - {fileID: 225066308}
   - {fileID: 750615038}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1598681148
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4819,13 +4729,10 @@ MonoBehaviour:
   - {fileID: 2147128320}
   - {fileID: 753788252}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1614432577
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4950,7 +4857,7 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1620641460
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5058,13 +4965,10 @@ MonoBehaviour:
   - {fileID: 225066308}
   - {fileID: 14073004}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1623748101
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5146,7 +5050,7 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1644845429
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5258,13 +5162,10 @@ MonoBehaviour:
   - {fileID: 1780868308}
   - {fileID: 2016518035}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1679474073
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5325,13 +5226,10 @@ MonoBehaviour:
   neighborhood:
   - {fileID: 1716380610}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1694094181
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5436,13 +5334,10 @@ MonoBehaviour:
   - {fileID: 833113285}
   - {fileID: 692391729}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1716380611
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5543,7 +5438,7 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1780868309
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5621,13 +5516,10 @@ MonoBehaviour:
   - {fileID: 250461968}
   - {fileID: 86495166}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1791966366
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5765,13 +5657,10 @@ MonoBehaviour:
   - {fileID: 1947158351}
   - {fileID: 692391729}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1878267513
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5880,13 +5769,10 @@ MonoBehaviour:
   - {fileID: 753788252}
   - {fileID: 692391729}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &1947158352
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6019,7 +5905,7 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &2016518036
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6213,13 +6099,10 @@ MonoBehaviour:
   - {fileID: 1614432576}
   - {fileID: 715937113}
   tropasNormais: []
-  tropasGrandes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
-  isPlayerDono: 0
+  player: 0
 --- !u!60 &2147128321
 PolygonCollider2D:
   m_ObjectHideFlags: 0

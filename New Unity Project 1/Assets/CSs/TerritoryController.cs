@@ -7,17 +7,14 @@ public class TerritoryController : MonoBehaviour {
 
     //lista de vizinhos do territorio
     public List<TerritoryController> neighborhood;
-    public List<GameObject> tropasNormais;
-    public List<GameObject> tropasGrandes;
-    public List<GameObject> tropasSelecionadas;
+    public List<GameObject> tropasNormais = new List<GameObject>();
+    public List<GameObject> tropasGrandes = new List<GameObject>();
+    public List<GameObject> tropasSelecionadas = new List<GameObject>();
     public GameObject Tropa;
     public int player;
 
     // Use this for initialization
     void Start () {
-        tropasNormais = new List<GameObject>();
-        tropasGrandes = new List<GameObject>();
-        tropasSelecionadas = new List<GameObject>();
     }
 	
 	// Update is called once per frame
