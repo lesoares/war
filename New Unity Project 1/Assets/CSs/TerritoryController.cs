@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.CSs;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +11,7 @@ public class TerritoryController : MonoBehaviour {
     public List<GameObject> tropasGrandes;
     public List<GameObject> tropasSelecionadas;
     public GameObject Tropa;
-    public bool isPlayerDono;
+    public int player;
 
     // Use this for initialization
     void Start () {
@@ -57,12 +58,12 @@ public class TerritoryController : MonoBehaviour {
         //bool tN;
         //bool tG;
         GameObject t;
-        if (isPlayerDono)
+        if (player == 1)
         {
             if (tropasNormais.Count < 4)
             {
                 t = Instantiate(Tropa, position, Quaternion.identity);
-                t.transform.SetParent(this.transform);
+                t.GetComponent<TropaController>().configure(this);
                 tropasNormais.Add(t);
             }
             else
@@ -76,7 +77,7 @@ public class TerritoryController : MonoBehaviour {
                 }
 
                 var tropaG = Instantiate(Tropa, position, Quaternion.identity);
-                tropaG.transform.SetParent(this.transform);
+                tropaG.GetComponent<TropaController>().configure(this);
                 tropaG.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
                 tropasGrandes.Add(tropaG);
             }
@@ -93,10 +94,10 @@ public class TerritoryController : MonoBehaviour {
     {
         if (isPlayer)
         {
-            if (!this.isPlayerDono) { Debug.Log("não pertence a região"); return; }
+            if (this.player == 0) { Debug.Log("não pertence a região"); return; }
             foreach (var t in neighborhood)
             {
-                if (t.isPlayerDono)
+                if (t.player == 1)
                 {
                     Debug.Log(t.name);
                 }
@@ -104,10 +105,10 @@ public class TerritoryController : MonoBehaviour {
         }
         else
         {
-            if (this.isPlayerDono) { Debug.Log("não pertence a região"); return; }
+            if (this.player == 1) { Debug.Log("não pertence a região"); return; }
             foreach (var t in neighborhood)
             {
-                if (!t.isPlayerDono)
+                if (t.player == 0)
                 {
                     Debug.Log(t.name);
                 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using Assets.CSs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,26 +29,31 @@ public class GameController : MonoBehaviour
 
     void DistributeTerritories()
     {
-        var limit = 47;
-        List<int> usedNumbers = new List<int>();
-        for (int i = 0; i < 24; i++)
+        var players = 2;
+        var range = Enumerable.Range(0, Territories.Count).ToList();
+        for(int i = 0; i < range.Count; i++)
         {
-            var number = UnityEngine.Random.Range(0, limit);
-            Territories[number].isPlayerDono = true;
-            GameObject t = Instantiate(Tropa, Territories[number].transform.position, Quaternion.identity);
-            t.transform.SetParent(Territories[number].transform);
-            Territories[number].tropasNormais.Add(t);
-            Debug.Log("add player " + Territories[number].name);
-            Territories.RemoveAt(number);
-            usedNumbers.Add(number);
-            limit--;
+            var temp = range[i];
+            var randomIndex = UnityEngine.Random.Range(i, range.Count);
+            range[i] = range[randomIndex];
+            range[randomIndex] = temp;
         }
-
-        foreach (var item in Territories)
+        for (int i = 0; i < range.Count; i++)
         {
-            Debug.Log("add ia " + item.name);
-            item.isPlayerDono = false;
+            var territory = Territories[range[i]];
+            territory.player = i % players;
+            GameObject t = Instantiate(Tropa, territory.transform.position, Quaternion.identity);
+            t.GetComponent<TropaController>().configure(territory);
+            territory.tropasNormais.Add(t);
+            if (territory.player == 1)
+            {
+                Debug.Log("Add player: " + territory.name);
+            } else
+            {
+                Debug.Log("Add IA: " + territory.name);
+            }
         }
+       
     }
 
     void Update()
@@ -72,7 +79,7 @@ public class GameController : MonoBehaviour
         int contaTerritorio = 0;
         foreach (var t in Territories)
         {
-            if (t.isPlayerDono)
+            if (t.player == 1)
             {
                 contaTerritorio++;
             }
