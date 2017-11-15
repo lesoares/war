@@ -22,6 +22,11 @@ public class TerritoryController : MonoBehaviour {
         
 	}
 
+    public int getTropas ()
+    {
+        return tropasNormais.Count + tropasGrandes.Count * 5;
+    }
+
     /// <summary>
     /// Ao reconhecer o clique do mouse, printo as informações do território
     /// </summary>
@@ -45,39 +50,53 @@ public class TerritoryController : MonoBehaviour {
                 var position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
                                                        Camera.main.ScreenToWorldPoint(Input.mousePosition).y,
                                                        this.transform.position.z - 1);
-                CreateTroop(position);
+                if (player == 1) { 
+                    CreateTroop(position);
+                }
             }
         }
     }
 
-    void CreateTroop(Vector3 position)
+    public Vector3 PointInArea()
+    {
+        var collider = this.gameObject.GetComponent<PolygonCollider2D>();
+        var bounds = collider.bounds;
+        var center = bounds.center;
+
+        var t = tropasNormais.Count + tropasGrandes.Count;
+        float a = 1.2f;
+        float x = a * t * Mathf.Cos(t);
+        float y = a * t * Mathf.Sin(t);
+
+        return new Vector3(center.x + x, center.y + y, center.z - 1);
+    }
+
+
+    public void CreateTroop(Vector3 position)
     {
         //bool tN;
         //bool tG;
         GameObject t;
-        if (player == 1)
+        if (tropasNormais.Count < 4)
         {
-            if (tropasNormais.Count < 4)
+            t = Instantiate(Tropa, position, Quaternion.identity);
+            t.GetComponent<TropaController>().configure(this);
+            tropasNormais.Add(t);
+        }
+        else
+        {
+            for (int i = 0; i < 4; i++)
             {
-                t = Instantiate(Tropa, position, Quaternion.identity);
-                t.GetComponent<TropaController>().configure(this);
-                tropasNormais.Add(t);
+                t = tropasNormais[0];
+                tropasNormais.Remove(t);
+                t.GetComponent<SpriteRenderer>().enabled = false;
+                Destroy(t);
             }
-            else
-            {
-                for (int i = 0; i < 4; i++)
-                {
-                    t = tropasNormais[0];
-                    tropasNormais.Remove(t);
-                    t.GetComponent<SpriteRenderer>().enabled = false;
-                    Destroy(t);
-                }
 
-                var tropaG = Instantiate(Tropa, position, Quaternion.identity);
-                tropaG.GetComponent<TropaController>().configure(this);
-                tropaG.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
-                tropasGrandes.Add(tropaG);
-            }
+            var tropaG = Instantiate(Tropa, position, Quaternion.identity);
+            tropaG.GetComponent<TropaController>().configure(this);
+            tropaG.transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
+            tropasGrandes.Add(tropaG);
         }
         
     }
