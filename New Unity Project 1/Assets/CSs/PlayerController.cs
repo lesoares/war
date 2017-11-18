@@ -15,7 +15,7 @@ public class PlayerController : PlayerBase {
 		
 	}
 
-    public void EndGame()
+    public override void EndGame()
     {
         SceneManager.LoadScene(3);
     }

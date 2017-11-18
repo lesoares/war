@@ -16,17 +16,22 @@ public class GameController : MonoBehaviour
     public GameObject IA;
     public static List<GameObject> players = new List<GameObject>();
     public static int turn = 0;
+    public static int state = 0;
+    public Dictionary<GameObject, int> exercitos;
+    public Dictionary<GameObject, int> exercitosAdd;
 
 
 
     void Start()
     {
-        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(new Color(0, 0, 1)));
-        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(new Color(1, 0, 0)));
+        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
+        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(1, new Color(1, 0, 0)));
         //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(new Color(1, 1, 0)));
 
         DistributeTerritories();
         turn = UnityEngine.Random.Range(0, players.Count - 1);
+        turn = 0;
+        StartTurn();
     }
 
     void DistributeTerritories()
@@ -50,10 +55,39 @@ public class GameController : MonoBehaviour
        
     }
 
+    void StartTurn()
+    {
+        exercitos = new Dictionary<GameObject, int>();
+        exercitosAdd = new Dictionary<GameObject, int>();
+        int world = Convert.ToInt32(Math.Max(3, Math.Round(Territories.Sum(t => (t.player == turn) ? 0.5 : 0.0))));
+        exercitos[this.gameObject] = world;
+        exercitosAdd[this.gameObject] = 0;
+        state = 0;
+    }
+
+    public bool AttackState()
+    {
+        foreach (KeyValuePair<GameObject, int> entry in exercitos) {
+            if (entry.Value - exercitosAdd[entry.Key] > 0) {
+                return false;
+            }
+        }
+        state = 1;
+        return true;
+    }
 
     void Update()
     {
-        players[turn].GetComponent<PlayerBase>().Play(this);
+        PlayerBase player = players[turn].GetComponent<PlayerBase>();
+        Debug.Log(turn + " " + state + " " + player.numTurn);
+
+        if (state == 0){
+            player.Distribute(this, exercitos, exercitosAdd);
+        }else if (state == 1){
+            //player.Attack(this);
+        }else if (state == 2){
+
+        }
     }
 
     public void EndTurn()
@@ -63,6 +97,7 @@ public class GameController : MonoBehaviour
             players[turn].GetComponent<PlayerBase>().EndGame();
         }
         turn = (turn + 1) % players.Count;
+        StartTurn();
     }
 
 
@@ -83,8 +118,19 @@ public class GameController : MonoBehaviour
         return false;
     }
 
+    public void CreateTroop(TerritoryController territory, Vector3 position)
+    {
+        GameObject continent = territory.transform.parent.gameObject;
+        if (exercitos.ContainsKey(continent) && exercitos[continent] - exercitosAdd[continent] >= 1) {
+            exercitosAdd[continent] += 1;
+            territory.CreateTroop(position);
+        }else if(exercitos[this.gameObject] - exercitosAdd[this.gameObject] >= 1) {
+            exercitosAdd[this.gameObject] += 1;
+            territory.CreateTroop(position);
+        }
+    }
 
-    
+
 }
 
 

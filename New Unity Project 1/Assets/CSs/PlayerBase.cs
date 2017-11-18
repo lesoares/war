@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerBase : MonoBehaviour {
 
     public Color color;
+    public int numTurn;
 
-    public GameObject configure(Color color)
+    public GameObject configure(int numTurn, Color color)
     {
+        this.numTurn = numTurn;
         this.color = color;
         return this.gameObject;
     }
@@ -22,13 +24,13 @@ public class PlayerBase : MonoBehaviour {
 		
 	}
 
-    public void Play(GameController got)
+    public virtual void EndGame()
     {
 
     }
 
-    public void EndGame()
+    public virtual void Distribute(GameController got, Dictionary<GameObject, int> exercitos, Dictionary<GameObject, int> exercitosAdd)
     {
-
+        Debug.Log("Dist base");
     }
 }
