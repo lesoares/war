@@ -57,18 +57,20 @@ public class TerritoryController : MonoBehaviour {
         }
     }
 
-    public Vector3 PointInArea()
+    public Vector3 SpiralPoint(Vector3 center, int t, float a)
     {
-        var collider = this.gameObject.GetComponent<PolygonCollider2D>();
-        var bounds = collider.bounds;
-        var center = bounds.center;
-
-        var t = tropasNormais.Count + tropasGrandes.Count;
-        float a = 1.2f;
         float x = a * t * Mathf.Cos(t);
         float y = a * t * Mathf.Sin(t);
 
         return new Vector3(center.x + x, center.y + y, center.z - 1);
+    }
+
+    public Vector3 PointInArea()
+    {
+        var collider = this.gameObject.GetComponent<PolygonCollider2D>();
+        var bounds = collider.bounds;
+
+        return SpiralPoint(bounds.center, tropasNormais.Count + tropasGrandes.Count, 1.2f);
     }
 
 
@@ -99,6 +101,28 @@ public class TerritoryController : MonoBehaviour {
             tropasGrandes.Add(tropaG);
         }
         
+    }
+
+    public void DestroyTroop()
+    {
+        GameObject t, m;
+        if (tropasNormais.Count == 0 && tropasGrandes.Count > 0) {
+            t = tropasGrandes[tropasGrandes.Count - 1];
+            tropasGrandes.Remove(t);
+            t.GetComponent<SpriteRenderer>().enabled = false;
+            for (int i = 0; i < 5; i++) {
+                m = Instantiate(Tropa, this.SpiralPoint(t.transform.position, i, 1.2f), Quaternion.identity);
+                m.GetComponent<TropaController>().configure(this);
+                tropasNormais.Add(m);
+            }
+            Destroy(t);
+        }
+        if (tropasNormais.Count > 0) {
+            t = tropasNormais[tropasNormais.Count - 1];
+            tropasNormais.Remove(t);
+            t.GetComponent<SpriteRenderer>().enabled = false;
+            Destroy(t);
+        }
     }
 
     void OnMousedrag()

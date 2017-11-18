@@ -17,8 +17,14 @@ public class GameController : MonoBehaviour
     public static List<GameObject> players = new List<GameObject>();
     public static int turn = 0;
     public static int state = 0;
+    public static int substate = 0;
     public Dictionary<GameObject, int> exercitos;
     public Dictionary<GameObject, int> exercitosAdd;
+
+    private TerritoryController attackSource;
+    private TerritoryController attackTarget;
+    private List<int> attackDice;
+    private List<int> defenseDice;
 
 
 
@@ -73,7 +79,23 @@ public class GameController : MonoBehaviour
             }
         }
         state = 1;
+        substate = 0;
         return true;
+    }
+
+    public void AttackSubstate()
+    {
+        substate = 0;
+    }
+
+    public void ConquestSubstate()
+    {
+        substate = 3;
+    }
+
+    public void RedistributeState()
+    {
+        state = 2;
     }
 
     void Update()
@@ -81,14 +103,24 @@ public class GameController : MonoBehaviour
         PlayerBase player = players[turn].GetComponent<PlayerBase>();
         Debug.Log(turn + " " + state + " " + player.numTurn);
 
-        if (state == 0){
+        if (state == 0) {
             player.Distribute(this, exercitos, exercitosAdd);
-        }else if (state == 1){
-            //player.Attack(this);
-        }else if (state == 2){
+        } else if (state == 1) {
+            if (substate == 0) {
+                player.Attack(this);
+            } else if (substate == 1) {
+                player.ShowAttack(this, attackSource, attackTarget, attackDice, defenseDice, false);
+            } else if (substate == 2) {
+                player.ShowAttack(this, attackSource, attackTarget, attackDice, defenseDice, true);
+            } else if (substate == 3) {
+                player.Conquest(this, attackSource, attackTarget);
+            }
+        } else if (state == 2){
 
         }
     }
+
+
 
     public void EndTurn()
     {
@@ -130,6 +162,53 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public void Attack(TerritoryController source, TerritoryController target)
+    {
+        if(source.player != turn || target.player == turn) {
+            return;
+        }
+        var attack = Math.Min(3, source.getTropas() - 1);
+        var defense = Math.Min(3, target.getTropas());
+        attackDice = new List<int>();
+        defenseDice = new List<int>();
+        for(var i = 0; i < attack; i++) {
+            attackDice.Add(UnityEngine.Random.Range(1, 6));
+        }
+        for (var i = 0; i < defense; i++) {
+            defenseDice.Add(UnityEngine.Random.Range(1, 6));
+        }
+        attackDice.Sort();
+        defenseDice.Sort();
+        attackDice.Reverse();
+        defenseDice.Reverse();
+        for(var i = 0; i < Math.Min(attack, defense); i++) {
+            if(attackDice[i] > defenseDice[i]) {
+                target.DestroyTroop();
+            } else {
+                source.DestroyTroop();
+            }
+        }
+        this.attackSource = source;
+        this.attackTarget = target;
+        if (target.getTropas() == 0) {
+            target.player = turn;
+            substate = 2;
+        } else {
+            substate = 1;
+        }
+    }
+
+    public bool MoveConquest(int troops)
+    {
+        if(attackSource.getTropas() > troops && troops <= 3) {
+            for (var i = 0; i < troops; i++) {
+                attackTarget.CreateTroop(attackTarget.PointInArea());
+                attackSource.DestroyTroop();
+            }
+            return true;
+        }
+        return false;
+    }
 
 }
 
