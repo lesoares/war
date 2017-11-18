@@ -1624,6 +1624,8 @@ MonoBehaviour:
   - {fileID: 279544127}
   - {fileID: 1424275375}
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  Player: {fileID: 1744755559765442, guid: 1cb184a78fc591c4487e6dc3d5425a0b, type: 2}
+  IA: {fileID: 1089710271183500, guid: 975cb7c05ba74064b96fc218e3256c70, type: 2}
 --- !u!1 &490546742
 GameObject:
   m_ObjectHideFlags: 0

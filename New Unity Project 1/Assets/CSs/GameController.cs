@@ -9,28 +9,28 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    public static bool isPlayerTurn = true;
     public List<TerritoryController> Territories = new List<TerritoryController>();
     public static Texture2D playerColor = null;
     public GameObject Tropa;
+    public GameObject Player;
+    public GameObject IA;
+    public static List<GameObject> players = new List<GameObject>();
+    public static int turn = 0;
+
+
 
     void Start()
     {
+        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(new Color(0, 0, 1)));
+        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(new Color(1, 0, 0)));
+        //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(new Color(1, 1, 0)));
+
         DistributeTerritories();
-        if(UnityEngine.Random.Range(0,1) == 0)
-        {
-            isPlayerTurn = true;
-        }
-        else
-        {
-            isPlayerTurn = false;
-        }
-        isPlayerTurn = false;
+        turn = UnityEngine.Random.Range(0, players.Count - 1);
     }
 
     void DistributeTerritories()
     {
-        var players = 2;
         var range = Enumerable.Range(0, Territories.Count).ToList();
         for(int i = 0; i < range.Count; i++)
         {
@@ -42,54 +42,27 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < range.Count; i++)
         {
             var territory = Territories[range[i]];
-            territory.player = i % players;
+            territory.player = i % players.Count;
             GameObject t = Instantiate(Tropa, territory.transform.position, Quaternion.identity);
             t.GetComponent<TropaController>().configure(territory);
             territory.tropasNormais.Add(t);
-            if (territory.player == 1)
-            {
-                Debug.Log("Add player: " + territory.name);
-            } else
-            {
-                Debug.Log("Add IA: " + territory.name);
-            }
         }
        
     }
 
+
     void Update()
     {
-        if (isPlayerTurn)
-        {
-        } else
-        {
-            var add = Math.Max(3, Math.Round(Territories.Sum(t => (t.player == 0) ? 0.5 : 0.0)));
-            var territory = Territories.OrderBy(t =>
-            {
-                if (t.player == 1) return 1000000000;
-                var enemy = t.neighborhood.Sum(n => (n.player == 1) ? 1 : 0);
-                enemy = (enemy == 0) ? 1 : enemy;
-                return (Convert.ToDouble(t.neighborhood.Sum(n => (n.player == 1) ? n.getTropas() : 0)) - t.getTropas())
-                / Convert.ToDouble(enemy);
-            }).First();
-            for (var i = 0; i < add; i++)
-            {
-                var position = territory.PointInArea();
-                Debug.Log("Adiciona " + territory.name + " " + position);
-                territory.CreateTroop(position);
-            }
-            isPlayerTurn = true;
-        }
+        players[turn].GetComponent<PlayerBase>().Play(this);
     }
 
-   void EndTurn()
+    public void EndTurn()
     {
         if (checkObjective())
         {
-            EndGame();
+            players[turn].GetComponent<PlayerBase>().EndGame();
         }
-        
-        isPlayerTurn = !isPlayerTurn;
+        turn = (turn + 1) % players.Count;
     }
 
 
@@ -98,26 +71,19 @@ public class GameController : MonoBehaviour
         int contaTerritorio = 0;
         foreach (var t in Territories)
         {
-            if (t.player == 1)
+            if (t.player == turn)
             {
                 contaTerritorio++;
             }
         }
-        if ((isPlayerTurn && contaTerritorio > 25) || (isPlayerTurn && contaTerritorio <= 23)) 
+        if ((contaTerritorio > 25) || (contaTerritorio <= 23)) 
         {
             return true;
         }
         return false;
     }
 
-    void EndGame()
-    {
-        if (isPlayerTurn)
-            SceneManager.LoadScene(3);
-        else
-            SceneManager.LoadScene(2);
-          
-    }
+
     
 }
 

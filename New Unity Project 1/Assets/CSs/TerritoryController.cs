@@ -34,7 +34,7 @@ public class TerritoryController : MonoBehaviour {
     {
         Debug.Log("região " + name + " clicada");
         Debug.Log("região pertence a " + transform.parent.name);
-        SendMessage("CheckAvailableTerritories", GameController.isPlayerTurn);
+        SendMessage("CheckAvailableTerritories");
         //foreach (var item in neighborhood)
         //{
         //    Debug.Log( item.name +  " pertence a sua vizinhança");
@@ -106,30 +106,18 @@ public class TerritoryController : MonoBehaviour {
         MapDrag.isDragging = true;
     }
 
-    void CheckAvailableTerritories(bool isPlayer)
+    void CheckAvailableTerritories()
     {
-        if (isPlayer)
+
+        if (this.player != GameController.turn) { Debug.Log("não pertence a região"); return; }
+        foreach (var t in neighborhood)
         {
-            if (this.player == 0) { Debug.Log("não pertence a região"); return; }
-            foreach (var t in neighborhood)
+            if (t.player == GameController.turn)
             {
-                if (t.player == 1)
-                {
-                    Debug.Log(t.name);
-                }
+                Debug.Log(t.name);
             }
         }
-        else
-        {
-            if (this.player == 1) { Debug.Log("não pertence a região"); return; }
-            foreach (var t in neighborhood)
-            {
-                if (t.player == 0)
-                {
-                    Debug.Log(t.name);
-                }
-            }
-        }
+      
         
     }
 }
