@@ -12,6 +12,7 @@ public class TerritoryController : MonoBehaviour {
     public List<GameObject> tropasSelecionadas = new List<GameObject>();
     public GameObject Tropa;
     public int player;
+    public int index;
 
     // Use this for initialization
     void Start () {

@@ -25,6 +25,7 @@ public class GameController : MonoBehaviour
     private TerritoryController attackTarget;
     private List<int> attackDice;
     private List<int> defenseDice;
+    private Dictionary<TerritoryController, int> redistributed;
 
 
 
@@ -53,6 +54,7 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < range.Count; i++)
         {
             var territory = Territories[range[i]];
+            territory.index = range[i];
             territory.player = i % players.Count;
             GameObject t = Instantiate(Tropa, territory.transform.position, Quaternion.identity);
             t.GetComponent<TropaController>().configure(territory);
@@ -95,6 +97,10 @@ public class GameController : MonoBehaviour
 
     public void RedistributeState()
     {
+        redistributed = new Dictionary<TerritoryController, int>();
+        foreach (var t in Territories) {
+            redistributed[t] = 0;
+        }
         state = 2;
     }
 
@@ -116,7 +122,7 @@ public class GameController : MonoBehaviour
                 player.Conquest(this, attackSource, attackTarget);
             }
         } else if (state == 2){
-
+            player.Redistribute(this, redistributed);
         }
     }
 
@@ -124,10 +130,11 @@ public class GameController : MonoBehaviour
 
     public void EndTurn()
     {
+        /*
         if (checkObjective())
         {
             players[turn].GetComponent<PlayerBase>().EndGame();
-        }
+        }*/
         turn = (turn + 1) % players.Count;
         StartTurn();
     }
@@ -208,6 +215,28 @@ public class GameController : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public bool Redistribute(TerritoryController source, TerritoryController target, int quantity)
+    {
+        if (System.Object.ReferenceEquals(source, target)) {
+            return false;
+        }
+        if (source.player != turn || target.player != turn) {
+            return false;
+        }
+        if (source.getTropas() <= quantity) {
+            return false;
+        }
+        if (source.getTropas() - redistributed[source] < quantity) {
+            return false;
+        }
+        for (var i = 0; i < quantity; i++) {
+            target.CreateTroop(target.PointInArea());
+            redistributed[target] += 1;
+            source.DestroyTroop();
+        }
+        return true;
     }
 
 }

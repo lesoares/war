@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class PlayerBase : MonoBehaviour {
 
+    float DELAY = 0.5f;
+
     public Color color;
     public int numTurn;
 
@@ -36,7 +38,6 @@ public class PlayerBase : MonoBehaviour {
 
     public virtual void Distribute(GameController got, Dictionary<GameObject, int> exercitos, Dictionary<GameObject, int> exercitosAdd)
     {
-        Debug.Log("Dist base");
     }
 
     public virtual void Attack(GameController got)
@@ -48,7 +49,7 @@ public class PlayerBase : MonoBehaviour {
     {
         timer += Time.deltaTime;
         if (showingAttack) {
-            if(timer > 3.5f) {
+            if(timer > DELAY) {
                 if (goToConquest) {
                     got.ConquestSubstate();
                 } else {
@@ -57,10 +58,11 @@ public class PlayerBase : MonoBehaviour {
                 showingAttack = false;
             }
         }else {
+            /*
             Debug.Log(source.name + " ataca " + target.name);
             Debug.Log("Ataque [" + string.Join(", ", attackDice.Select(x => x.ToString()).ToArray()) + "] / Defesa [" + string.Join(", ", defenseDice.Select(x => x.ToString()).ToArray()) + "]");
 
-            /*
+            
             for (var i = 0; i < Math.Min(attackDice.Count, defenseDice.Count); i++) {
                 if (attackDice[i] > defenseDice[i]) {
                     Debug.Log("Ataque " + attackDice[i] + " ganha de defesa " + defenseDice[i]);
@@ -78,5 +80,10 @@ public class PlayerBase : MonoBehaviour {
     public virtual void Conquest(GameController got, TerritoryController source, TerritoryController target)
     {
    
+    }
+
+    public virtual void Redistribute(GameController got, Dictionary<TerritoryController, int> redistributed)
+    {
+        
     }
 }

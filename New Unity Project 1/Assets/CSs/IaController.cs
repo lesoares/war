@@ -82,7 +82,6 @@ public class IaController : PlayerBase
                     continue;
                 }
                 Attack novo = new Attack(t, n, t.getTropas() - n.getTropas());
-                Debug.Log("A " + t.name + " " + n.name + " " + novo.pont);
 
                 if ( choose == null || choose.pont < novo.pont) {
                     choose = novo;
@@ -103,6 +102,64 @@ public class IaController : PlayerBase
         }
 
     }
+
+    public override void Redistribute(GameController got, Dictionary<TerritoryController, int> redistributed)
+    {
+        bool changed = false;
+        foreach (TerritoryController t in got.Territories) {
+            if (t.player != this.numTurn || t.getTropas() - redistributed[t] == 0 || t.getTropas() == 1) {
+                continue;
+            }
+            // Busca em largura
+
+            List<Relocation> options = new List<Relocation>();
+
+            Queue<Relocation> queue = new Queue<Relocation>();
+            foreach (var n in t.neighborhood) {
+                Relocation relocation = new Relocation(n, n, 1);
+                if (n.player != this.numTurn) {
+                    options.Add(new Relocation(t, t, 0));
+                } else {
+                    queue.Enqueue(relocation);
+                }
+            }
+
+            if (options.Count == 0) {
+                while (queue.Count > 0) {
+                    Relocation current = queue.Dequeue();
+                    foreach (var n in current.territory.neighborhood) {
+                        Relocation relocation = new Relocation(n, current.origin, current.distance + 1);
+                        if (n.player != this.numTurn) {
+                            if (options.Count == 0 || options[options.Count - 1].distance == current.distance) {
+                                options.Add(current);
+                            } else {
+                                queue.Clear();
+                                break;
+                            }
+                        } else {
+                            queue.Enqueue(relocation);
+                        }
+                    }
+                }
+            }
+            if (options.Count > 0) {
+                Relocation selected = options.OrderBy(o => {
+                    var enemy = o.territory.neighborhood.Sum(n => (n.player != this.numTurn) ? n.getTropas() : 0);
+                    return -enemy;
+                }).First();
+                int quantity; 
+                if (redistributed[t] == 0) {
+                    quantity = t.getTropas() - 1;
+                } else {
+                    quantity = t.getTropas() - redistributed[t];
+                }
+                changed |= got.Redistribute(t, selected.origin, quantity);
+            }
+        }
+        if (!changed) {
+            got.EndTurn();
+        }
+    }
 }
 
 
@@ -117,5 +174,19 @@ class Attack
         this.source = source;
         this.target = target;
         this.pont = pont;
+    }
+}
+
+class Relocation
+{
+    public TerritoryController territory;
+    public TerritoryController origin;
+    public int distance;
+
+    public Relocation(TerritoryController territory, TerritoryController origin, int distance)
+    {
+        this.territory = territory;
+        this.origin = origin;
+        this.distance = distance;
     }
 }
