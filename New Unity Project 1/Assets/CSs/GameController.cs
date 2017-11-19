@@ -35,10 +35,10 @@ public class GameController : MonoBehaviour
     void Start()
     {
         players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
-        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(1, new Color(1, 0, 0)));
+        //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(1, new Color(1, 0, 0)));
 
-        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 0)));
-        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 1)));
+        //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 0)));
+        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 1)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(3, new Color(1, 0, 0)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(4, new Color(1, 0, 1)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(5, new Color(1, 1, 0)));
@@ -212,6 +212,16 @@ public class GameController : MonoBehaviour
     public void Attack(TerritoryController source, TerritoryController target)
     {
         if(source.player != turn || target.player == turn) {
+            return;
+        }
+        bool isNeighborhood = false;
+        foreach (var n in source.neighborhood) {
+            if (System.Object.ReferenceEquals(n, target)) {
+                isNeighborhood = true;
+                break;
+            }
+        }
+        if (!isNeighborhood) {
             return;
         }
         var attack = Math.Min(3, source.getTropas() - 1);
