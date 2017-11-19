@@ -23,6 +23,11 @@ public class IaController : PlayerBase
 
     }
 
+    public override string Text()
+    {
+        return "IA";
+    }
+
     public override void EndGame()
     {
         SceneManager.LoadScene(2);

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class GameController : MonoBehaviour
     public GameObject Tropa;
     public GameObject Player;
     public GameObject IA;
+    public GameObject log;
+    public GameObject playerText;
     public static List<GameObject> players = new List<GameObject>();
     public static int turn = 0;
     public static int state = 0;
@@ -32,7 +35,9 @@ public class GameController : MonoBehaviour
     void Start()
     {
         players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
-        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(1, new Color(0, 1, 0)));
+        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(1, new Color(1, 0, 0)));
+
+        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 0)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 1)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(3, new Color(1, 0, 0)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(4, new Color(1, 0, 1)));
@@ -41,11 +46,16 @@ public class GameController : MonoBehaviour
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(7, new Color(0.0f, 0.0f, 0.5f)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(8, new Color(0, 0.5f, 0)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(9, new Color(0, 0.5f, 0.5f)));
-        //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(1, new Color(1, 0, 0)));
         //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(new Color(1, 1, 0)));
 
-        //ToDo: ordem aleatoria
-        // Ver primeiro for do DistributeTerritories e usar a mesma logica em players
+
+        for (int i = 0; i < players.Count; i++) {
+            var temp = players[i];
+            var randomIndex = UnityEngine.Random.Range(i, players.Count);
+            players[i] = players[randomIndex];
+            players[randomIndex] = temp;
+            players[i].GetComponent<PlayerBase>().numTurn = i;
+        }
 
         DistributeTerritories();
         turn = UnityEngine.Random.Range(0, players.Count - 1);
@@ -76,6 +86,10 @@ public class GameController : MonoBehaviour
 
     void StartTurn()
     {
+        PlayerBase player = players[turn].GetComponent<PlayerBase>();
+        this.playerText.GetComponent<Text>().text = player.Text() + " " + (player.numTurn + 1);
+        this.playerText.GetComponent<Text>().color = player.color;
+        this.log.GetComponent<Text>().text = "";
         exercitos = new Dictionary<GameObject, int>();
         exercitosAdd = new Dictionary<GameObject, int>();
         int territories = Territories.Sum(t => (t.player == turn) ? 1 : 0);
@@ -99,6 +113,7 @@ public class GameController : MonoBehaviour
                 return false;
             }
         }
+
         if (state == -1) {
             EndTurn();
         } else {
@@ -130,7 +145,6 @@ public class GameController : MonoBehaviour
     void Update()
     {
         PlayerBase player = players[turn].GetComponent<PlayerBase>();
-        Debug.Log(turn + " " + state + " " + substate);
 
         if (state == -1 || state == 0) {
             player.Distribute(this, exercitos, exercitosAdd);
@@ -159,7 +173,7 @@ public class GameController : MonoBehaviour
             players[turn].GetComponent<PlayerBase>().EndGame();
         }
         turn = (turn + 1) % players.Count;
-        if (state != -1 || turn != 0) {
+        if (state != -1 || turn == 0) {
             state = 0;
         }
         StartTurn();
@@ -265,6 +279,19 @@ public class GameController : MonoBehaviour
         return true;
     }
 
+
+    public void NextPlayerState()
+    {
+        if (state == -1 || state == 0) {
+            AttackState();
+        } else if (state == 1) {
+            if (substate == 0) {
+                RedistributeState();
+            }
+        } else if (state == 2) {
+            EndTurn();
+        }
+    }
 }
 
 

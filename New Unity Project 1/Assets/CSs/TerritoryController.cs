@@ -33,17 +33,11 @@ public class TerritoryController : MonoBehaviour {
     /// </summary>
     void OnMouseDown()
     {
-        Debug.Log("região " + name + " clicada");
-        Debug.Log("região pertence a " + transform.parent.name);
-        SendMessage("CheckAvailableTerritories");
-        //foreach (var item in neighborhood)
-        //{
-        //    Debug.Log( item.name +  " pertence a sua vizinhança");
-        //}
     }
 
     void OnMouseOver()
     {
+        var got = this.transform.parent.parent.gameObject.GetComponent<GameController>();
         if (!MapDrag.isDragging)
         {
             if (Input.GetMouseButtonDown(1))
@@ -51,8 +45,9 @@ public class TerritoryController : MonoBehaviour {
                 var position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
                                                        Camera.main.ScreenToWorldPoint(Input.mousePosition).y,
                                                        this.transform.position.z - 1);
-                if (player == 1) { 
-                    CreateTroop(position);
+
+                if (player == GameController.turn && GameController.players[player].GetComponent<PlayerBase>().clickDistribution) {
+                    got.CreateTroop(this, position);
                 }
             }
         }
@@ -73,7 +68,6 @@ public class TerritoryController : MonoBehaviour {
 
         return SpiralPoint(bounds.center, tropasNormais.Count + tropasGrandes.Count, 1.2f);
     }
-
 
     public void CreateTroop(Vector3 position)
     {
@@ -131,18 +125,4 @@ public class TerritoryController : MonoBehaviour {
         MapDrag.isDragging = true;
     }
 
-    void CheckAvailableTerritories()
-    {
-
-        if (this.player != GameController.turn) { Debug.Log("não pertence a região"); return; }
-        foreach (var t in neighborhood)
-        {
-            if (t.player == GameController.turn)
-            {
-                Debug.Log(t.name);
-            }
-        }
-      
-        
-    }
 }

@@ -10,6 +10,7 @@ public class PlayerBase : MonoBehaviour {
 
     public Color color;
     public int numTurn;
+    public bool clickDistribution = false;
 
     private float timer = 0.0f;
     private bool showingAttack = false;
@@ -30,6 +31,12 @@ public class PlayerBase : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public virtual string Text()
+    {
+        return "Base";
+    }
+
 
     public virtual void EndGame()
     {
