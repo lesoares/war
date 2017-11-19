@@ -97,10 +97,21 @@ public class IaController : PlayerBase
 
     public override void Conquest(GameController got, TerritoryController source, TerritoryController target)
     {
-        if (got.MoveConquest(Math.Min(3, source.getTropas() - 1))) {
-            got.AttackSubstate();
+        bool enemy = false;
+        foreach(var n in target.neighborhood) {
+            if(n.player != this.numTurn) {
+                enemy = true;
+            }
         }
-
+        if (enemy) {
+            if (got.MoveConquest(Math.Min(3, source.getTropas() - 1))) {
+                got.AttackSubstate();
+            }
+        } else {
+            if (got.MoveConquest(1)) {
+                got.AttackSubstate();
+            }
+        }
     }
 
     public override void Redistribute(GameController got, Dictionary<TerritoryController, int> redistributed)

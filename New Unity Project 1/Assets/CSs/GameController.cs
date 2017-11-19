@@ -32,27 +32,38 @@ public class GameController : MonoBehaviour
     void Start()
     {
         players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
-        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(1, new Color(1, 0, 0)));
+        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(1, new Color(0, 1, 0)));
+        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 1)));
+        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(3, new Color(1, 0, 0)));
+        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(4, new Color(1, 0, 1)));
+        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(5, new Color(1, 1, 0)));
+        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(6, new Color(1, 1, 1)));
+        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(7, new Color(0.0f, 0.0f, 0.5f)));
+        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(8, new Color(0, 0.5f, 0)));
+        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(9, new Color(0, 0.5f, 0.5f)));
+        //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(1, new Color(1, 0, 0)));
         //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(new Color(1, 1, 0)));
+
+        //ToDo: ordem aleatoria
+        // Ver primeiro for do DistributeTerritories e usar a mesma logica em players
 
         DistributeTerritories();
         turn = UnityEngine.Random.Range(0, players.Count - 1);
         turn = 0;
+        state = -1;
         StartTurn();
     }
 
     void DistributeTerritories()
     {
         var range = Enumerable.Range(0, Territories.Count).ToList();
-        for(int i = 0; i < range.Count; i++)
-        {
+        for (int i = 0; i < range.Count; i++) {
             var temp = range[i];
             var randomIndex = UnityEngine.Random.Range(i, range.Count);
             range[i] = range[randomIndex];
             range[randomIndex] = temp;
         }
-        for (int i = 0; i < range.Count; i++)
-        {
+        for (int i = 0; i < range.Count; i++) {
             var territory = Territories[range[i]];
             territory.index = range[i];
             territory.player = i % players.Count;
@@ -60,17 +71,25 @@ public class GameController : MonoBehaviour
             t.GetComponent<TropaController>().configure(territory);
             territory.tropasNormais.Add(t);
         }
-       
+
     }
 
     void StartTurn()
     {
         exercitos = new Dictionary<GameObject, int>();
         exercitosAdd = new Dictionary<GameObject, int>();
-        int world = Convert.ToInt32(Math.Max(3, Math.Round(Territories.Sum(t => (t.player == turn) ? 0.5 : 0.0))));
+        int territories = Territories.Sum(t => (t.player == turn) ? 1 : 0);
+        if (territories == 0) {
+            EndTurn();
+        }
+        int world = Math.Max(3, territories / 2);
         exercitos[this.gameObject] = world;
         exercitosAdd[this.gameObject] = 0;
-        state = 0;
+
+        //ToDo: adicionar tropas adicionais por conquistar continente
+        // exercitos[continente] = quantidade;
+        // exercitosAdd[continente] = 0;
+
     }
 
     public bool AttackState()
@@ -80,8 +99,12 @@ public class GameController : MonoBehaviour
                 return false;
             }
         }
-        state = 1;
-        substate = 0;
+        if (state == -1) {
+            EndTurn();
+        } else {
+            state = 1;
+            substate = 0;
+        }
         return true;
     }
 
@@ -107,9 +130,9 @@ public class GameController : MonoBehaviour
     void Update()
     {
         PlayerBase player = players[turn].GetComponent<PlayerBase>();
-        Debug.Log(turn + " " + state + " " + player.numTurn);
+        Debug.Log(turn + " " + state + " " + substate);
 
-        if (state == 0) {
+        if (state == -1 || state == 0) {
             player.Distribute(this, exercitos, exercitosAdd);
         } else if (state == 1) {
             if (substate == 0) {
@@ -121,7 +144,7 @@ public class GameController : MonoBehaviour
             } else if (substate == 3) {
                 player.Conquest(this, attackSource, attackTarget);
             }
-        } else if (state == 2){
+        } else if (state == 2) {
             player.Redistribute(this, redistributed);
         }
     }
@@ -130,12 +153,15 @@ public class GameController : MonoBehaviour
 
     public void EndTurn()
     {
-        /*
+        
         if (checkObjective())
         {
             players[turn].GetComponent<PlayerBase>().EndGame();
-        }*/
+        }
         turn = (turn + 1) % players.Count;
+        if (state != -1 || turn != 0) {
+            state = 0;
+        }
         StartTurn();
     }
 
@@ -150,7 +176,7 @@ public class GameController : MonoBehaviour
                 contaTerritorio++;
             }
         }
-        if ((contaTerritorio > 25) || (contaTerritorio <= 23)) 
+        if ((contaTerritorio > 40)) //|| (contaTerritorio <= 23) 
         {
             return true;
         }

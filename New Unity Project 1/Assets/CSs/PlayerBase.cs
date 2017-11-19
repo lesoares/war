@@ -71,6 +71,8 @@ public class PlayerBase : MonoBehaviour {
                 }
             }
             */
+            // ToDo: Animacao de Dados
+
             timer = 0.0f;
             showingAttack = true;
         }
