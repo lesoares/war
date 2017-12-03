@@ -34,11 +34,11 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
-        //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(1, new Color(1, 0, 0)));
+        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
+        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(0, new Color(1, 0, 0)));
 
         //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 0)));
-        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 1)));
+        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(1, new Color(0, 1, 1)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(3, new Color(1, 0, 0)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(4, new Color(1, 0, 1)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(5, new Color(1, 1, 0)));
@@ -100,9 +100,21 @@ public class GameController : MonoBehaviour
         exercitos[this.gameObject] = world;
         exercitosAdd[this.gameObject] = 0;
 
-        //ToDo: adicionar tropas adicionais por conquistar continente
-        // exercitos[continente] = quantidade;
-        // exercitosAdd[continente] = 0;
+        for (var i = 0; i <  this.gameObject.transform.childCount; i++) {
+            var continent = this.gameObject.transform.GetChild(i).GetComponent<ContinentController>();
+            var owner = true;
+            for (var j = 0; j < continent.gameObject.transform.childCount; j++) {
+                var territory = continent.gameObject.transform.GetChild(j).GetComponent<TerritoryController>();
+                if (territory.player != turn) {
+                    owner = false;
+                    break;
+                }
+            }
+            if (owner) {
+                exercitos[continent.gameObject] = continent.units;
+                exercitosAdd[continent.gameObject] = 0;
+            }
+        }
 
     }
 
