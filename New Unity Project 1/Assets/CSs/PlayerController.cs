@@ -28,12 +28,15 @@ public class PlayerController : PlayerBase {
     public override void Distribute(GameController got, Dictionary<GameObject, int> exercitos, Dictionary<GameObject, int> exercitosAdd)
     {
         string msg = "Distribuir\n";
+        bool found = false;
         foreach (KeyValuePair<GameObject, int> entry in exercitos) {
             if (entry.Value - exercitosAdd[entry.Key] < 1) {
                 continue;
             }
             msg += "- " + entry.Key.name + ": " + (entry.Value - exercitosAdd[entry.Key]) + "\n";
+            found = true;
         }
+        showNext = !found;
         Text text = got.log.GetComponent<Text>();
         text.text = msg;
         text.color = this.color;
@@ -46,6 +49,7 @@ public class PlayerController : PlayerBase {
         got.log.GetComponent<Text>().text = "Atacar";
         clickDistribution = false;
         clickAttack = true;
+        showNext = true;
 
     }
 
@@ -54,6 +58,7 @@ public class PlayerController : PlayerBase {
         got.log.GetComponent<Text>().text = "Atacar - Conquistou";
         clickDistribution = false;
         clickAttack = false;
+        showNext = true;
         got.slider.SetActive(true);
         var slider = got.slider.GetComponent<Slider>();
         slider.minValue = 1;
@@ -67,6 +72,7 @@ public class PlayerController : PlayerBase {
         clickDistribution = false;
         clickAttack = false;
         clickRedistribution = true;
+        showNext = true;
     }
 
     public override void RedistributeSelected(GameController got, Dictionary<TerritoryController, int> redistributed)
@@ -75,6 +81,7 @@ public class PlayerController : PlayerBase {
         clickDistribution = false;
         clickAttack = false;
         clickRedistribution = false;
+        showNext = true;
         got.slider.SetActive(true);
         var slider = got.slider.GetComponent<Slider>();
         slider.minValue = 0;

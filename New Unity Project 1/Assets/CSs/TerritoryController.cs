@@ -57,12 +57,21 @@ public class TerritoryController : MonoBehaviour {
                     } else if (this == turnPlayer.selectedTerritory) {
                         turnPlayer.selectedTerritory = null;
                     } else {
-                        turnPlayer.otherTerritory = this;
-                        got.RedistributeSelectedSubstate();
+                        var found = false;
+                        foreach (var n in turnPlayer.selectedTerritory.neighborhood) {
+                            if (System.Object.ReferenceEquals(n, this)) {
+                                found = true;
+                                break;
+                            }
+                        }
+                        if (found) {
+                            turnPlayer.otherTerritory = this;
+                            got.RedistributeSelectedSubstate();
+                        }
                     }
                 }
             } else {
-                if (turnPlayer.clickAttack && turnPlayer.selectedTerritory != null) {
+                if (turnPlayer.clickAttack && (turnPlayer.selectedTerritory != null) && (turnPlayer.selectedTerritory.getTropas() > 1)) {
                     if (got.Attack(turnPlayer.selectedTerritory, this)) {
                         turnPlayer.otherTerritory = this;
                     }

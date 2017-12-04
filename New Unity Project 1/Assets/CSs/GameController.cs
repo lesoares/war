@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
     public GameObject log;
     public GameObject slider;
     public GameObject playerText;
+    public GameObject nextButton;
     public static List<GameObject> players = new List<GameObject>();
     public static int turn = 0;
     public static int state = 0;
@@ -72,7 +73,7 @@ public class GameController : MonoBehaviour
 
         DistributeTerritories();
         turn = 0;
-        state = 0; // -1
+        state = -1;
         StartTurn();
     }
 
@@ -231,6 +232,8 @@ public class GameController : MonoBehaviour
         }
         otherSprite.color = otherColor;
 
+        this.nextButton.SetActive(player.showNext);
+
 
         if (state == -1 || state == 0) {
             player.Distribute(this, exercitos, exercitosAdd);
@@ -377,6 +380,16 @@ public class GameController : MonoBehaviour
 
     public bool Redistribute(TerritoryController source, TerritoryController target, int quantity)
     {
+        var found = false;
+        foreach (var n in source.neighborhood) {
+            if (System.Object.ReferenceEquals(n, target)) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            return false;
+        }
         if (System.Object.ReferenceEquals(source, target)) {
             return false;
         }

@@ -1849,6 +1849,7 @@ MonoBehaviour:
   log: {fileID: 1136564657}
   slider: {fileID: 749085347}
   playerText: {fileID: 562824147}
+  nextButton: {fileID: 1024814216}
 --- !u!1 &490546742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,6 +2186,7 @@ MonoBehaviour:
   - {fileID: 2016518035}
   - {fileID: 1542553878}
   - {fileID: 615341058}
+  - {fileID: 1780868308}
   tropasNormais: []
   tropasGrandes: []
   tropasSelecionadas: []
