@@ -1,8 +1,11 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 
 public class PlayerController : PlayerBase {
 
@@ -49,6 +52,13 @@ public class PlayerController : PlayerBase {
     public override void Conquest(GameController got, TerritoryController source, TerritoryController target)
     {
         clickDistribution = false;
+        clickAttack = false;
+        got.slider.SetActive(true);
+        var slider = got.slider.GetComponent<Slider>();
+        slider.minValue = 1;
+        slider.maxValue = Math.Min(3, source.getTropas() - 1);
+        got.log.GetComponent<Text>().text = "Mover " + slider.value;
+
     }
 
     public override void Redistribute(GameController got, Dictionary<TerritoryController, int> redistributed)

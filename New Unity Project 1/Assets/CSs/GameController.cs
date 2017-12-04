@@ -21,6 +21,7 @@ public class GameController : MonoBehaviour
     public GameObject Player;
     public GameObject IA;
     public GameObject log;
+    public GameObject slider;
     public GameObject playerText;
     public static List<GameObject> players = new List<GameObject>();
     public static int turn = 0;
@@ -39,8 +40,8 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
-        //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(0, new Color(0, 1, 0)));
+        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
+        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(0, new Color(0, 1, 0)));
 
         //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 0)));
         players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(1, new Color(0, 1, 1)));
@@ -59,6 +60,7 @@ public class GameController : MonoBehaviour
             AttackDiceObject[i].transform.position = new Vector3(apos.x, apos.y, 700);
             DefenseDiceObject[i].transform.position = new Vector3(dpos.x, dpos.y, 700);
         }
+        this.slider.SetActive(false);
 
         for (int i = 0; i < players.Count; i++) {
             var temp = players[i];
@@ -152,6 +154,10 @@ public class GameController : MonoBehaviour
 
     public void AttackSubstate()
     {
+        PlayerBase player = players[turn].GetComponent<PlayerBase>();
+        player.selectedTerritory = null;
+        player.otherTerritory = null;
+        this.slider.SetActive(false);
         substate = 0;
     }
 
@@ -371,6 +377,8 @@ public class GameController : MonoBehaviour
         } else if (state == 1) {
             if (substate == 0) {
                 RedistributeState();
+            } else if (substate == 3 && this.MoveConquest(Convert.ToInt32(this.slider.GetComponent<Slider>().value))) {
+                AttackSubstate();
             }
         } else if (state == 2) {
             EndTurn();
