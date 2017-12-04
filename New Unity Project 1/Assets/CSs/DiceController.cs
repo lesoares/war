@@ -16,7 +16,6 @@ public class DiceController : MonoBehaviour {
 
     public void roll(int number)
     {
-        Debug.Log(number);
         if (number == 1) {
             this.gameObject.transform.rotation = Quaternion.Euler(90, 0, 0);
         } else if (number == 2) {

@@ -37,30 +37,27 @@ public class TerritoryController : MonoBehaviour {
 
     void OnMouseOver()
     {
+       
         var got = this.transform.parent.parent.gameObject.GetComponent<GameController>();
         PlayerBase turnPlayer = GameController.players[GameController.turn].GetComponent<PlayerBase>();
-        if (!MapDrag.isDragging)
-        {
-            if (Input.GetMouseButtonDown(1)) {
-                var position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
-                                                       Camera.main.ScreenToWorldPoint(Input.mousePosition).y,
-                                                       this.transform.position.z - 1);
-                if (player == GameController.turn) {
-                    if (turnPlayer.clickDistribution) {
-                        got.CreateTroop(this, position);
-                    }
-                    if (turnPlayer.clickAttack) {
-                        turnPlayer.selectedTerritory = this;
-                    }
-                } else {
-                    if (turnPlayer.clickAttack && turnPlayer.selectedTerritory != null) {
-                        if (got.Attack(turnPlayer.selectedTerritory, this)) {
-                            turnPlayer.otherTerritory = this;
-                        }
+        if (Input.GetMouseButtonDown(0)) {
+            Debug.Log("Click " + this.name);
+            var position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
+                                                    Camera.main.ScreenToWorldPoint(Input.mousePosition).y,
+                                                    this.transform.position.z - 1);
+            if (player == GameController.turn) {
+                if (turnPlayer.clickDistribution) {
+                    got.CreateTroop(this, position);
+                }
+                if (turnPlayer.clickAttack) {
+                    turnPlayer.selectedTerritory = this;
+                }
+            } else {
+                if (turnPlayer.clickAttack && turnPlayer.selectedTerritory != null) {
+                    if (got.Attack(turnPlayer.selectedTerritory, this)) {
+                        turnPlayer.otherTerritory = this;
                     }
                 }
-                
-
             }
         }
     }
@@ -132,9 +129,5 @@ public class TerritoryController : MonoBehaviour {
         }
     }
 
-    void OnMousedrag()
-    {
-        MapDrag.isDragging = true;
-    }
 
 }
