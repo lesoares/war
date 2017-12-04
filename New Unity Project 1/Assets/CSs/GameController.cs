@@ -38,22 +38,24 @@ public class GameController : MonoBehaviour
     private Dictionary<TerritoryController, int> redistributed;
 
 
-
-    void Start()
+    void Configure(int iaCount, int playerCount)
     {
-        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
-        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(0, new Color(0, 1, 0)));
-
-        //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 0)));
-        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(1, new Color(0, 1, 1)));
-        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(3, new Color(1, 0, 0)));
-        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(4, new Color(1, 0, 1)));
-        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(5, new Color(1, 1, 0)));
-        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(6, new Color(1, 1, 1)));
-        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(7, new Color(0.0f, 0.0f, 0.5f)));
-        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(8, new Color(0, 0.5f, 0)));
-        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(9, new Color(0, 0.5f, 0.5f)));
-        //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(new Color(1, 1, 0)));
+        var colors = new List<Color> {
+            new Color(0, 0, 1),
+            new Color(1, 0, 0),
+            new Color(0, 1, 0),
+            new Color(0, 1, 1),
+            new Color(1, 0, 1),
+            new Color(1, 1, 0),
+            new Color(1, 1, 1),
+            new Color(0, 0, 0),
+        };
+        for (int i = 0; i < iaCount; i++) {
+            players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(i, colors[i]));
+        }
+        for (int i = 0; i < playerCount; i++) {
+            players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(i + iaCount, colors[i + iaCount]));
+        }
 
         for (var i = 0; i < 3; i++) {
             var apos = AttackDiceObject[i].transform.position;
@@ -75,6 +77,12 @@ public class GameController : MonoBehaviour
         turn = 0;
         state = -1;
         StartTurn();
+    }
+
+
+    void Start()
+    {
+        this.Configure(1, 1);
     }
 
     void DistributeTerritories()

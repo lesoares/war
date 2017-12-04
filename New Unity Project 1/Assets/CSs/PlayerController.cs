@@ -36,11 +36,14 @@ public class PlayerController : PlayerBase {
             msg += "- " + entry.Key.name + ": " + (entry.Value - exercitosAdd[entry.Key]) + "\n";
             found = true;
         }
-        showNext = !found;
+        
         Text text = got.log.GetComponent<Text>();
         text.text = msg;
         text.color = this.color;
         clickDistribution = true;
+        clickAttack = false;
+        clickRedistribution = false;
+        showNext = !found;
     }
 
     public override void Attack(GameController got)
@@ -49,6 +52,7 @@ public class PlayerController : PlayerBase {
         got.log.GetComponent<Text>().text = "Atacar";
         clickDistribution = false;
         clickAttack = true;
+        clickRedistribution = false;
         showNext = true;
 
     }
@@ -58,6 +62,7 @@ public class PlayerController : PlayerBase {
         got.log.GetComponent<Text>().text = "Atacar - Conquistou";
         clickDistribution = false;
         clickAttack = false;
+        clickRedistribution = false;
         showNext = true;
         got.slider.SetActive(true);
         var slider = got.slider.GetComponent<Slider>();
