@@ -41,7 +41,6 @@ public class TerritoryController : MonoBehaviour {
         var got = this.transform.parent.parent.gameObject.GetComponent<GameController>();
         PlayerBase turnPlayer = GameController.players[GameController.turn].GetComponent<PlayerBase>();
         if (Input.GetMouseButtonDown(0)) {
-            Debug.Log("Click " + this.name);
             var position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
                                                     Camera.main.ScreenToWorldPoint(Input.mousePosition).y,
                                                     this.transform.position.z - 1);
@@ -51,6 +50,16 @@ public class TerritoryController : MonoBehaviour {
                 }
                 if (turnPlayer.clickAttack) {
                     turnPlayer.selectedTerritory = this;
+                }
+                if (turnPlayer.clickRedistribution) {
+                    if (turnPlayer.selectedTerritory == null) {
+                        turnPlayer.selectedTerritory = this;
+                    } else if (this == turnPlayer.selectedTerritory) {
+                        turnPlayer.selectedTerritory = null;
+                    } else {
+                        turnPlayer.otherTerritory = this;
+                        got.RedistributeSelectedSubstate();
+                    }
                 }
             } else {
                 if (turnPlayer.clickAttack && turnPlayer.selectedTerritory != null) {

@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
         players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(0, new Color(0, 1, 0)));
 
         //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 0)));
-        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(1, new Color(0, 1, 1)));
+        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(1, new Color(0, 1, 1)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(3, new Color(1, 0, 0)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(4, new Color(1, 0, 1)));
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(5, new Color(1, 1, 0)));
@@ -154,6 +154,12 @@ public class GameController : MonoBehaviour
 
     public void AttackSubstate()
     {
+        for (var i = 0; i < 3; i++) {
+            var apos = AttackDiceObject[i].transform.position;
+            var dpos = DefenseDiceObject[i].transform.position;
+            AttackDiceObject[i].transform.position = new Vector3(apos.x, apos.y, 700);
+            DefenseDiceObject[i].transform.position = new Vector3(dpos.x, dpos.y, 700);
+        }
         PlayerBase player = players[turn].GetComponent<PlayerBase>();
         player.selectedTerritory = null;
         player.otherTerritory = null;
@@ -176,6 +182,24 @@ public class GameController : MonoBehaviour
             redistributed[t] = 0;
         }
         state = 2;
+        substate = 0;
+    }
+
+    public void RedistributeSelectedSubstate()
+    {
+        state = 2;
+        substate = 1;
+    }
+
+    public void RedistributeSubstate()
+    {
+        PlayerBase player = players[turn].GetComponent<PlayerBase>();
+
+        player.selectedTerritory = null;
+        player.otherTerritory = null;
+        this.slider.SetActive(false);
+        state = 2;
+        substate = 0;
     }
 
     void Update()
@@ -221,7 +245,11 @@ public class GameController : MonoBehaviour
                 player.Conquest(this, attackSource, attackTarget);
             }
         } else if (state == 2) {
-            player.Redistribute(this, redistributed);
+            if (substate == 0) {
+                player.Redistribute(this, redistributed);
+            } else {
+                player.RedistributeSelected(this, redistributed);
+            }
         }
     }
 
@@ -370,8 +398,10 @@ public class GameController : MonoBehaviour
     }
 
 
+
     public void NextPlayerState()
     {
+        PlayerBase player = players[turn].GetComponent<PlayerBase>();
         if (state == -1 || state == 0) {
             AttackState();
         } else if (state == 1) {
@@ -381,7 +411,11 @@ public class GameController : MonoBehaviour
                 AttackSubstate();
             }
         } else if (state == 2) {
-            EndTurn();
+            if (substate == 0) {
+                EndTurn();
+            } else if (substate == 1 && this.Redistribute(player.selectedTerritory, player.otherTerritory, Convert.ToInt32(this.slider.GetComponent<Slider>().value))) {
+                RedistributeSubstate();
+            }
         }
     }
 }

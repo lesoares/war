@@ -14,6 +14,7 @@ public class PlayerBase : MonoBehaviour {
     public bool clickAttack = false;
     public TerritoryController selectedTerritory = null;
     public TerritoryController otherTerritory = null;
+    public bool clickRedistribution = false;
 
     private float timer = 0.0f;
     private bool showingAttack = false;
@@ -99,5 +100,10 @@ public class PlayerBase : MonoBehaviour {
     public virtual void Redistribute(GameController got, Dictionary<TerritoryController, int> redistributed)
     {
         
+    }
+
+    public virtual void RedistributeSelected(GameController got, Dictionary<TerritoryController, int> redistributed)
+    {
+
     }
 }

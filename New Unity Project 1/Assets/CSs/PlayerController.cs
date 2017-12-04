@@ -51,6 +51,7 @@ public class PlayerController : PlayerBase {
 
     public override void Conquest(GameController got, TerritoryController source, TerritoryController target)
     {
+        got.log.GetComponent<Text>().text = "Atacar - Conquistou";
         clickDistribution = false;
         clickAttack = false;
         got.slider.SetActive(true);
@@ -58,13 +59,31 @@ public class PlayerController : PlayerBase {
         slider.minValue = 1;
         slider.maxValue = Math.Min(3, source.getTropas() - 1);
         got.log.GetComponent<Text>().text = "Mover " + slider.value;
-
     }
 
     public override void Redistribute(GameController got, Dictionary<TerritoryController, int> redistributed)
     {
         got.log.GetComponent<Text>().text = "Remanejar";
         clickDistribution = false;
+        clickAttack = false;
+        clickRedistribution = true;
+    }
+
+    public override void RedistributeSelected(GameController got, Dictionary<TerritoryController, int> redistributed)
+    {
+        got.log.GetComponent<Text>().text = "Remanejando";
+        clickDistribution = false;
+        clickAttack = false;
+        clickRedistribution = false;
+        got.slider.SetActive(true);
+        var slider = got.slider.GetComponent<Slider>();
+        slider.minValue = 0;
+        if (redistributed[this.selectedTerritory] == 0) {
+            slider.maxValue = this.selectedTerritory.getTropas() - 1;
+        } else {
+            slider.maxValue = this.selectedTerritory.getTropas() - redistributed[this.selectedTerritory];
+        }
+        got.log.GetComponent<Text>().text = "Mover " + slider.value;
     }
 
     public override void EndGame()
