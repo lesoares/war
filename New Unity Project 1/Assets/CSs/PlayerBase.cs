@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlayerBase : MonoBehaviour {
 
-    float DELAY = 0.5f;
+    float DELAY = 3.5f;
 
     public Color color;
     public int numTurn;
@@ -58,6 +58,7 @@ public class PlayerBase : MonoBehaviour {
 
     public virtual void ShowAttack(GameController got, TerritoryController source, TerritoryController target, List<int> attackDice, List<int> defenseDice, bool goToConquest)
     {
+        clickAttack = false;
         timer += Time.deltaTime;
         if (showingAttack) {
             if(timer > DELAY) {

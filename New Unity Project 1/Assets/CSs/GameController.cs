@@ -12,6 +12,9 @@ public class GameController : MonoBehaviour
 {
     public List<TerritoryController> Territories = new List<TerritoryController>();
     public static Texture2D playerColor = null;
+
+    public List<GameObject> AttackDiceObject;
+    public List<GameObject> DefenseDiceObject;
     public GameObject Select;
     public GameObject Other;
     public GameObject Tropa;
@@ -36,8 +39,8 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
-        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(0, new Color(0, 1, 0)));
+        players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
+        //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(0, new Color(0, 1, 0)));
 
         //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 0)));
         players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(1, new Color(0, 1, 1)));
@@ -50,6 +53,12 @@ public class GameController : MonoBehaviour
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(9, new Color(0, 0.5f, 0.5f)));
         //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(new Color(1, 1, 0)));
 
+        for (var i = 0; i < 3; i++) {
+            var apos = AttackDiceObject[i].transform.position;
+            var dpos = DefenseDiceObject[i].transform.position;
+            AttackDiceObject[i].transform.position = new Vector3(apos.x, apos.y, 700);
+            DefenseDiceObject[i].transform.position = new Vector3(dpos.x, dpos.y, 700);
+        }
 
         for (int i = 0; i < players.Count; i++) {
             var temp = players[i];
@@ -60,7 +69,6 @@ public class GameController : MonoBehaviour
         }
 
         DistributeTerritories();
-        turn = UnityEngine.Random.Range(0, players.Count - 1);
         turn = 0;
         state = 0; // -1
         StartTurn();
@@ -257,10 +265,10 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void Attack(TerritoryController source, TerritoryController target)
+    public bool Attack(TerritoryController source, TerritoryController target)
     {
-        if(source.player != turn || target.player == turn) {
-            return;
+        if (source.player != turn || target.player == turn) {
+            return false;
         }
         bool isNeighborhood = false;
         foreach (var n in source.neighborhood) {
@@ -270,24 +278,24 @@ public class GameController : MonoBehaviour
             }
         }
         if (!isNeighborhood) {
-            return;
+            return false;
         }
         var attack = Math.Min(3, source.getTropas() - 1);
         var defense = Math.Min(3, target.getTropas());
         attackDice = new List<int>();
         defenseDice = new List<int>();
-        for(var i = 0; i < attack; i++) {
-            attackDice.Add(UnityEngine.Random.Range(1, 6));
+        for (var i = 0; i < attack; i++) {
+            attackDice.Add(UnityEngine.Random.Range(1, 7));
         }
         for (var i = 0; i < defense; i++) {
-            defenseDice.Add(UnityEngine.Random.Range(1, 6));
+            defenseDice.Add(UnityEngine.Random.Range(1, 7));
         }
         attackDice.Sort();
         defenseDice.Sort();
         attackDice.Reverse();
         defenseDice.Reverse();
-        for(var i = 0; i < Math.Min(attack, defense); i++) {
-            if(attackDice[i] > defenseDice[i]) {
+        for (var i = 0; i < Math.Min(attack, defense); i++) {
+            if (attackDice[i] > defenseDice[i]) {
                 target.DestroyTroop();
             } else {
                 source.DestroyTroop();
@@ -301,6 +309,24 @@ public class GameController : MonoBehaviour
         } else {
             substate = 1;
         }
+        //this.GetComponent<MapController>().resetCamera();
+        for (var i = 0; i < 3; i++) {
+            var apos = AttackDiceObject[i].transform.position;
+            var dpos = DefenseDiceObject[i].transform.position;
+            AttackDiceObject[i].transform.position = new Vector3(apos.x, apos.y, 700);
+            DefenseDiceObject[i].transform.position = new Vector3(dpos.x, dpos.y, 700);
+        }
+        for (var i = 0; i < attack; i++) {
+            var apos = AttackDiceObject[i].transform.position;
+            AttackDiceObject[i].GetComponent<DiceController>().roll(attackDice[i]);
+            AttackDiceObject[i].transform.position = new Vector3(apos.x, apos.y, 200);
+        }
+        for (var i = 0; i < defense; i++) {
+            var dpos = DefenseDiceObject[i].transform.position;
+            DefenseDiceObject[i].GetComponent<DiceController>().roll(defenseDice[i]);
+            DefenseDiceObject[i].transform.position = new Vector3(dpos.x, dpos.y, 200);
+        }
+        return true;
     }
 
     public bool MoveConquest(int troops)

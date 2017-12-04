@@ -35,6 +35,14 @@ public class MapController : MonoBehaviour
 
     }
 
+    public void resetCamera()
+    {
+        var camera = cameraGO.GetComponent<Camera>() as Camera;
+        camera.orthographicSize = defaultCameraSize;
+        cameraGO.transform.position = defaultCameraPosition;
+        isZoomActivated = false;
+    }
+
     /// <summary>
     /// No evento de clique do mouse, verifico se o zoom já está ativo ou não
     /// e caso não esteja, aplico o zoom e religo os colliders dos filhos do meu objeto. Depois
@@ -73,10 +81,7 @@ public class MapController : MonoBehaviour
 
             this.GetComponent<BoxCollider2D>().enabled = true;
 
-            camera.orthographicSize = defaultCameraSize;
-            cameraGO.transform.position = defaultCameraPosition;
-            isZoomActivated = false;
-            
+            resetCamera();
         }
     }
 }
