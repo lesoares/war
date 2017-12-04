@@ -38,7 +38,7 @@ public class GameController : MonoBehaviour
     private Dictionary<TerritoryController, int> redistributed;
 
 
-    void Configure(int iaCount, int playerCount)
+    public void Configure(int iaCount, int playerCount)
     {
         var colors = new List<Color> {
             new Color(0, 0, 1),
@@ -82,7 +82,6 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        this.Configure(1, 1);
     }
 
     void DistributeTerritories()
