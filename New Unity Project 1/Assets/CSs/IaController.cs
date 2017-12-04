@@ -94,6 +94,8 @@ public class IaController : PlayerBase
             }
         }
         if(choose != null) {
+            this.selectedTerritory = choose.source;
+            this.otherTerritory = choose.target;
             got.Attack(choose.source, choose.target);
         } else {
             got.RedistributeState();

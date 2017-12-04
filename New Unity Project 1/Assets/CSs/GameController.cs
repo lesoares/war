@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
 {
     public List<TerritoryController> Territories = new List<TerritoryController>();
     public static Texture2D playerColor = null;
+    public GameObject Select;
+    public GameObject Other;
     public GameObject Tropa;
     public GameObject Player;
     public GameObject IA;
@@ -35,7 +37,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         //players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(0, new Color(0, 0, 1)));
-        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(0, new Color(1, 0, 0)));
+        players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(0, new Color(0, 1, 0)));
 
         //players.Add(Instantiate(Player).GetComponent<PlayerBase>().configure(2, new Color(0, 1, 0)));
         players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(1, new Color(0, 1, 1)));
@@ -60,7 +62,7 @@ public class GameController : MonoBehaviour
         DistributeTerritories();
         turn = UnityEngine.Random.Range(0, players.Count - 1);
         turn = 0;
-        state = -1;
+        state = 0; // -1
         StartTurn();
     }
 
@@ -87,6 +89,8 @@ public class GameController : MonoBehaviour
     void StartTurn()
     {
         PlayerBase player = players[turn].GetComponent<PlayerBase>();
+        player.selectedTerritory = null;
+        player.otherTerritory = null;
         this.playerText.GetComponent<Text>().text = player.Text() + " " + (player.numTurn + 1);
         this.playerText.GetComponent<Text>().color = player.color;
         this.log.GetComponent<Text>().text = "";
@@ -120,6 +124,9 @@ public class GameController : MonoBehaviour
 
     public bool AttackState()
     {
+        PlayerBase player = players[turn].GetComponent<PlayerBase>();
+        player.selectedTerritory = null;
+        player.otherTerritory = null;
         foreach (KeyValuePair<GameObject, int> entry in exercitos) {
             if (entry.Value - exercitosAdd[entry.Key] > 0) {
                 return false;
@@ -147,6 +154,9 @@ public class GameController : MonoBehaviour
 
     public void RedistributeState()
     {
+        PlayerBase player = players[turn].GetComponent<PlayerBase>();
+        player.selectedTerritory = null;
+        player.otherTerritory = null;
         redistributed = new Dictionary<TerritoryController, int>();
         foreach (var t in Territories) {
             redistributed[t] = 0;
@@ -157,6 +167,32 @@ public class GameController : MonoBehaviour
     void Update()
     {
         PlayerBase player = players[turn].GetComponent<PlayerBase>();
+        var selectedSprite = this.Select.GetComponent<SpriteRenderer>();
+        var selectedColor = player.color;
+        if (player.selectedTerritory != null) {
+            selectedColor.a = 1;
+            var selectedPos = player.selectedTerritory.transform.position;
+            this.Select.transform.position = new Vector3(
+                selectedPos.x, selectedPos.y, this.Select.transform.position.z
+            );
+        } else {
+            selectedColor.a = 0;
+        }
+        selectedSprite.color = selectedColor;
+
+        var otherSprite = this.Other.GetComponent<SpriteRenderer>();
+        var otherColor = player.color;
+        if (player.otherTerritory != null) {
+            otherColor.a = 1;
+            var otherPos = player.otherTerritory.transform.position;
+            this.Other.transform.position = new Vector3(
+               otherPos.x, otherPos.y, this.Other.transform.position.z
+            );
+        } else {
+            otherColor.a = 0;
+        }
+        otherSprite.color = otherColor;
+
 
         if (state == -1 || state == 0) {
             player.Distribute(this, exercitos, exercitosAdd);

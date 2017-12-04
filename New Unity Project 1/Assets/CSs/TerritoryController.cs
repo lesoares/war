@@ -38,17 +38,24 @@ public class TerritoryController : MonoBehaviour {
     void OnMouseOver()
     {
         var got = this.transform.parent.parent.gameObject.GetComponent<GameController>();
+        PlayerBase playerBase = GameController.players[player].GetComponent<PlayerBase>();
         if (!MapDrag.isDragging)
         {
-            if (Input.GetMouseButtonDown(1))
-            {
+            if (Input.GetMouseButtonDown(1)) {
                 var position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
                                                        Camera.main.ScreenToWorldPoint(Input.mousePosition).y,
                                                        this.transform.position.z - 1);
-
-                if (player == GameController.turn && GameController.players[player].GetComponent<PlayerBase>().clickDistribution) {
-                    got.CreateTroop(this, position);
+                if (player == GameController.turn) {
+                    if (playerBase.clickDistribution) {
+                        got.CreateTroop(this, position);
+                    }
+                    if (playerBase.clickAttack) {
+                        playerBase.selectedTerritory = this;
+                        Debug.Log("42");
+                    }
                 }
+                
+
             }
         }
     }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerController : PlayerBase {
 
+
     // Use this for initialization
     void Start () {
 		
@@ -38,8 +39,11 @@ public class PlayerController : PlayerBase {
 
     public override void Attack(GameController got)
     {
+
         got.log.GetComponent<Text>().text = "Atacar";
         clickDistribution = false;
+        clickAttack = true;
+
     }
 
     public override void Conquest(GameController got, TerritoryController source, TerritoryController target)

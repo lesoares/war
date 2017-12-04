@@ -11,9 +11,13 @@ public class PlayerBase : MonoBehaviour {
     public Color color;
     public int numTurn;
     public bool clickDistribution = false;
+    public bool clickAttack = false;
+    public TerritoryController selectedTerritory = null;
+    public TerritoryController otherTerritory = null;
 
     private float timer = 0.0f;
     private bool showingAttack = false;
+
 
     public GameObject configure(int numTurn, Color color)
     {
