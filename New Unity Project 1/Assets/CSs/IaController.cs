@@ -31,6 +31,7 @@ public class IaController : PlayerBase
     public override void EndGame()
     {
         Vencedor.number = numTurn;
+        Vencedor.color = color;
         SceneManager.LoadScene(2);
     }
 

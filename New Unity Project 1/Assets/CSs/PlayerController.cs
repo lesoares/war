@@ -101,6 +101,7 @@ public class PlayerController : PlayerBase {
 
     public override void EndGame()
     {
+        Vencedor.color = color;
         Vencedor.number = numTurn;
         SceneManager.LoadScene(3);
     }
