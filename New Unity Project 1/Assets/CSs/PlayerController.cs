@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Assets.CSs;
 
 
 public class PlayerController : PlayerBase {
@@ -12,8 +13,9 @@ public class PlayerController : PlayerBase {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -100,6 +102,8 @@ public class PlayerController : PlayerBase {
 
     public override void EndGame()
     {
+        Permanente.color = color;
+        Permanente.num = numTurn;
         SceneManager.LoadScene(3);
     }
 
