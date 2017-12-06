@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 14073006}
   - component: {fileID: 14073005}
   - component: {fileID: 14073004}
+  - component: {fileID: 14073007}
   m_Layer: 0
   m_Name: The Crag
   m_TagString: Untagged
@@ -195,6 +196,18 @@ Transform:
   m_Father: {fileID: 1141687948}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &14073007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 14073003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &73205362
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +334,7 @@ GameObject:
   - component: {fileID: 86495168}
   - component: {fileID: 86495167}
   - component: {fileID: 86495166}
+  - component: {fileID: 86495169}
   m_Layer: 0
   m_Name: Searoad Marshes
   m_TagString: Untagged
@@ -413,6 +427,18 @@ Transform:
   m_Father: {fileID: 1360337259}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &86495169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 86495165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!4 &112373950 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400008, guid: c807e1a8e27dfbd4caff57f9a6204e77, type: 3}
@@ -427,6 +453,7 @@ GameObject:
   - component: {fileID: 115644876}
   - component: {fileID: 115644878}
   - component: {fileID: 115644877}
+  - component: {fileID: 115644879}
   m_Layer: 0
   m_Name: White Harbor
   m_TagString: WhiteHarbor
@@ -542,6 +569,18 @@ PolygonCollider2D:
       - {x: 0.867203, y: 0.04118848}
       - {x: 0.9041109, y: 0.19781494}
       - {x: 0.85019827, y: 0.3900149}
+--- !u!114 &115644879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 115644875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &167871349
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +664,7 @@ GameObject:
   - component: {fileID: 177865971}
   - component: {fileID: 177865973}
   - component: {fileID: 177865972}
+  - component: {fileID: 177865974}
   m_Layer: 0
   m_Name: Stoney Shore
   m_TagString: StoneyShore
@@ -747,6 +787,18 @@ PolygonCollider2D:
       - {x: 0.5989002, y: 1.2976408}
       - {x: 0.6327909, y: 1.4128237}
       - {x: 0.64575565, y: 1.655756}
+--- !u!114 &177865974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 177865970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1001 &201613359
 Prefab:
   m_ObjectHideFlags: 0
@@ -884,6 +936,7 @@ GameObject:
   - component: {fileID: 225066307}
   - component: {fileID: 225066309}
   - component: {fileID: 225066308}
+  - component: {fileID: 225066310}
   m_Layer: 0
   m_Name: Riverrun
   m_TagString: Riverrun
@@ -964,6 +1017,18 @@ PolygonCollider2D:
       - {x: 0.43, y: -0.08}
       - {x: 0.52, y: 0.13}
       - {x: 0.31, y: 0.34}
+--- !u!114 &225066310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 225066306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &232320429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1113,7 @@ GameObject:
   - component: {fileID: 238353231}
   - component: {fileID: 238353230}
   - component: {fileID: 238353229}
+  - component: {fileID: 238353232}
   m_Layer: 0
   m_Name: Karhold
   m_TagString: Karhold
@@ -1145,6 +1211,18 @@ Transform:
   m_Father: {fileID: 1792339647}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &238353232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238353228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &250461967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,6 +1233,7 @@ GameObject:
   - component: {fileID: 250461970}
   - component: {fileID: 250461969}
   - component: {fileID: 250461968}
+  - component: {fileID: 250461971}
   m_Layer: 0
   m_Name: Casterly Rock
   m_TagString: Untagged
@@ -1232,6 +1311,18 @@ Transform:
   m_Father: {fileID: 1141687948}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &250461971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250461967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &279544126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,6 +1333,7 @@ GameObject:
   - component: {fileID: 279544129}
   - component: {fileID: 279544127}
   - component: {fileID: 279544128}
+  - component: {fileID: 279544130}
   m_Layer: 0
   m_Name: Crackclaw Point
   m_TagString: Untagged
@@ -1325,6 +1417,18 @@ Transform:
   m_Father: {fileID: 1104634438}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &279544130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279544126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &327674343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,6 +1439,7 @@ GameObject:
   - component: {fileID: 327674346}
   - component: {fileID: 327674345}
   - component: {fileID: 327674344}
+  - component: {fileID: 327674347}
   m_Layer: 0
   m_Name: Blackwater Rush
   m_TagString: Untagged
@@ -1433,6 +1538,18 @@ Transform:
   m_Father: {fileID: 1360337259}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &327674347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327674343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &385110625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,6 +1560,7 @@ GameObject:
   - component: {fileID: 385110628}
   - component: {fileID: 385110627}
   - component: {fileID: 385110626}
+  - component: {fileID: 385110629}
   m_Layer: 0
   m_Name: Bear Island
   m_TagString: BearIsland
@@ -1514,6 +1632,18 @@ Transform:
   m_Father: {fileID: 1792339647}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &385110629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 385110625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &409778196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,6 +1687,7 @@ GameObject:
   - component: {fileID: 451849811}
   - component: {fileID: 451849813}
   - component: {fileID: 451849812}
+  - component: {fileID: 451849814}
   m_Layer: 0
   m_Name: Wolfswood
   m_TagString: Wolfswood
@@ -1666,6 +1797,18 @@ PolygonCollider2D:
       - {x: 0.8636911, y: -0.11114669}
       - {x: 0.76405543, y: 0.019500732}
       - {x: 0.7420616, y: 0.23824596}
+--- !u!114 &451849814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451849810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &472287598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,6 +2196,7 @@ GameObject:
   - component: {fileID: 579962127}
   - component: {fileID: 579962126}
   - component: {fileID: 579962125}
+  - component: {fileID: 579962128}
   m_Layer: 0
   m_Name: Winterfell
   m_TagString: Winterfell
@@ -2152,6 +2296,18 @@ Transform:
   m_Father: {fileID: 1792339647}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &579962128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579962124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &598365399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,6 +2318,7 @@ GameObject:
   - component: {fileID: 598365402}
   - component: {fileID: 598365401}
   - component: {fileID: 598365400}
+  - component: {fileID: 598365403}
   m_Layer: 0
   m_Name: Mountains of the Moon
   m_TagString: MountainsOfTheMoon
@@ -2300,6 +2457,18 @@ Transform:
   m_Father: {fileID: 724212808}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &598365403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598365399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &602231256
 GameObject:
   m_ObjectHideFlags: 0
@@ -2372,6 +2541,7 @@ GameObject:
   - component: {fileID: 615341057}
   - component: {fileID: 615341059}
   - component: {fileID: 615341058}
+  - component: {fileID: 615341060}
   m_Layer: 0
   m_Name: Harrenhal
   m_TagString: Harrenhal
@@ -2450,6 +2620,18 @@ PolygonCollider2D:
       - {x: 0.72, y: 0.06}
       - {x: 0.5, y: 0.25}
       - {x: 0.13, y: 0.41}
+--- !u!114 &615341060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 615341056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &663169509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,6 +2715,7 @@ GameObject:
   - component: {fileID: 677893495}
   - component: {fileID: 677893494}
   - component: {fileID: 677893493}
+  - component: {fileID: 677893496}
   m_Layer: 0
   m_Name: The Gift
   m_TagString: TheGift
@@ -2608,6 +2791,18 @@ Transform:
   m_Father: {fileID: 1792339647}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &677893496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677893492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &692391728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,6 +2813,7 @@ GameObject:
   - component: {fileID: 692391731}
   - component: {fileID: 692391729}
   - component: {fileID: 692391730}
+  - component: {fileID: 692391732}
   m_Layer: 0
   m_Name: Red Mountains
   m_TagString: Untagged
@@ -2726,6 +2922,18 @@ Transform:
   m_Father: {fileID: 1146920266}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &692391732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 692391728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &707068513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2736,6 +2944,7 @@ GameObject:
   - component: {fileID: 707068516}
   - component: {fileID: 707068514}
   - component: {fileID: 707068515}
+  - component: {fileID: 707068517}
   m_Layer: 0
   m_Name: The Arbor
   m_TagString: Untagged
@@ -2806,6 +3015,18 @@ Transform:
   m_Father: {fileID: 1360337259}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &707068517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 707068513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &707070938
 GameObject:
   m_ObjectHideFlags: 0
@@ -2859,6 +3080,7 @@ GameObject:
   - component: {fileID: 715937115}
   - component: {fileID: 715937113}
   - component: {fileID: 715937114}
+  - component: {fileID: 715937116}
   m_Layer: 0
   m_Name: Kingswood
   m_TagString: Untagged
@@ -2964,6 +3186,18 @@ Transform:
   m_Father: {fileID: 1104634438}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &715937116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 715937112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &717163098
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,6 +3208,7 @@ GameObject:
   - component: {fileID: 717163099}
   - component: {fileID: 717163101}
   - component: {fileID: 717163100}
+  - component: {fileID: 717163102}
   m_Layer: 0
   m_Name: Widow's Watch
   m_TagString: Untagged
@@ -3053,6 +3288,18 @@ PolygonCollider2D:
       - {x: 0.41, y: -0.03}
       - {x: 0.28, y: 0.07}
       - {x: 0.37, y: 0.28}
+--- !u!114 &717163102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717163098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &717479414
 GameObject:
   m_ObjectHideFlags: 0
@@ -3266,6 +3513,7 @@ GameObject:
   - component: {fileID: 750615037}
   - component: {fileID: 750615039}
   - component: {fileID: 750615038}
+  - component: {fileID: 750615040}
   m_Layer: 0
   m_Name: Stoney Sept
   m_TagString: StoneySept
@@ -3346,6 +3594,18 @@ PolygonCollider2D:
       - {x: 0.6, y: -0.17}
       - {x: 0.59, y: -0.01}
       - {x: 0.5, y: 0.35}
+--- !u!114 &750615040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 750615036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &753788251
 GameObject:
   m_ObjectHideFlags: 0
@@ -3356,6 +3616,7 @@ GameObject:
   - component: {fileID: 753788254}
   - component: {fileID: 753788252}
   - component: {fileID: 753788253}
+  - component: {fileID: 753788255}
   m_Layer: 0
   m_Name: Dornish Marches
   m_TagString: Untagged
@@ -3473,6 +3734,18 @@ Transform:
   m_Father: {fileID: 213679792}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &753788255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 753788251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &815135054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3483,6 +3756,7 @@ GameObject:
   - component: {fileID: 815135057}
   - component: {fileID: 815135055}
   - component: {fileID: 815135056}
+  - component: {fileID: 815135058}
   m_Layer: 0
   m_Name: Rainwood
   m_TagString: Untagged
@@ -3588,6 +3862,18 @@ Transform:
   m_Father: {fileID: 213679792}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &815135058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 815135054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &833113284
 GameObject:
   m_ObjectHideFlags: 0
@@ -3598,6 +3884,7 @@ GameObject:
   - component: {fileID: 833113287}
   - component: {fileID: 833113285}
   - component: {fileID: 833113286}
+  - component: {fileID: 833113288}
   m_Layer: 0
   m_Name: Sandstone
   m_TagString: Untagged
@@ -3684,6 +3971,18 @@ Transform:
   m_Father: {fileID: 1146920266}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &833113288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 833113284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!4 &834367404 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400008, guid: c807e1a8e27dfbd4caff57f9a6204e77, type: 3}
@@ -3800,6 +4099,7 @@ GameObject:
   - component: {fileID: 969885561}
   - component: {fileID: 969885559}
   - component: {fileID: 969885560}
+  - component: {fileID: 969885562}
   m_Layer: 0
   m_Name: Tarth
   m_TagString: Untagged
@@ -3878,6 +4178,18 @@ Transform:
   m_Father: {fileID: 213679792}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &969885562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 969885558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &979883953
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,6 +4200,7 @@ GameObject:
   - component: {fileID: 979883954}
   - component: {fileID: 979883956}
   - component: {fileID: 979883955}
+  - component: {fileID: 979883957}
   m_Layer: 0
   m_Name: The Fingers
   m_TagString: TheFingers
@@ -4023,6 +4336,18 @@ PolygonCollider2D:
       - {x: 0.09, y: 0.35}
       - {x: -0.03, y: 0.35}
       - {x: -0.07, y: 0.38}
+--- !u!114 &979883957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 979883953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &981335871
 GameObject:
   m_ObjectHideFlags: 0
@@ -4033,6 +4358,7 @@ GameObject:
   - component: {fileID: 981335874}
   - component: {fileID: 981335872}
   - component: {fileID: 981335873}
+  - component: {fileID: 981335875}
   m_Layer: 0
   m_Name: Oldtown
   m_TagString: Untagged
@@ -4126,6 +4452,18 @@ Transform:
   m_Father: {fileID: 1360337259}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981335875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 981335871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1001898283
 GameObject:
   m_ObjectHideFlags: 0
@@ -4136,6 +4474,7 @@ GameObject:
   - component: {fileID: 1001898286}
   - component: {fileID: 1001898285}
   - component: {fileID: 1001898284}
+  - component: {fileID: 1001898287}
   m_Layer: 0
   m_Name: The Eyrie
   m_TagString: Untagged
@@ -4238,6 +4577,18 @@ Transform:
   m_Father: {fileID: 724212808}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1001898287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1001898283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1010775413
 GameObject:
   m_ObjectHideFlags: 0
@@ -4248,6 +4599,7 @@ GameObject:
   - component: {fileID: 1010775416}
   - component: {fileID: 1010775415}
   - component: {fileID: 1010775414}
+  - component: {fileID: 1010775417}
   m_Layer: 0
   m_Name: Gulltown
   m_TagString: Untagged
@@ -4322,6 +4674,18 @@ Transform:
   m_Father: {fileID: 724212808}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1010775417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1010775413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1011715969
 GameObject:
   m_ObjectHideFlags: 0
@@ -4332,6 +4696,7 @@ GameObject:
   - component: {fileID: 1011715972}
   - component: {fileID: 1011715970}
   - component: {fileID: 1011715971}
+  - component: {fileID: 1011715973}
   m_Layer: 0
   m_Name: King's Landing
   m_TagString: Untagged
@@ -4429,6 +4794,18 @@ Transform:
   m_Father: {fileID: 1104634438}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1011715973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1011715969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1024814216
 GameObject:
   m_ObjectHideFlags: 0
@@ -4561,6 +4938,7 @@ GameObject:
   - component: {fileID: 1038752581}
   - component: {fileID: 1038752580}
   - component: {fileID: 1038752579}
+  - component: {fileID: 1038752582}
   m_Layer: 0
   m_Name: Dreadfort
   m_TagString: Dreadfort
@@ -4666,6 +5044,18 @@ Transform:
   m_Father: {fileID: 1792339647}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1038752582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1038752578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1068091052
 GameObject:
   m_ObjectHideFlags: 0
@@ -5367,6 +5757,7 @@ GameObject:
   - component: {fileID: 1307139287}
   - component: {fileID: 1307139286}
   - component: {fileID: 1307139285}
+  - component: {fileID: 1307139288}
   m_Layer: 0
   m_Name: Silverhill
   m_TagString: Untagged
@@ -5449,6 +5840,18 @@ Transform:
   m_Father: {fileID: 1141687948}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1307139288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1307139284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1308027966
 GameObject:
   m_ObjectHideFlags: 0
@@ -5732,6 +6135,7 @@ GameObject:
   - component: {fileID: 1424275374}
   - component: {fileID: 1424275375}
   - component: {fileID: 1424275376}
+  - component: {fileID: 1424275377}
   m_Layer: 0
   m_Name: Dragonstone
   m_TagString: Untagged
@@ -5809,6 +6213,18 @@ PolygonCollider2D:
       - {x: 0.3298052, y: 0.071893156}
       - {x: 0.35341412, y: 0.15603602}
       - {x: 0.3407116, y: 0.22721863}
+--- !u!114 &1424275377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424275373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1503277123
 GameObject:
   m_ObjectHideFlags: 0
@@ -5819,6 +6235,7 @@ GameObject:
   - component: {fileID: 1503277126}
   - component: {fileID: 1503277125}
   - component: {fileID: 1503277124}
+  - component: {fileID: 1503277127}
   m_Layer: 0
   m_Name: Skagos
   m_TagString: Skagos
@@ -5893,6 +6310,18 @@ Transform:
   m_Father: {fileID: 1792339647}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1503277127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1503277123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1514520753 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: c807e1a8e27dfbd4caff57f9a6204e77, type: 3}
@@ -5933,6 +6362,7 @@ GameObject:
   - component: {fileID: 1542553880}
   - component: {fileID: 1542553879}
   - component: {fileID: 1542553878}
+  - component: {fileID: 1542553881}
   m_Layer: 0
   m_Name: Trident
   m_TagString: Untagged
@@ -6011,6 +6441,18 @@ Transform:
   m_Father: {fileID: 1308027967}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1542553881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542553877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1555535552
 GameObject:
   m_ObjectHideFlags: 0
@@ -6165,6 +6607,7 @@ GameObject:
   - component: {fileID: 1598681149}
   - component: {fileID: 1598681148}
   - component: {fileID: 1598681147}
+  - component: {fileID: 1598681150}
   m_Layer: 0
   m_Name: Golden Tooth
   m_TagString: Untagged
@@ -6243,6 +6686,18 @@ Transform:
   m_Father: {fileID: 1141687948}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1598681150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1598681146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1614432575
 GameObject:
   m_ObjectHideFlags: 0
@@ -6253,6 +6708,7 @@ GameObject:
   - component: {fileID: 1614432578}
   - component: {fileID: 1614432577}
   - component: {fileID: 1614432576}
+  - component: {fileID: 1614432579}
   m_Layer: 0
   m_Name: The Mander
   m_TagString: Untagged
@@ -6360,6 +6816,18 @@ Transform:
   m_Father: {fileID: 1360337259}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1614432579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1614432575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1620641457
 GameObject:
   m_ObjectHideFlags: 0
@@ -6370,6 +6838,7 @@ GameObject:
   - component: {fileID: 1620641458}
   - component: {fileID: 1620641460}
   - component: {fileID: 1620641459}
+  - component: {fileID: 1620641461}
   m_Layer: 0
   m_Name: Cape Kraken
   m_TagString: CapeKraken
@@ -6470,6 +6939,18 @@ PolygonCollider2D:
       - {x: 0.6053428, y: 0.2422278}
       - {x: 0.61860937, y: 0.30731}
       - {x: 0.539219, y: 0.46460974}
+--- !u!114 &1620641461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1620641457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1623748098
 GameObject:
   m_ObjectHideFlags: 0
@@ -6480,6 +6961,7 @@ GameObject:
   - component: {fileID: 1623748099}
   - component: {fileID: 1623748101}
   - component: {fileID: 1623748100}
+  - component: {fileID: 1623748102}
   m_Layer: 0
   m_Name: Pyke
   m_TagString: Untagged
@@ -6551,6 +7033,18 @@ PolygonCollider2D:
       - {x: 0.05957517, y: -0.43311322}
       - {x: 0.32451972, y: -0.24329282}
       - {x: 0.2873577, y: -0.09738435}
+--- !u!114 &1623748102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1623748098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1644845426
 GameObject:
   m_ObjectHideFlags: 0
@@ -6561,6 +7055,7 @@ GameObject:
   - component: {fileID: 1644845427}
   - component: {fileID: 1644845429}
   - component: {fileID: 1644845428}
+  - component: {fileID: 1644845430}
   m_Layer: 0
   m_Name: Barrowlands
   m_TagString: Barrowlands
@@ -6669,6 +7164,18 @@ PolygonCollider2D:
       - {x: 0.39623114, y: 0.32125974}
       - {x: 0.28528458, y: 0.48922038}
       - {x: 0.31947646, y: 0.7699597}
+--- !u!114 &1644845430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644845426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1679474070
 GameObject:
   m_ObjectHideFlags: 0
@@ -6679,6 +7186,7 @@ GameObject:
   - component: {fileID: 1679474071}
   - component: {fileID: 1679474073}
   - component: {fileID: 1679474072}
+  - component: {fileID: 1679474074}
   m_Layer: 0
   m_Name: Harlaw
   m_TagString: Untagged
@@ -6749,6 +7257,18 @@ PolygonCollider2D:
       - {x: -0.056146532, y: -0.3356853}
       - {x: 0.19705248, y: -0.32328463}
       - {x: 0.25, y: -0.02}
+--- !u!114 &1679474074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679474070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1681886529
 GameObject:
   m_ObjectHideFlags: 0
@@ -6830,6 +7350,7 @@ GameObject:
   - component: {fileID: 1694094182}
   - component: {fileID: 1694094180}
   - component: {fileID: 1694094181}
+  - component: {fileID: 1694094183}
   m_Layer: 0
   m_Name: Sunspear
   m_TagString: Untagged
@@ -6927,6 +7448,18 @@ Transform:
   m_Father: {fileID: 1146920266}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1694094183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1694094179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1705338135
 GameObject:
   m_ObjectHideFlags: 0
@@ -6971,6 +7504,7 @@ GameObject:
   - component: {fileID: 1716380612}
   - component: {fileID: 1716380611}
   - component: {fileID: 1716380610}
+  - component: {fileID: 1716380613}
   m_Layer: 0
   m_Name: Greenblood
   m_TagString: Untagged
@@ -7047,6 +7581,18 @@ Transform:
   m_Father: {fileID: 1146920266}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1716380613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1716380609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!4 &1767555521 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400008, guid: c807e1a8e27dfbd4caff57f9a6204e77, type: 3}
@@ -7061,6 +7607,7 @@ GameObject:
   - component: {fileID: 1780868307}
   - component: {fileID: 1780868309}
   - component: {fileID: 1780868308}
+  - component: {fileID: 1780868310}
   m_Layer: 0
   m_Name: The Neck
   m_TagString: TheNeck
@@ -7149,6 +7696,18 @@ PolygonCollider2D:
       - {x: -0.37056088, y: -0.5068237}
       - {x: -0.09505831, y: -0.62421685}
       - {x: 0.52366686, y: -0.55890024}
+--- !u!114 &1780868310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1780868306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1791966364
 GameObject:
   m_ObjectHideFlags: 0
@@ -7159,6 +7718,7 @@ GameObject:
   - component: {fileID: 1791966367}
   - component: {fileID: 1791966366}
   - component: {fileID: 1791966365}
+  - component: {fileID: 1791966368}
   m_Layer: 0
   m_Name: Crackehall
   m_TagString: Untagged
@@ -7249,6 +7809,18 @@ Transform:
   m_Father: {fileID: 1141687948}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1791966368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1791966364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1792339646
 GameObject:
   m_ObjectHideFlags: 0
@@ -7313,6 +7885,7 @@ GameObject:
   - component: {fileID: 1878267514}
   - component: {fileID: 1878267512}
   - component: {fileID: 1878267513}
+  - component: {fileID: 1878267515}
   m_Layer: 0
   m_Name: Three Towers
   m_TagString: Untagged
@@ -7413,6 +7986,18 @@ Transform:
   m_Father: {fileID: 1360337259}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1878267515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1878267511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &1908251622 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: c807e1a8e27dfbd4caff57f9a6204e77, type: 3}
@@ -7579,6 +8164,7 @@ GameObject:
   - component: {fileID: 1947158353}
   - component: {fileID: 1947158352}
   - component: {fileID: 1947158351}
+  - component: {fileID: 1947158354}
   m_Layer: 0
   m_Name: Highgarden
   m_TagString: Untagged
@@ -7693,6 +8279,18 @@ Transform:
   m_Father: {fileID: 1360337259}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1947158354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947158350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &2016518033
 GameObject:
   m_ObjectHideFlags: 0
@@ -7703,6 +8301,7 @@ GameObject:
   - component: {fileID: 2016518034}
   - component: {fileID: 2016518036}
   - component: {fileID: 2016518035}
+  - component: {fileID: 2016518037}
   m_Layer: 0
   m_Name: The Twins
   m_TagString: TheTwins
@@ -7792,6 +8391,18 @@ PolygonCollider2D:
       - {x: 0.2097276, y: -0.2537404}
       - {x: 0.3087811, y: -0.2728786}
       - {x: 0.53651154, y: -0.24440299}
+--- !u!114 &2016518037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2016518033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
 --- !u!1 &2123362917
 GameObject:
   m_ObjectHideFlags: 0
@@ -7995,6 +8606,7 @@ GameObject:
   - component: {fileID: 2147128322}
   - component: {fileID: 2147128320}
   - component: {fileID: 2147128321}
+  - component: {fileID: 2147128323}
   m_Layer: 0
   m_Name: Storm's End
   m_TagString: Untagged
@@ -8100,3 +8712,15 @@ Transform:
   m_Father: {fileID: 213679792}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2147128323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2147128319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452c788ccc681134ab2daeaaa58141ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Simbolo: 0
