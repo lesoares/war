@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vencedor : MonoBehaviour {
+public class VencedorController : MonoBehaviour {
 
-    public static int number;
-    public static Color color;
+    public static int number = Permanente.num;
+    public static Color color = Permanente.color;
     public GameObject Vencedor_1;
     public GameObject Vencedor_2;
     public GameObject Vencedor_3;
@@ -73,6 +73,7 @@ public class Vencedor : MonoBehaviour {
 	void Update () {
 		
 	}
+
 
 
 

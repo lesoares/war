@@ -14,7 +14,7 @@ public class IaController : PlayerBase
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -30,8 +30,9 @@ public class IaController : PlayerBase
 
     public override void EndGame()
     {
-        Vencedor.number = numTurn;
-        Vencedor.color = color;
+        Debug.Log("fim");
+        Permanente.num = numTurn;
+        Permanente.color = color;
         SceneManager.LoadScene(2);
     }
 

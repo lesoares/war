@@ -13,8 +13,9 @@ public class PlayerController : PlayerBase {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -101,8 +102,8 @@ public class PlayerController : PlayerBase {
 
     public override void EndGame()
     {
-        Vencedor.color = color;
-        Vencedor.number = numTurn;
+        Permanente.color = color;
+        Permanente.num = numTurn;
         SceneManager.LoadScene(3);
     }
 
