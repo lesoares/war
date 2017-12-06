@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Assets.CSs;
 
 
 public class PlayerController : PlayerBase {
@@ -100,6 +101,7 @@ public class PlayerController : PlayerBase {
 
     public override void EndGame()
     {
+        Vencedor.number = numTurn;
         SceneManager.LoadScene(3);
     }
 

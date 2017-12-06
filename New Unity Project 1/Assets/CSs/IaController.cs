@@ -30,6 +30,7 @@ public class IaController : PlayerBase
 
     public override void EndGame()
     {
+        Vencedor.number = numTurn;
         SceneManager.LoadScene(2);
     }
 
