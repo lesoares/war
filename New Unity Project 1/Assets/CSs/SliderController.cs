@@ -7,7 +7,7 @@ namespace Assets.CSs
     class SliderController : MonoBehaviour
     {
          
-        void SettingPlayers(Single value)
+        void SettingPlayers(int value)
         {
             int qtIA = 1;
             int qtPlayer = 2;
