@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FimJogoVitoria.unity
     guid: 3089436b4240b884d88ecd9eb595ae88
+  - enabled: 1
+    path: Assets/Scenes/New Scene.unity
+    guid: c0ed9bcf31b47314ea6853dc5f4561be
