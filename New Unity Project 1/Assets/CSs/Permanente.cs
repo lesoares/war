@@ -7,6 +7,8 @@ public class Permanente : MonoBehaviour {
 
     static public int num;
     static public Color color;
+    static public int iaCount = 1;
+    static public int playerCount = 1;
 
 	// Use this for initialization
 	void Start () {

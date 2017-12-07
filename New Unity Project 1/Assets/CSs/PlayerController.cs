@@ -13,7 +13,6 @@ public class PlayerController : PlayerBase {
 
     // Use this for initialization
     void Start () {
-        
 
     }
 	
@@ -21,6 +20,8 @@ public class PlayerController : PlayerBase {
 	void Update () {
 		
 	}
+
+    
 
     public override string Text()
     {

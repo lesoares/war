@@ -82,7 +82,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        Configure(1, 1);
+        Configure(Permanente.iaCount, Permanente.playerCount);
     }
 
     void DistributeTerritories()

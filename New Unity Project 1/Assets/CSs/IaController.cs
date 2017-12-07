@@ -14,7 +14,7 @@ public class IaController : PlayerBase
     // Use this for initialization
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
