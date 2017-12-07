@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 210567339}
   - component: {fileID: 210567342}
   - component: {fileID: 210567343}
+  - component: {fileID: 210567344}
   m_Layer: 5
   m_Name: Creditos
   m_TagString: Untagged
@@ -142,9 +143,9 @@ RectTransform:
   m_Father: {fileID: 1535164539}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -270, y: -36}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 168, y: -36}
   m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &210567339
@@ -254,6 +255,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e6b0ad86c374e49afee2472e854792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &210567344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 210567337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: 1
+  m_FlexibleHeight: 1
+  m_LayoutPriority: 1
 --- !u!1 &225636608
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +361,7 @@ GameObject:
   - component: {fileID: 226221238}
   - component: {fileID: 226221241}
   - component: {fileID: 226221242}
+  - component: {fileID: 226221243}
   m_Layer: 5
   m_Name: ComoJogar
   m_TagString: Untagged
@@ -362,9 +383,9 @@ RectTransform:
   m_Father: {fileID: 1535164539}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -270, y: 8}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 168, y: 8}
   m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &226221238
@@ -474,6 +495,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e6b0ad86c374e49afee2472e854792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &226221243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 226221236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: 1
+  m_FlexibleHeight: 1
+  m_LayoutPriority: 1
 --- !u!1 &335965191
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +662,7 @@ GameObject:
   - component: {fileID: 413017482}
   - component: {fileID: 413017481}
   - component: {fileID: 413017484}
+  - component: {fileID: 413017485}
   m_Layer: 5
   m_Name: Sair
   m_TagString: Untagged
@@ -643,9 +684,9 @@ RectTransform:
   m_Father: {fileID: 1535164539}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -270, y: -82}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 168, y: -82}
   m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413017481
@@ -733,6 +774,25 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &413017485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 413017479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: 1
+  m_FlexibleHeight: 1
+  m_LayoutPriority: 1
 --- !u!1 &476008532
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,6 +807,7 @@ GameObject:
   - component: {fileID: 476008537}
   - component: {fileID: 476008538}
   - component: {fileID: 476008539}
+  - component: {fileID: 476008540}
   m_Layer: 5
   m_Name: Jogar
   m_TagString: Untagged
@@ -768,9 +829,9 @@ RectTransform:
   m_Father: {fileID: 1535164539}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -270, y: 51}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 168, y: 51}
   m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &476008534
@@ -893,6 +954,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e6b0ad86c374e49afee2472e854792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &476008540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 476008532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: 1
+  m_FlexibleHeight: 1
+  m_LayoutPriority: 1
 --- !u!1 &521705972
 GameObject:
   m_ObjectHideFlags: 0
