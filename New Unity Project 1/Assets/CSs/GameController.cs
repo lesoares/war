@@ -82,6 +82,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        Configure(1, 1);
     }
 
     void DistributeTerritories()
