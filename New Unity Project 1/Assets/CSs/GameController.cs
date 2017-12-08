@@ -262,6 +262,10 @@ public class GameController : MonoBehaviour
                 player.RedistributeSelected(this, redistributed);
             }
         }
+
+        if(Input.GetKey(KeyCode.M)) {
+            players[turn].GetComponent<PlayerBase>().EndGame();
+        }
     }
 
 

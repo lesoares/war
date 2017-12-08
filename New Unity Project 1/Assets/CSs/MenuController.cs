@@ -20,6 +20,7 @@ public class MenuController : MonoBehaviour {
     void StartGame  ()
     {
         Debug.Log("Jogar");
+        Permanente.Resete();
         //Application.LoadLevel(1);
         SceneManager.LoadScene(1);
     }

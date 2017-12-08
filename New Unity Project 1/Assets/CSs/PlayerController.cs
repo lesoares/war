@@ -104,7 +104,7 @@ public class PlayerController : PlayerBase {
     public override void EndGame()
     {
         Permanente.color = color;
-        Permanente.num = numTurn;
+        Permanente.num = numTurn + 1;
         SceneManager.LoadScene(3);
     }
 

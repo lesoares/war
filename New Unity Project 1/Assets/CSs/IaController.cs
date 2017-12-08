@@ -31,7 +31,7 @@ public class IaController : PlayerBase
     public override void EndGame()
     {
         Debug.Log("fim");
-        Permanente.num = numTurn;
+        Permanente.num = numTurn + 1;
         Permanente.color = color;
         SceneManager.LoadScene(2);
     }
