@@ -11,8 +11,12 @@
  Este projeto foi construído utilizando o Unity 2017.1 e C#.
  
  ## Autores
- [Leticia](https://github.com/lesoares) <br>
- [Flávio Cruz](https://github.com/FlavioCruz)
+ [Letícia Soares](https://github.com/lesoares) <br>
+ [Flávio Cruz](https://github.com/FlavioCruz) <br>
+ [Marcelo Nicolaci](https://github.com/xhynelo) <br>
+ [Caio Sanches ](https://github.com/CaioSanches143) <br>
+ [Erick Arruzzo](https://github.com/erickarruzzo) <br>
+ 
  
  ## Contribuidores
-  /Sessão a ser construída/
+ 
