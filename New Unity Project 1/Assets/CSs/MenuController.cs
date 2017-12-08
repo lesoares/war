@@ -49,17 +49,18 @@ public class MenuController : MonoBehaviour {
 
     void ChangeToCredits()
     {
+        /*
         foreach (var item in canvasGroup)
         {
             item.alpha = 0;
             item.blocksRaycasts = false;
         }
-
+        */
         var cG = credits.GetComponent<CanvasGroup>() as CanvasGroup;
-        cG.alpha = 1;
-        cG.blocksRaycasts = true;
-        var sR = credits.GetComponent<SpriteRenderer>() as SpriteRenderer;
-        sR.enabled = true;
+        cG.alpha = cG.alpha == 1? 0 : 1;
+        //cG.blocksRaycasts = true;
+        //var sR = credits.GetComponent<SpriteRenderer>() as SpriteRenderer;
+        //sR.enabled = true;
 
     }
 

@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
     public GameObject slider;
     public GameObject playerText;
     public GameObject nextButton;
+    public bool started = false;
     public static List<GameObject> players = new List<GameObject>();
     public static int turn = 0;
     public static int state = 0;
@@ -48,8 +49,12 @@ public class GameController : MonoBehaviour
             new Color(1, 0, 1),
             new Color(1, 1, 0),
             new Color(1, 1, 1),
-            new Color(0, 0, 0),
+            new Color(0, 0.5f, 0.5f),
         };
+        players.Clear();
+        turn = 0;
+        state = 0;
+        substate = 0;
         for (int i = 0; i < iaCount; i++) {
             players.Add(Instantiate(IA).GetComponent<PlayerBase>().configure(i, colors[i]));
         }
@@ -82,7 +87,15 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        Configure(Permanente.iaCount, Permanente.playerCount);
+    
+    }
+
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(scene.name == "Mapa") {
+            Configure(Permanente.iaCount, Permanente.playerCount);
+        }
     }
 
     void DistributeTerritories()
@@ -213,6 +226,10 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
+        if (!started) {
+            Configure(Permanente.iaCount, Permanente.playerCount);
+            started = true;
+        }
         PlayerBase player = players[turn].GetComponent<PlayerBase>();
         var selectedSprite = this.Select.GetComponent<SpriteRenderer>();
         var selectedColor = player.color;

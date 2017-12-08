@@ -9,8 +9,8 @@ public class Permanente : MonoBehaviour {
     private static Permanente oi;
     static public int num;
     static public Color color;
-    static public int iaCount;
-    static public int playerCount;
+    static public int iaCount = 1;
+    static public int playerCount = 1;
 
     private Permanente()
     {
@@ -47,7 +47,7 @@ public class Permanente : MonoBehaviour {
     {
         num = 0;
         color = Color.clear;
-        iaCount = 3;
-        playerCount = 3;
+        iaCount = 8;
+        playerCount = 0;
     }
 }
