@@ -6,8 +6,23 @@ using UnityEngine;
 
 namespace Assets.CSs
 {
-    class TropaController : MonoBehaviour
+    public class TropaController : MonoBehaviour
     {
+
+        public TerritoryController territory;
+        
+
+        public GameObject configure(TerritoryController territory)
+        {
+            this.transform.SetParent(territory.transform);
+            this.transform.Translate(0, 0, -1);
+            this.GetComponent<TropaController>().territory = territory;
+            Color color = GameController.players[territory.player].GetComponent<PlayerBase>().color;
+            
+            this.GetComponent<SpriteRenderer>().color = color;
+
+            return this.gameObject;
+        }
 
         void Start()
         {
@@ -22,18 +37,16 @@ namespace Assets.CSs
         void OnMouseDown()
         {
             var a = this.GetComponent<SpriteRenderer>().color.a;
+            Color tmp = this.GetComponent<SpriteRenderer>().color;
             if (a == 1)
             {
-                Color tmp = this.GetComponent<SpriteRenderer>().color;
                 tmp.a = 0.5f;
-                this.GetComponent<SpriteRenderer>().color = tmp;
             }
             else
             {
-                Color tmp = this.GetComponent<SpriteRenderer>().color;
                 tmp.a = 1;
-                this.GetComponent<SpriteRenderer>().color = tmp;
             }
+            this.GetComponent<SpriteRenderer>().color = tmp;
         }
     }
 }

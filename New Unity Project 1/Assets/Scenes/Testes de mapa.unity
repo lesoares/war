@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -137,17 +137,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1623748100}
+  - {fileID: 225066308}
+  - {fileID: 1598681147}
+  - {fileID: 250461968}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &14073005
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -172,17 +174,17 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.6918929, y: 1.5293477}
-      - {x: -0.36418545, y: 1.5998348}
-      - {x: -0.5449484, y: 1.4817091}
-      - {x: -0.7261183, y: 0.5982229}
-      - {x: -0.7092812, y: 0.5761672}
-      - {x: -0.33071277, y: 0.5620344}
-      - {x: 0.11648626, y: 1.0119107}
-      - {x: 0.3176168, y: 1.0513828}
-      - {x: 0.54624635, y: 1.1190822}
-      - {x: 0.8473217, y: 1.0524848}
-      - {x: 0.9296336, y: 1.1980579}
+    - - {x: 0.71541363, y: 0.37685168}
+      - {x: -0.42298654, y: 0.41205847}
+      - {x: -0.36854607, y: -0.03535211}
+      - {x: -0.6202769, y: -0.50723255}
+      - {x: -0.34471646, y: -0.4940073}
+      - {x: -0.20135075, y: -0.36701822}
+      - {x: 0.092966214, y: -0.058264613}
+      - {x: 0.3411372, y: -0.054073095}
+      - {x: 0.56976676, y: 0.060667634}
+      - {x: 0.75324035, y: -0.06473088}
+      - {x: 0.88259315, y: 0.11612284}
 --- !u!4 &14073006
 Transform:
   m_ObjectHideFlags: 0
@@ -190,7 +192,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 14073003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1141687948}
@@ -332,18 +334,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1791966365}
+  - {fileID: 1307139285}
+  - {fileID: 327674344}
+  - {fileID: 1947158351}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &86495167
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -368,14 +371,32 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.3295934, y: 0.6720811}
-      - {x: -0.51556504, y: 0.87430143}
-      - {x: -0.47129866, y: 1.0428449}
-      - {x: -1.1702785, y: 0.8842138}
-      - {x: -2.0329018, y: 0.11621221}
-      - {x: -1.2840222, y: -0.3805637}
-      - {x: -0.65472937, y: -0.17704822}
-      - {x: -0.3450154, y: 0.10550268}
+    - - {x: 0.5435878, y: 0.36673567}
+      - {x: 0.3951149, y: 0.568956}
+      - {x: 0.40723962, y: 0.742856}
+      - {x: 0.25812036, y: 0.7042788}
+      - {x: 0.16113132, y: 0.73095167}
+      - {x: 0.051207066, y: 0.6481383}
+      - {x: -0.0456416, y: 0.6275767}
+      - {x: -0.1657291, y: 0.6105635}
+      - {x: -0.22862977, y: 0.512288}
+      - {x: -0.32709593, y: 0.5242342}
+      - {x: -0.39364356, y: 0.43322793}
+      - {x: -0.4794641, y: 0.2678748}
+      - {x: -0.60764676, y: 0.21982381}
+      - {x: -0.7042249, y: 0.032460123}
+      - {x: -0.9964815, y: -0.11840536}
+      - {x: -1.0925028, y: -0.16204683}
+      - {x: -1.0793662, y: -0.21591732}
+      - {x: -0.91107756, y: -0.26885462}
+      - {x: -0.84540945, y: -0.3777852}
+      - {x: -0.77086717, y: -0.41807836}
+      - {x: -0.60162574, y: -0.4007441}
+      - {x: -0.5339653, y: -0.49189746}
+      - {x: -0.5783426, y: -0.5390056}
+      - {x: -0.35191458, y: -0.62698257}
+      - {x: 0.21845186, y: -0.47168022}
+      - {x: 0.5495944, y: -0.17841494}
 --- !u!4 &86495168
 Transform:
   m_ObjectHideFlags: 0
@@ -383,7 +404,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 86495165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.91, y: 0.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1360337259}
@@ -439,6 +460,8 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &115644878
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -561,6 +584,8 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &177865973
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -716,19 +741,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1542553878}
+  - {fileID: 615341058}
+  - {fileID: 750615038}
+  - {fileID: 1598681147}
+  - {fileID: 14073004}
+  - {fileID: 1623748100}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &225066309
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -868,16 +895,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1503277124}
+  - {fileID: 677893493}
+  - {fileID: 1038752579}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &238353230
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -976,18 +1005,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 14073004}
+  - {fileID: 1598681147}
+  - {fileID: 750615038}
+  - {fileID: 1307139285}
+  - {fileID: 1791966365}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &250461969
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1043,8 +1074,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 279544129}
-  - component: {fileID: 279544128}
   - component: {fileID: 279544127}
+  - component: {fileID: 279544128}
   m_Layer: 0
   m_Name: Crackclaw Point
   m_TagString: Untagged
@@ -1064,15 +1095,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1424275375}
+  - {fileID: 1011715970}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &279544128
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1097,14 +1130,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.85577273, y: 1.0596046}
-      - {x: 1.0158284, y: 1.5651443}
-      - {x: 0.26945594, y: 1.1462353}
-      - {x: -0.54329556, y: 1.0172349}
-      - {x: -0.5518475, y: 0.82089543}
-      - {x: -0.20148414, y: 0.5287273}
-      - {x: 0.66647655, y: 0.965105}
-      - {x: 0.67921454, y: 0.93139076}
+    - - {x: 0.5495525, y: 0.30051482}
+      - {x: 0.2635728, y: 0.18676555}
+      - {x: 0.10473022, y: 0.1313572}
+      - {x: -0.11927473, y: 0.1041193}
+      - {x: -0.25736764, y: 0.16699529}
+      - {x: -0.42144105, y: 0.13773274}
+      - {x: -0.53213745, y: 0.09955704}
+      - {x: -0.53075254, y: -0.12457371}
+      - {x: -0.374837, y: -0.25741482}
+      - {x: -0.20582871, y: -0.37777627}
+      - {x: -0.046774913, y: -0.10355657}
+      - {x: 0.0511731, y: -0.15917593}
+      - {x: 0.21815003, y: -0.15599489}
+      - {x: 0.24552235, y: -0.05439055}
+      - {x: 0.5967402, y: -0.025039494}
+      - {x: 0.68370587, y: 0.06527293}
+      - {x: 0.8268082, y: 0.16036212}
+      - {x: 0.75401914, y: 0.24592769}
+      - {x: 0.95721686, y: 0.56160164}
 --- !u!4 &279544129
 Transform:
   m_ObjectHideFlags: 0
@@ -1112,7 +1156,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279544126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.918, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1104634438}
@@ -1147,21 +1191,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 750615038}
+  - {fileID: 1307139285}
+  - {fileID: 86495166}
+  - {fileID: 1614432576}
+  - {fileID: 238353229}
+  - {fileID: 615341058}
+  - {fileID: 1011715970}
+  - {fileID: 715937113}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &327674345
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1186,17 +1232,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.5116624, y: 1.0690849}
-      - {x: 1.2532269, y: 1.8033502}
-      - {x: 0.34733, y: 1.5678076}
-      - {x: -0.2858018, y: 1.1774156}
-      - {x: -0.43691194, y: 0.93027437}
-      - {x: -0.32654783, y: 0.65332323}
-      - {x: -0.26644486, y: 0.12286921}
-      - {x: 0.3553448, y: 0.326782}
-      - {x: 0.6527603, y: 0.554986}
-      - {x: 1.4339814, y: 0.7976835}
-      - {x: 1.5508912, y: 0.80173874}
+    - - {x: 1.0077373, y: 0.01668799}
+      - {x: 0.93891907, y: 0.4887048}
+      - {x: 0.8438269, y: 0.55210936}
+      - {x: 0.853755, y: 0.6823789}
+      - {x: 0.7202914, y: 0.76728296}
+      - {x: 0.7644856, y: 0.9709636}
+      - {x: 0.4616566, y: 0.92933464}
+      - {x: 0.2158427, y: 0.7861967}
+      - {x: -0.047412604, y: 0.7587944}
+      - {x: -0.22200736, y: 0.654129}
+      - {x: -0.46978396, y: 0.41468418}
+      - {x: -0.6859981, y: 0.41854393}
+      - {x: -0.8172734, y: 0.28929877}
+      - {x: -0.9194319, y: 0.07012981}
+      - {x: -0.7601166, y: -0.08793938}
+      - {x: -0.7419716, y: -0.64636594}
+      - {x: -0.47704238, y: -0.49033165}
+      - {x: -0.2178092, y: -0.49122515}
+      - {x: 0.012947291, y: -0.38602594}
+      - {x: 0.01297161, y: -0.25240523}
+      - {x: 0.16630968, y: -0.17979854}
+      - {x: 0.31298962, y: -0.2282604}
+      - {x: 0.37688866, y: -0.16258329}
+      - {x: 0.42212912, y: -0.06370926}
+      - {x: 0.51318824, y: -0.03283477}
+      - {x: 0.59494305, y: -0.07084352}
+      - {x: 0.7064725, y: 0.003743887}
+      - {x: 0.9017819, y: 0.068627596}
 --- !u!4 &327674346
 Transform:
   m_ObjectHideFlags: 0
@@ -1204,7 +1267,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 327674343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.497, y: 0.804, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1360337259}
@@ -1239,16 +1302,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 579962125}
+  - {fileID: 451849812}
+  - {fileID: 177865972}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &385110627
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1342,6 +1407,8 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &451849813
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1528,9 +1595,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44bb7d42493f30647bd57019dd71d0ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultCameraPosition: {x: 202, y: -99.4, z: 155.6}
-  defaultCameraSize: 350
-  cameraGO: {fileID: 1085541685}
 --- !u!114 &472287603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1591,7 +1655,17 @@ MonoBehaviour:
   - {fileID: 1011715970}
   - {fileID: 279544127}
   - {fileID: 1424275375}
+  AttackDiceObject: []
+  DefenseDiceObject: []
+  Select: {fileID: 0}
+  Other: {fileID: 0}
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  Player: {fileID: 0}
+  IA: {fileID: 0}
+  log: {fileID: 0}
+  slider: {fileID: 0}
+  playerText: {fileID: 0}
+  nextButton: {fileID: 0}
 --- !u!1 &490546742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,6 +1736,8 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &579962126
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1758,18 +1834,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2016518035}
+  - {fileID: 1542553878}
+  - {fileID: 615341058}
+  - {fileID: 1001898284}
+  - {fileID: 979883955}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &598365401
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1981,19 +2059,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1542553878}
+  - {fileID: 225066308}
+  - {fileID: 750615038}
+  - {fileID: 327674344}
+  - {fileID: 1011715970}
+  - {fileID: 598365400}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &615341059
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2057,17 +2137,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 579962125}
+  - {fileID: 238353229}
+  - {fileID: 1503277124}
+  - {fileID: 1038752579}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &677893494
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2122,8 +2204,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 692391731}
-  - component: {fileID: 692391730}
   - component: {fileID: 692391729}
+  - component: {fileID: 692391730}
   m_Layer: 0
   m_Name: Red Mountains
   m_TagString: Untagged
@@ -2143,18 +2225,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 753788252}
+  - {fileID: 1947158351}
+  - {fileID: 1878267512}
+  - {fileID: 833113285}
+  - {fileID: 1716380610}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &692391730
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2179,23 +2263,47 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.62196434, y: 0.5658452}
-      - {x: 0.04264519, y: 0.5463617}
-      - {x: 0.5433473, y: 1.2298768}
-      - {x: -0.13092577, y: 1.5679761}
-      - {x: -0.5882501, y: 1.4863157}
-      - {x: -0.9127733, y: 1.2719319}
-      - {x: -1.3610483, y: 1.3238195}
-      - {x: -1.5466481, y: 1.3016704}
-      - {x: -2.4795446, y: 0.12202988}
-      - {x: -2.2387235, y: -0.15073128}
-      - {x: -1.8468263, y: -0.74632335}
-      - {x: -1.703425, y: -0.31382656}
-      - {x: -1.3926954, y: -0.1559771}
-      - {x: -1.4487401, y: 0.10992738}
-      - {x: -1.3109787, y: 0.41589606}
-      - {x: -1.0158821, y: 0.4904678}
-      - {x: -0.91931087, y: 0.6120379}
+    - - {x: 1.0301046, y: 0.63714474}
+      - {x: 0.5914222, y: 0.6006016}
+      - {x: 0.2533366, y: 0.42179233}
+      - {x: -0.3695978, y: 0.40829068}
+      - {x: -0.64243066, y: 0.021501422}
+      - {x: -0.8870053, y: -0.12960249}
+      - {x: -1.0011232, y: -0.52904534}
+      - {x: -1.2897906, y: -0.78065264}
+      - {x: -1.1385722, y: -0.9982301}
+      - {x: -0.99882436, y: -0.9670522}
+      - {x: -0.8396965, y: -0.8364639}
+      - {x: -0.46747887, y: -0.46642023}
+      - {x: -0.6588824, y: -0.83493054}
+      - {x: -0.8096951, y: -1.0885264}
+      - {x: -0.8127639, y: -1.4502534}
+      - {x: -0.6734483, y: -1.570303}
+      - {x: -0.59951866, y: -1.2329388}
+      - {x: -0.5582752, y: -1.1265624}
+      - {x: -0.36274672, y: -1.0904102}
+      - {x: -0.29956746, y: -1.0395076}
+      - {x: -0.34597635, y: -0.9544535}
+      - {x: -0.36433196, y: -0.8341705}
+      - {x: -0.32137263, y: -0.7453316}
+      - {x: -0.32050157, y: -0.67167616}
+      - {x: -0.20282781, y: -0.48795137}
+      - {x: -0.07915747, y: -0.41367108}
+      - {x: 0.13695294, y: -0.3922239}
+      - {x: 0.13074422, y: -0.2947421}
+      - {x: 0.26538384, y: -0.25653046}
+      - {x: 0.45486516, y: -0.30353296}
+      - {x: 0.48716074, y: -0.3476624}
+      - {x: 1.0339496, y: -0.28134465}
+      - {x: 1.0932304, y: -0.28875428}
+      - {x: 1.1161431, y: -0.21453029}
+      - {x: 1.2543911, y: -0.16892833}
+      - {x: 1.2491559, y: -0.028697431}
+      - {x: 1.3899294, y: 0.0015839338}
+      - {x: 1.3825192, y: 0.12014443}
+      - {x: 1.4904103, y: 0.15524822}
+      - {x: 1.5028648, y: 0.2465859}
+      - {x: 1.4828786, y: 0.42247266}
 --- !u!4 &692391731
 Transform:
   m_ObjectHideFlags: 0
@@ -2203,7 +2311,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 692391728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.131, y: 0.879, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1146920266}
@@ -2217,8 +2325,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 707068516}
-  - component: {fileID: 707068515}
   - component: {fileID: 707068514}
+  - component: {fileID: 707068515}
   m_Layer: 0
   m_Name: The Arbor
   m_TagString: Untagged
@@ -2238,15 +2346,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 981335872}
+  - {fileID: 1878267512}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &707068515
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2271,13 +2381,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2.3675764, y: -2.6579618}
-      - {x: -2.679051, y: -2.6083763}
-      - {x: -2.7421677, y: -2.8624125}
-      - {x: -2.5095847, y: -3.1076188}
-      - {x: -2.0603096, y: -2.9970617}
-      - {x: -2.1051924, y: -2.795088}
-      - {x: -2.157089, y: -2.7766864}
+    - - {x: -0.04236579, y: 0.17084312}
+      - {x: -0.24899673, y: 0.18191957}
+      - {x: -0.24886012, y: -0.010121822}
+      - {x: -0.07796073, y: -0.07669616}
+      - {x: -0.0775609, y: -0.23467374}
+      - {x: 0.29136252, y: -0.029908895}
 --- !u!4 &707068516
 Transform:
   m_ObjectHideFlags: 0
@@ -2285,7 +2394,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 707068513}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.41, y: -2.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1360337259}
@@ -2299,8 +2408,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 715937115}
-  - component: {fileID: 715937114}
   - component: {fileID: 715937113}
+  - component: {fileID: 715937114}
   m_Layer: 0
   m_Name: Kingswood
   m_TagString: Untagged
@@ -2320,19 +2429,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2147128320}
+  - {fileID: 1614432576}
+  - {fileID: 327674344}
+  - {fileID: 1011715970}
+  - {fileID: 1424275375}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &715937114
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2357,18 +2467,44 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.4911019, y: 0.27902088}
-      - {x: 0.390008, y: -0.07639221}
-      - {x: 0.033872284, y: -0.2873609}
-      - {x: -0.06761706, y: -0.08510625}
-      - {x: -0.6366712, y: -0.22692911}
-      - {x: -1.2645261, y: -0.24477848}
-      - {x: -1.3487779, y: -0.42013744}
-      - {x: -1.210281, y: -0.98382664}
-      - {x: -1.0997845, y: -1.112038}
-      - {x: -0.3050755, y: -1.1220621}
-      - {x: 0.30566338, y: -0.6627309}
-      - {x: 0.68983155, y: -0.004452371}
+    - - {x: 1.0991626, y: 0.7453157}
+      - {x: 0.9047848, y: 0.50687295}
+      - {x: 0.81738305, y: 0.4790858}
+      - {x: 0.6391566, y: 0.44958636}
+      - {x: 0.56622523, y: 0.31135994}
+      - {x: 0.5276734, y: 0.39397147}
+      - {x: 0.41752458, y: 0.40498677}
+      - {x: 0.4725979, y: 0.5206433}
+      - {x: 0.46248767, y: 0.5615535}
+      - {x: 0.31987518, y: 0.45079646}
+      - {x: 0.23701653, y: 0.4552599}
+      - {x: -0.028715134, y: 0.37103978}
+      - {x: -0.13834757, y: 0.37362394}
+      - {x: -0.25314653, y: 0.34511092}
+      - {x: -0.3655814, y: 0.365431}
+      - {x: -0.41739404, y: 0.4364965}
+      - {x: -0.74998957, y: 0.43635905}
+      - {x: -0.78970367, y: 0.3392981}
+      - {x: -0.7809821, y: 0.20361203}
+      - {x: -0.7135752, y: 0.051107764}
+      - {x: -0.65132517, y: -0.12652451}
+      - {x: -0.67965513, y: -0.24157661}
+      - {x: -0.6509349, y: -0.31959426}
+      - {x: -0.56481034, y: -0.37027645}
+      - {x: -0.29199487, y: -0.33698964}
+      - {x: -0.021664739, y: -0.34925437}
+      - {x: 0.12874028, y: -0.3581612}
+      - {x: 0.2890609, y: -0.33765066}
+      - {x: 0.45457467, y: -0.10360706}
+      - {x: 0.6239349, y: -0.042877138}
+      - {x: 0.6923807, y: 0.06363642}
+      - {x: 0.84133005, y: 0.14141834}
+      - {x: 0.78284097, y: 0.2450104}
+      - {x: 0.8444194, y: 0.2660557}
+      - {x: 0.9379418, y: 0.32821158}
+      - {x: 0.9336172, y: 0.43759498}
+      - {x: 1.1842816, y: 0.7593004}
+      - {x: 1.05159, y: 0.99264324}
 --- !u!4 &715937115
 Transform:
   m_ObjectHideFlags: 0
@@ -2376,7 +2512,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 715937112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.529, y: -0.717, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1104634438}
@@ -2431,6 +2567,8 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &717163101
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2543,19 +2681,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1598681147}
+  - {fileID: 250461968}
+  - {fileID: 1307139285}
+  - {fileID: 327674344}
+  - {fileID: 615341058}
+  - {fileID: 225066308}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &750615039
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2600,8 +2740,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 753788254}
-  - component: {fileID: 753788253}
   - component: {fileID: 753788252}
+  - component: {fileID: 753788253}
   m_Layer: 0
   m_Name: Dornish Marches
   m_TagString: Untagged
@@ -2621,18 +2761,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1614432576}
+  - {fileID: 1947158351}
+  - {fileID: 692391729}
+  - {fileID: 2147128320}
+  - {fileID: 815135055}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &753788253
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2657,20 +2799,56 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.80948377, y: 0.19960845}
-      - {x: -1.1180401, y: 0.29991788}
-      - {x: -1.3289471, y: 0.21719334}
-      - {x: -1.2030371, y: 0.070756935}
-      - {x: -2.0467749, y: -0.25328547}
-      - {x: -2.204934, y: -0.6000433}
-      - {x: -1.9327735, y: -0.47311026}
-      - {x: -1.5007157, y: -0.37825716}
-      - {x: -1.1312348, y: -0.5280191}
-      - {x: -0.91170317, y: -0.6836295}
-      - {x: -0.40486714, y: -0.7149762}
-      - {x: -0.19569495, y: -0.088094644}
-      - {x: -0.3419749, y: 0.17845824}
-      - {x: -0.26102403, y: 0.36126256}
+    - - {x: 0.42211816, y: 0.45870388}
+      - {x: 0.34949857, y: 0.44744396}
+      - {x: 0.2083162, y: 0.42608923}
+      - {x: 0.17813939, y: 0.34887058}
+      - {x: -0.076776505, y: 0.4417962}
+      - {x: -0.16201925, y: 0.4489573}
+      - {x: -0.24464333, y: 0.4625858}
+      - {x: -0.33374, y: 0.40299448}
+      - {x: -0.41962993, y: 0.37996638}
+      - {x: -0.33441734, y: 0.21576662}
+      - {x: -0.41359293, y: 0.15247558}
+      - {x: -0.54405475, y: 0.16056728}
+      - {x: -0.5897007, y: 0.10574609}
+      - {x: -0.7184005, y: 0.06111124}
+      - {x: -0.72436225, y: -0.007397026}
+      - {x: -0.8266158, y: -0.026977867}
+      - {x: -0.9461099, y: -0.063952684}
+      - {x: -1.0419216, y: -0.034980103}
+      - {x: -1.0769873, y: -0.12307936}
+      - {x: -1.170562, y: -0.09183183}
+      - {x: -1.2138412, y: -0.2631765}
+      - {x: -1.2880561, y: -0.4097393}
+      - {x: -1.2136145, y: -0.3778927}
+      - {x: -1.0368904, y: -0.23932153}
+      - {x: -0.8916534, y: -0.24871096}
+      - {x: -0.8496541, y: -0.238045}
+      - {x: -0.7910112, y: -0.27064747}
+      - {x: -0.7480124, y: -0.24607632}
+      - {x: -0.69564486, y: -0.23332587}
+      - {x: -0.67583144, y: -0.2049934}
+      - {x: -0.56411135, y: -0.19685465}
+      - {x: -0.43286407, y: -0.22578111}
+      - {x: -0.25063336, y: -0.30935028}
+      - {x: -0.0809322, y: -0.39921442}
+      - {x: -0.013776183, y: -0.5067133}
+      - {x: 0.071666956, y: -0.47516552}
+      - {x: 0.17996305, y: -0.5370408}
+      - {x: 0.28543538, y: -0.4843013}
+      - {x: 0.385413, y: -0.5252247}
+      - {x: 0.5079299, y: -0.48345277}
+      - {x: 0.52082455, y: -0.34547654}
+      - {x: 0.62858754, y: -0.1856044}
+      - {x: 0.5724421, y: -0.16630027}
+      - {x: 0.6197736, y: -0.09298152}
+      - {x: 0.5663708, y: -0.008567482}
+      - {x: 0.6199449, y: 0.043031514}
+      - {x: 0.6934613, y: 0.12529972}
+      - {x: 0.6343695, y: 0.15919852}
+      - {x: 0.50132847, y: 0.37568212}
+      - {x: 0.6070641, y: 0.5301558}
 --- !u!4 &753788254
 Transform:
   m_ObjectHideFlags: 0
@@ -2678,7 +2856,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 753788251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.888, y: -0.183, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 213679792}
@@ -2692,8 +2870,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 815135057}
-  - component: {fileID: 815135056}
   - component: {fileID: 815135055}
+  - component: {fileID: 815135056}
   m_Layer: 0
   m_Name: Rainwood
   m_TagString: Untagged
@@ -2713,16 +2891,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 753788252}
+  - {fileID: 2147128320}
+  - {fileID: 969885559}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &815135056
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2747,16 +2927,46 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.82546943, y: -0.05534646}
-      - {x: 0.28212282, y: 0.007346908}
-      - {x: 0.0010714144, y: 0.10164798}
-      - {x: -0.24052545, y: -0.23432952}
-      - {x: -0.25530875, y: -0.45013797}
-      - {x: -0.117580734, y: -0.78811926}
-      - {x: 0.7528953, y: -0.9626359}
-      - {x: 0.984847, y: -0.9448531}
-      - {x: 1.4614207, y: -0.18630783}
-      - {x: 1.013751, y: -0.15073729}
+    - - {x: 0.98983824, y: 0.27209255}
+      - {x: 0.7423017, y: 0.19015545}
+      - {x: 0.5860896, y: 0.21724738}
+      - {x: 0.4123272, y: 0.29034477}
+      - {x: 0.40603825, y: 0.37319726}
+      - {x: 0.35147694, y: 0.3742838}
+      - {x: 0.3247867, y: 0.30137455}
+      - {x: 0.3764629, y: 0.21150811}
+      - {x: 0.2789115, y: 0.15391067}
+      - {x: 0.1972253, y: 0.19229159}
+      - {x: 0.17169282, y: 0.26389062}
+      - {x: 0.119362205, y: 0.33303672}
+      - {x: -0.011207432, y: 0.38153386}
+      - {x: -0.09734082, y: 0.33977395}
+      - {x: -0.17704216, y: 0.3722182}
+      - {x: -0.16293922, y: 0.483091}
+      - {x: -0.262223, y: 0.5088755}
+      - {x: -0.36318535, y: 0.5099763}
+      - {x: -0.48039877, y: 0.49714977}
+      - {x: -0.5441893, y: 0.41345286}
+      - {x: -0.6461309, y: 0.2856362}
+      - {x: -0.69027007, y: 0.23257715}
+      - {x: -0.6588909, y: -0.000004053116}
+      - {x: -0.6369177, y: -0.09070894}
+      - {x: -0.57886493, y: -0.12864849}
+      - {x: -0.59406656, y: -0.23659238}
+      - {x: -0.49226964, y: -0.2977275}
+      - {x: -0.4422625, y: -0.25192633}
+      - {x: -0.19740675, y: -0.31393114}
+      - {x: -0.06888926, y: -0.2699848}
+      - {x: 0.02875346, y: -0.2944601}
+      - {x: 0.106276006, y: -0.3572581}
+      - {x: 0.16230038, y: -0.34113148}
+      - {x: 0.2394369, y: -0.43669477}
+      - {x: 0.32933035, y: -0.49437705}
+      - {x: 0.5408188, y: -0.39479926}
+      - {x: 0.4857705, y: -0.25291643}
+      - {x: 0.55561984, y: -0.20608369}
+      - {x: 0.5306258, y: -0.11794379}
+      - {x: 1.0521913, y: 0.230358}
 --- !u!4 &815135057
 Transform:
   m_ObjectHideFlags: 0
@@ -2764,7 +2974,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 815135054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.433, y: -0.461, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 213679792}
@@ -2778,8 +2988,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 833113287}
-  - component: {fileID: 833113286}
   - component: {fileID: 833113285}
+  - component: {fileID: 833113286}
   m_Layer: 0
   m_Name: Sandstone
   m_TagString: Untagged
@@ -2799,15 +3009,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 692391729}
+  - {fileID: 1716380610}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &833113286
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2832,21 +3044,28 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.60689765, y: 0.08119737}
-      - {x: -0.70008147, y: 0.4566529}
-      - {x: -0.7734245, y: 0.55979276}
-      - {x: -0.9390061, y: 0.5667823}
-      - {x: -1.0109833, y: 0.44303364}
-      - {x: -1.2982374, y: 0.36156416}
-      - {x: -1.4058833, y: 0.16412137}
-      - {x: -1.441139, y: -0.0032388007}
-      - {x: -1.3901597, y: -0.21312535}
-      - {x: -1.687161, y: -0.29387125}
-      - {x: -1.7685195, y: -0.71497667}
-      - {x: -1.4064394, y: -0.7283059}
-      - {x: -0.26903084, y: -0.68363}
-      - {x: -0.3020381, y: -0.4097334}
-      - {x: -0.52224964, y: -0.16118649}
+    - - {x: 0.20254338, y: 0.6707349}
+      - {x: 0.07861394, y: 0.6768103}
+      - {x: 0.04713446, y: 0.5704838}
+      - {x: -0.29594254, y: 0.4924487}
+      - {x: -0.4413525, y: 0.14756228}
+      - {x: -0.3494494, y: -0.03188011}
+      - {x: -0.45264602, y: -0.11713256}
+      - {x: -0.6598743, y: -0.1525772}
+      - {x: -0.7537476, y: -0.52950114}
+      - {x: -0.26492083, y: -0.5288384}
+      - {x: 0.05933559, y: -0.42850107}
+      - {x: 0.1865887, y: -0.53622544}
+      - {x: 0.675134, y: -0.5557057}
+      - {x: 0.68743217, y: -0.32157224}
+      - {x: 0.60370237, y: -0.22791447}
+      - {x: 0.59573627, y: -0.17428772}
+      - {x: 0.5086621, y: -0.16757216}
+      - {x: 0.49146605, y: -0.014361158}
+      - {x: 0.42273134, y: 0.023362592}
+      - {x: 0.33063334, y: 0.10829637}
+      - {x: 0.2868963, y: 0.4066488}
+      - {x: 0.29594266, y: 0.58853215}
 --- !u!4 &833113287
 Transform:
   m_ObjectHideFlags: 0
@@ -2854,7 +3073,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 833113284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.98, y: -0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1146920266}
@@ -2868,8 +3087,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 969885561}
-  - component: {fileID: 969885560}
   - component: {fileID: 969885559}
+  - component: {fileID: 969885560}
   m_Layer: 0
   m_Name: Tarth
   m_TagString: Untagged
@@ -2889,15 +3108,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2147128320}
+  - {fileID: 815135055}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &969885560
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2922,13 +3143,20 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.3833278, y: 0.71130645}
-      - {x: 1.2538785, y: 0.69697994}
-      - {x: 1.1909838, y: 0.3821605}
-      - {x: 1.2512355, y: 0.13139072}
-      - {x: 1.4693869, y: 0.1046193}
-      - {x: 1.6953772, y: 0.288126}
-      - {x: 1.609342, y: 0.6433846}
+    - - {x: 0.1609019, y: 0.050822586}
+      - {x: 0.12448275, y: 0.2530977}
+      - {x: -0.08559859, y: 0.27345055}
+      - {x: -0.13606012, y: 0.21538877}
+      - {x: -0.09670365, y: 0.08402455}
+      - {x: -0.19905233, y: 0.025887549}
+      - {x: -0.125417, y: -0.10360983}
+      - {x: -0.061695933, y: -0.22848076}
+      - {x: 0.030573726, y: -0.26366022}
+      - {x: 0.0814631, y: -0.2319446}
+      - {x: 0.034006834, y: -0.15531696}
+      - {x: 0.113165855, y: -0.09171972}
+      - {x: 0.2432344, y: -0.12154454}
+      - {x: 0.26343226, y: -0.046649754}
 --- !u!4 &969885561
 Transform:
   m_ObjectHideFlags: 0
@@ -2936,7 +3164,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 969885558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.41, y: 0.376, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 213679792}
@@ -2984,14 +3212,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
+  - {fileID: 598365400}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &979883956
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3096,8 +3326,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 981335874}
-  - component: {fileID: 981335873}
   - component: {fileID: 981335872}
+  - component: {fileID: 981335873}
   m_Layer: 0
   m_Name: Oldtown
   m_TagString: Untagged
@@ -3117,16 +3347,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1947158351}
+  - {fileID: 1878267512}
+  - {fileID: 707068514}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &981335873
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3151,14 +3383,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.099633, y: -0.95240873}
-      - {x: -1.6953295, y: -0.63372695}
-      - {x: -2.297546, y: -1.1721214}
-      - {x: -2.5479715, y: -1.3735828}
-      - {x: -2.3467455, y: -1.9542593}
-      - {x: -1.6498228, y: -1.7165627}
-      - {x: -1.2748578, y: -1.5944688}
-      - {x: -1.293092, y: -1.3292099}
+    - - {x: 0.48178828, y: 0.4428727}
+      - {x: 0.37929726, y: 0.47980553}
+      - {x: 0.32280755, y: 0.58311605}
+      - {x: 0.20474303, y: 0.61013466}
+      - {x: 0.0826453, y: 0.66799265}
+      - {x: 0.07520783, y: 0.7157685}
+      - {x: 0.005801201, y: 0.67484516}
+      - {x: -0.17550826, y: 0.42315394}
+      - {x: -0.11622989, y: 0.34987116}
+      - {x: -0.18297338, y: 0.2604152}
+      - {x: -0.33565545, y: 0.23224413}
+      - {x: -0.4504285, y: 0.22708356}
+      - {x: -0.61553764, y: 0.03435397}
+      - {x: -0.5699997, y: -0.07102811}
+      - {x: -0.657907, y: -0.16156507}
+      - {x: -0.5206876, y: -0.38857126}
+      - {x: -0.5446949, y: -0.50423276}
+      - {x: -0.5029259, y: -0.60844123}
+      - {x: -0.21245551, y: -0.5307008}
+      - {x: -0.01911354, y: -0.31958616}
+      - {x: 0.12231159, y: -0.2949928}
+      - {x: 0.33556676, y: -0.21839833}
+      - {x: 0.46435416, y: -0.2921487}
+      - {x: 0.42438567, y: -0.15182745}
+      - {x: 0.5524405, y: -0.079316735}
+      - {x: 0.51307034, y: 0.17122805}
+      - {x: 0.67654705, y: 0.33431864}
+      - {x: 0.6779119, y: 0.42039293}
 --- !u!4 &981335874
 Transform:
   m_ObjectHideFlags: 0
@@ -3166,7 +3418,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 981335871}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.8, y: -1.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1360337259}
@@ -3201,15 +3453,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 598365400}
+  - {fileID: 1010775414}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1001898285
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3234,20 +3488,44 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.4490565, y: 0.80777836}
-      - {x: 0.6962565, y: 0.60149956}
-      - {x: 0.64586276, y: 0.51602507}
-      - {x: 0.4190289, y: 0.47757745}
-      - {x: 0.34029117, y: 0.11696125}
-      - {x: 0.014345402, y: -0.039992426}
-      - {x: -0.16623423, y: -0.14779732}
-      - {x: -0.45470932, y: -0.57243645}
-      - {x: 0.0050592716, y: -0.84174603}
-      - {x: -0.40946963, y: -1.1454004}
-      - {x: -0.23869035, y: -1.2389572}
-      - {x: 0.60327345, y: -1.0912508}
-      - {x: 0.27727532, y: -0.36542848}
-      - {x: 1.6903691, y: 0.19072677}
+    - - {x: 1.2136643, y: 0.9720059}
+      - {x: 0.12146056, y: 0.6069739}
+      - {x: 0.10938665, y: 0.31347793}
+      - {x: -0.205454, y: 0.19749446}
+      - {x: -0.27072623, y: 0.18196794}
+      - {x: -0.41515458, y: -0.008946151}
+      - {x: -0.50570774, y: -0.20969407}
+      - {x: -0.7027102, y: -0.43245816}
+      - {x: -0.2685849, y: -0.5395911}
+      - {x: -0.27960217, y: -0.68846685}
+      - {x: -0.63391316, y: -0.94832736}
+      - {x: -0.5069282, y: -1.0090388}
+      - {x: 0.38430262, y: -0.877755}
+      - {x: 0.24990347, y: -0.7376771}
+      - {x: 0.32363176, y: -0.6512504}
+      - {x: 0.28354907, y: -0.6254219}
+      - {x: 0.2655782, y: -0.62674457}
+      - {x: 0.26410246, y: -0.5703268}
+      - {x: 0.19068918, y: -0.5123706}
+      - {x: 0.22409362, y: -0.33307636}
+      - {x: 0.12832507, y: -0.25826675}
+      - {x: 0.08833814, y: -0.17204742}
+      - {x: 0.13603494, y: -0.0995986}
+      - {x: 0.26229095, y: -0.08112596}
+      - {x: 0.3108527, y: -0.08036412}
+      - {x: 0.40784514, y: -0.027181193}
+      - {x: 0.49458742, y: -0.021089315}
+      - {x: 0.5902178, y: -0.0032018125}
+      - {x: 0.625086, y: 0.05001673}
+      - {x: 0.7452191, y: 0.08102657}
+      - {x: 0.79294336, y: 0.18344525}
+      - {x: 0.8735972, y: 0.19282797}
+      - {x: 0.96969944, y: 0.21309014}
+      - {x: 1.0724356, y: 0.2558128}
+      - {x: 1.1596131, y: 0.27463168}
+      - {x: 1.0666327, y: 0.31359488}
+      - {x: 1.1878419, y: 0.39861572}
+      - {x: 1.3454921, y: 0.4261194}
 --- !u!4 &1001898286
 Transform:
   m_ObjectHideFlags: 0
@@ -3255,7 +3533,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1001898283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.241, y: -0.203, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 724212808}
@@ -3290,14 +3568,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
+  - {fileID: 1001898284}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1010775415
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3322,14 +3602,17 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.5363033, y: -0.2060841}
-      - {x: 0.42845452, y: -0.31749442}
-      - {x: 0.39857206, y: -0.41935408}
-      - {x: 0.4851695, y: -0.5378225}
-      - {x: 0.48334858, y: -0.7233259}
-      - {x: 0.57597953, y: -0.9192441}
-      - {x: 0.6948995, y: -1.0125327}
-      - {x: 1.6794279, y: -0.31224075}
+    - - {x: 0.5509647, y: 0.16413024}
+      - {x: -0.3518442, y: 0.04132867}
+      - {x: -0.6209411, y: -0.032053173}
+      - {x: -0.48877865, y: -0.14482594}
+      - {x: -0.53046846, y: -0.32463342}
+      - {x: -0.44353294, y: -0.4579003}
+      - {x: -0.4265545, y: -0.54998976}
+      - {x: -0.36448163, y: -0.6081449}
+      - {x: -0.20357877, y: -0.4780947}
+      - {x: -0.11439508, y: -0.47187483}
+      - {x: 0.58587146, y: -0.010373741}
 --- !u!4 &1010775416
 Transform:
   m_ObjectHideFlags: 0
@@ -3337,7 +3620,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1010775413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.997, y: -0.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 724212808}
@@ -3351,8 +3634,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1011715972}
-  - component: {fileID: 1011715971}
   - component: {fileID: 1011715970}
+  - component: {fileID: 1011715971}
   m_Layer: 0
   m_Name: King's Landing
   m_TagString: Untagged
@@ -3372,17 +3655,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 327674344}
+  - {fileID: 615341058}
+  - {fileID: 279544127}
+  - {fileID: 715937113}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1011715971
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3407,15 +3692,37 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.06879027, y: 0.4202308}
-      - {x: -0.5120002, y: 0.68653065}
-      - {x: -0.66037834, y: 1.122295}
-      - {x: -1.2932887, y: 0.57834524}
-      - {x: -1.6093422, y: 0.4657516}
-      - {x: -1.6061605, y: 0.36568472}
-      - {x: -1.3087646, y: -0.2029766}
-      - {x: -0.958663, y: -0.19252694}
-      - {x: -0.55359626, y: -0.088044144}
+    - - {x: 0.42482197, y: 0.26866356}
+      - {x: 0.29098004, y: 0.36897555}
+      - {x: 0.22113806, y: 0.47891238}
+      - {x: 0.24470061, y: 0.60144055}
+      - {x: 0.19537973, y: 0.72511315}
+      - {x: 0.15366185, y: 0.7577077}
+      - {x: 0.11171597, y: 0.6441697}
+      - {x: -0.010274351, y: 0.61263}
+      - {x: -0.21925014, y: 0.4348211}
+      - {x: -0.36588627, y: 0.23982093}
+      - {x: -0.7090418, y: 0.12516126}
+      - {x: -0.7797013, y: 0.0120790005}
+      - {x: -0.637394, y: -0.048071712}
+      - {x: -0.6218595, y: -0.192722}
+      - {x: -0.527052, y: -0.26813814}
+      - {x: -0.57156354, y: -0.38437593}
+      - {x: -0.45688516, y: -0.51460403}
+      - {x: -0.31265098, y: -0.54936224}
+      - {x: -0.20737237, y: -0.5306184}
+      - {x: -0.14434952, y: -0.52703077}
+      - {x: -0.0973869, y: -0.43956882}
+      - {x: 0.027759314, y: -0.36010706}
+      - {x: 0.11124998, y: -0.41168877}
+      - {x: 0.2750581, y: -0.35172182}
+      - {x: 0.28593665, y: -0.44533163}
+      - {x: 0.40844268, y: -0.29637814}
+      - {x: 0.5211263, y: -0.15639259}
+      - {x: 0.6350833, y: 0.009313822}
+      - {x: 0.48256272, y: -0.014623225}
+      - {x: 0.43097952, y: 0.048873484}
+      - {x: 0.57349443, y: 0.1731917}
 --- !u!4 &1011715972
 Transform:
   m_ObjectHideFlags: 0
@@ -3423,7 +3730,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1011715969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.84, y: 0.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1104634438}
@@ -3551,6 +3858,46 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1024814216}
+--- !u!1 &1037729976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1037729978}
+  - component: {fileID: 1037729977}
+  m_Layer: 0
+  m_Name: catuaba
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1037729977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1037729976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934f92f2f80223449a0d45073ec9dae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1037729978
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1037729976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 402.2024, y: 196.25992, z: -326.5625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1038752578
 GameObject:
   m_ObjectHideFlags: 0
@@ -3591,6 +3938,8 @@ MonoBehaviour:
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1038752580
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3715,20 +4064,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -3849,6 +4184,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragSpeed: 110
   map: {fileID: 472287598}
+  defaultCameraPosition: {x: 202, y: -99.4, z: 155.6}
+  zoomSpeed: 1
+  targetOrtho: 0
+  smoothSpeed: 2
+  minOrtho: 1
+  maxOrtho: 20
+  zoom: 350
 --- !u!1 &1104634437
 GameObject:
   m_ObjectHideFlags: 0
@@ -3975,18 +4317,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 250461968}
+  - {fileID: 750615038}
+  - {fileID: 1791966365}
+  - {fileID: 86495166}
+  - {fileID: 327674344}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1307139286
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4011,14 +4355,21 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.34388506, y: -0.12299764}
-      - {x: -0.32134017, y: -0.19967002}
-      - {x: -0.27624232, y: -0.71927154}
-      - {x: -0.2985791, y: -0.8304395}
-      - {x: 0.14392556, y: -0.6543936}
-      - {x: 0.51280594, y: -0.61621284}
-      - {x: 0.64690065, y: -0.52558064}
-      - {x: 0.67256135, y: -0.22655003}
+    - - {x: 0.21113001, y: 0.2163721}
+      - {x: 0.13665466, y: 0.23381588}
+      - {x: -0.09269653, y: 0.18397349}
+      - {x: -0.2850262, y: 0.23426598}
+      - {x: -0.4718154, y: 0.16600811}
+      - {x: -0.33468032, y: 0.045298576}
+      - {x: -0.3763872, y: -0.031898826}
+      - {x: -0.39655465, y: -0.09405908}
+      - {x: -0.396343, y: -0.2624657}
+      - {x: -0.41020852, y: -0.36669204}
+      - {x: -0.22328608, y: -0.28665498}
+      - {x: 0.09372993, y: -0.2109997}
+      - {x: 0.27856016, y: -0.19791701}
+      - {x: 0.4210208, y: -0.05708912}
+      - {x: 0.42994952, y: 0.13318476}
 --- !u!4 &1307139287
 Transform:
   m_ObjectHideFlags: 0
@@ -4026,7 +4377,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1307139284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.184, y: -0.418, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1141687948}
@@ -4182,8 +4533,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1424275374}
-  - component: {fileID: 1424275376}
   - component: {fileID: 1424275375}
+  - component: {fileID: 1424275376}
   m_Layer: 0
   m_Name: Dragonstone
   m_TagString: Untagged
@@ -4198,7 +4549,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1424275373}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.453, y: 0.535, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1104634438}
@@ -4216,15 +4567,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 279544127}
+  - {fileID: 715937113}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1424275376
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4249,13 +4602,19 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.49360627, y: 0.799696}
-      - {x: 0.09338542, y: 0.6166271}
-      - {x: 0.10612549, y: 0.39996076}
-      - {x: 0.36841646, y: 0.35703823}
-      - {x: 0.65216917, y: 0.399961}
-      - {x: 0.9322097, y: 0.5217467}
-      - {x: 0.8151358, y: 0.7740088}
+    - - {x: 0.05662918, y: 0.20718169}
+      - {x: -0.06828162, y: 0.114558816}
+      - {x: -0.26041728, y: 0.10805446}
+      - {x: -0.3170393, y: 0.010226786}
+      - {x: -0.31554213, y: -0.1062696}
+      - {x: -0.15666404, y: -0.102437496}
+      - {x: 0.0075929165, y: -0.13183942}
+      - {x: 0.13581836, y: -0.04765898}
+      - {x: 0.28457427, y: 0.09633148}
+      - {x: 0.27317548, y: 0.07818538}
+      - {x: 0.3298052, y: 0.071893156}
+      - {x: 0.35341412, y: 0.15603602}
+      - {x: 0.3407116, y: 0.22721863}
 --- !u!1 &1503277123
 GameObject:
   m_ObjectHideFlags: 0
@@ -4285,15 +4644,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 677893493}
+  - {fileID: 238353229}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1503277125
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4370,17 +4731,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2016518035}
+  - {fileID: 598365400}
+  - {fileID: 225066308}
+  - {fileID: 615341058}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1542553879
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4459,17 +4822,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 14073004}
+  - {fileID: 225066308}
+  - {fileID: 750615038}
+  - {fileID: 250461968}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1598681148
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4494,14 +4859,18 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.47129878, y: 0.9678659}
-      - {x: 0.17755377, y: 0.9178835}
-      - {x: -0.20126313, y: 0.58751166}
-      - {x: -0.12864606, y: 0.3933386}
-      - {x: 0.33339033, y: 0.24069448}
-      - {x: 0.46996057, y: 0.21927138}
-      - {x: 0.6467505, y: 0.42984667}
-      - {x: 0.908211, y: 0.4268417}
+    - - {x: 0.26785347, y: 0.18916303}
+      - {x: 0.20688522, y: 0.368689}
+      - {x: 0.12925696, y: 0.39475727}
+      - {x: 0.0852606, y: 0.33270293}
+      - {x: -0.032502085, y: 0.34690803}
+      - {x: -0.21530536, y: 0.2794879}
+      - {x: -0.4818769, y: -0.01580733}
+      - {x: -0.35028479, y: -0.18992099}
+      - {x: 0.07382277, y: -0.2994867}
+      - {x: 0.21740809, y: -0.2577721}
+      - {x: 0.3450903, y: -0.15944165}
+      - {x: 0.5013213, y: -0.09930915}
 --- !u!4 &1598681149
 Transform:
   m_ObjectHideFlags: 0
@@ -4509,7 +4878,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1598681146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.29, y: 0.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1141687948}
@@ -4544,19 +4913,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 327674344}
+  - {fileID: 715937113}
+  - {fileID: 2147128320}
+  - {fileID: 753788252}
+  - {fileID: 1947158351}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1614432577
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4581,20 +4951,46 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.3425295, y: 0.7570262}
-      - {x: 0.01071132, y: 0.21807186}
-      - {x: 0.07382124, y: 0.011773684}
-      - {x: -0.23339738, y: -0.34437472}
-      - {x: -0.016426146, y: -0.4273771}
-      - {x: 0.33586347, y: -0.4245386}
-      - {x: 0.3710715, y: -0.5726666}
-      - {x: 0.49406007, y: -0.6162122}
-      - {x: 1.2332371, y: -0.31586424}
-      - {x: 1.0769583, y: -0.14723353}
-      - {x: 1.3589486, y: -0.02672345}
-      - {x: 1.766033, y: -0.16633615}
-      - {x: 1.7860804, y: 0.11459558}
-      - {x: 1.5830256, y: 0.7696046}
+    - - {x: 0.8706437, y: 0.25221762}
+      - {x: 0.84083766, y: 0.43135104}
+      - {x: 0.78080803, y: 0.5907544}
+      - {x: 0.74214166, y: 0.74094844}
+      - {x: 0.6192922, y: 0.75840855}
+      - {x: 0.51863176, y: 0.7640482}
+      - {x: 0.40169114, y: 0.7413102}
+      - {x: 0.3576911, y: 0.6587328}
+      - {x: 0.21907681, y: 0.66290385}
+      - {x: 0.17951983, y: 0.6803331}
+      - {x: 0.12766176, y: 0.5649798}
+      - {x: 0.043054342, y: 0.50352603}
+      - {x: -0.09961933, y: 0.49103987}
+      - {x: -0.13393742, y: 0.52826023}
+      - {x: -0.20585525, y: 0.4643473}
+      - {x: -0.17815185, y: 0.3538059}
+      - {x: -0.28350163, y: 0.31530067}
+      - {x: -0.33562022, y: 0.31089327}
+      - {x: -0.42121273, y: 0.2622483}
+      - {x: -0.5294827, y: 0.20245248}
+      - {x: -0.6675043, y: 0.22471203}
+      - {x: -0.77865195, y: 0.21295033}
+      - {x: -0.8123455, y: 0.15771456}
+      - {x: -0.6943655, y: -0.032123066}
+      - {x: -1.0125581, y: -0.33340025}
+      - {x: -0.82292104, y: -0.42348206}
+      - {x: -0.52672154, y: -0.41640356}
+      - {x: -0.41586167, y: -0.5836632}
+      - {x: -0.08435309, y: -0.53974503}
+      - {x: 0.14288926, y: -0.3912435}
+      - {x: 0.3882317, y: -0.3213517}
+      - {x: 0.2937551, y: -0.27741784}
+      - {x: 0.27036268, y: -0.1252855}
+      - {x: 0.4261505, y: -0.08159375}
+      - {x: 0.5863177, y: -0.04013429}
+      - {x: 0.74548525, y: -0.08598479}
+      - {x: 0.8729628, y: -0.15343536}
+      - {x: 0.9465627, y: -0.12134827}
+      - {x: 0.93915635, y: -0.006620795}
+      - {x: 0.9794504, y: 0.12762041}
 --- !u!4 &1614432578
 Transform:
   m_ObjectHideFlags: 0
@@ -4602,7 +4998,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1614432575}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.817, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1360337259}
@@ -4655,6 +5051,8 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1620641460
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4740,7 +5138,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1623748098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.41, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 490546743}
@@ -4758,15 +5156,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1679474072}
+  - {fileID: 14073004}
+  - {fileID: 225066308}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1623748101
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4791,12 +5192,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.40316683, y: 0.34364977}
-      - {x: -0.79426897, y: 0.25432178}
-      - {x: -0.6703748, y: -0.077952035}
-      - {x: -0.29150268, y: -0.49894035}
-      - {x: -0.12895574, y: -0.4261458}
-      - {x: -0.034463506, y: -0.15589733}
+    - - {x: 0.013737828, y: 0.2851369}
+      - {x: -0.3188512, y: 0.18849473}
+      - {x: -0.2607843, y: -0.07063793}
+      - {x: 0.05957517, y: -0.43311322}
+      - {x: 0.32451972, y: -0.24329282}
+      - {x: 0.2873577, y: -0.09738435}
 --- !u!1 &1644845426
 GameObject:
   m_ObjectHideFlags: 0
@@ -4848,6 +5249,8 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1644845429
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4955,15 +5358,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1780868308}
+  - {fileID: 2016518035}
+  - {fileID: 1623748100}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1679474073
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5001,8 +5407,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1694094182}
-  - component: {fileID: 1694094181}
   - component: {fileID: 1694094180}
+  - component: {fileID: 1694094181}
   m_Layer: 0
   m_Name: Sunspear
   m_TagString: Untagged
@@ -5022,14 +5428,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
+  - {fileID: 1716380610}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1694094181
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5054,15 +5462,40 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 2.6419127, y: 0.4600001}
-      - {x: 1.8963053, y: 0.13600288}
-      - {x: 1.6833309, y: 0.27938357}
-      - {x: 1.3716373, y: 0.1968096}
-      - {x: 1.4194713, y: -0.20083793}
-      - {x: 1.7461292, y: -0.14699396}
-      - {x: 1.9791574, y: -0.3826286}
-      - {x: 2.697285, y: -0.39384934}
-      - {x: 3.1278803, y: 0.28657553}
+    - - {x: 0.56467175, y: 0.47205123}
+      - {x: 0.36068153, y: 0.2800023}
+      - {x: 0.38477182, y: 0.4381137}
+      - {x: 0.23400879, y: 0.4048038}
+      - {x: 0.086778164, y: 0.31020528}
+      - {x: 0.040836573, y: 0.24845272}
+      - {x: -0.01047945, y: 0.19119701}
+      - {x: -0.11819124, y: 0.23584062}
+      - {x: -0.17460656, y: 0.1808216}
+      - {x: -0.30951655, y: 0.19778022}
+      - {x: -0.4337721, y: 0.2563687}
+      - {x: -0.4962108, y: 0.36708143}
+      - {x: -0.60434544, y: 0.31546447}
+      - {x: -0.6592498, y: 0.34323433}
+      - {x: -0.74951005, y: 0.2662645}
+      - {x: -0.7431209, y: 0.055447303}
+      - {x: -0.72125924, y: -0.111712255}
+      - {x: -0.5285872, y: -0.09147241}
+      - {x: -0.4299388, y: -0.09703321}
+      - {x: -0.28564918, y: -0.15866128}
+      - {x: -0.22744429, y: -0.2593454}
+      - {x: -0.124942064, y: -0.30898443}
+      - {x: 0.014050484, y: -0.30954888}
+      - {x: 0.04745531, y: -0.25688323}
+      - {x: 0.17199135, y: -0.26062793}
+      - {x: 0.29212594, y: -0.2908604}
+      - {x: 0.39457822, y: -0.24807948}
+      - {x: 0.36872745, y: -0.17619452}
+      - {x: 0.5572479, y: -0.11887286}
+      - {x: 0.6831734, y: 0.12984195}
+      - {x: 0.717376, y: 0.1451588}
+      - {x: 0.8090575, y: 0.30596945}
+      - {x: 0.67998743, y: 0.28210294}
+      - {x: 0.50521183, y: 0.23572764}
 --- !u!4 &1694094182
 Transform:
   m_ObjectHideFlags: 0
@@ -5070,7 +5503,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1694094179}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.18, y: -0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1146920266}
@@ -5105,15 +5538,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1694094180}
+  - {fileID: 833113285}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1716380611
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5214,6 +5649,8 @@ MonoBehaviour:
   tropasGrandes: []
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1780868309
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5287,16 +5724,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 250461968}
+  - {fileID: 1307139285}
+  - {fileID: 86495166}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1791966366
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5321,16 +5760,31 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5787213, y: -0.29094258}
-      - {x: -0.8890411, y: -0.23180391}
-      - {x: -0.94034517, y: -0.20512773}
-      - {x: -1.2898105, y: -0.7538379}
-      - {x: -1.277695, y: -1.3962277}
-      - {x: -1.1019292, y: -1.5052536}
-      - {x: -0.853584, y: -1.443901}
-      - {x: -0.34410125, y: -0.8839966}
-      - {x: -0.2723966, y: -0.44821995}
-      - {x: -0.3664385, y: -0.20512727}
+    - - {x: 0.33021995, y: 0.54320884}
+      - {x: 0.19699264, y: 0.4936877}
+      - {x: -0.104411125, y: 0.5082452}
+      - {x: -0.2002961, y: 0.5170889}
+      - {x: -0.30902278, y: 0.34286046}
+      - {x: -0.2775786, y: 0.23418105}
+      - {x: -0.31770992, y: 0.11916554}
+      - {x: -0.4152491, y: -0.012242913}
+      - {x: -0.47927988, y: -0.17913222}
+      - {x: -0.41061842, y: -0.39526165}
+      - {x: -0.49332368, y: -0.52864397}
+      - {x: -0.3343649, y: -0.6795249}
+      - {x: -0.15555567, y: -0.5942718}
+      - {x: -0.063676655, y: -0.5022664}
+      - {x: 0.052738726, y: -0.3633014}
+      - {x: 0.16631627, y: -0.3441875}
+      - {x: 0.24759778, y: -0.19091749}
+      - {x: 0.35801768, y: -0.0673219}
+      - {x: 0.3447883, y: 0.018270195}
+      - {x: 0.32930937, y: 0.10704434}
+      - {x: 0.33295077, y: 0.10121751}
+      - {x: 0.434477, y: 0.1768859}
+      - {x: 0.37472522, y: 0.3099426}
+      - {x: 0.4368465, y: 0.40296736}
+      - {x: 0.36633512, y: 0.42945838}
 --- !u!4 &1791966367
 Transform:
   m_ObjectHideFlags: 0
@@ -5338,7 +5792,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1791966364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.722, y: -0.811, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1141687948}
@@ -5393,8 +5847,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1878267514}
-  - component: {fileID: 1878267513}
   - component: {fileID: 1878267512}
+  - component: {fileID: 1878267513}
   m_Layer: 0
   m_Name: Three Towers
   m_TagString: Untagged
@@ -5414,17 +5868,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 981335872}
+  - {fileID: 1947158351}
+  - {fileID: 692391729}
+  - {fileID: 707068514}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1878267513
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5449,15 +5905,40 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.2903851, y: -1.7041979}
-      - {x: -1.4661514, y: -1.6426781}
-      - {x: -1.7589504, y: -1.7219368}
-      - {x: -2.1362479, y: -2.21161}
-      - {x: -1.726384, y: -2.7917874}
-      - {x: -1.1514299, y: -2.5931146}
-      - {x: -1.369929, y: -2.206746}
-      - {x: -1.0572914, y: -1.9269562}
-      - {x: -0.9003657, y: -1.5087419}
+    - - {x: 0.4549533, y: 0.580498}
+      - {x: 0.5165856, y: 0.522194}
+      - {x: 0.45253754, y: 0.50688314}
+      - {x: 0.42088068, y: 0.5337745}
+      - {x: 0.38700724, y: 0.485031}
+      - {x: 0.27201807, y: 0.52821326}
+      - {x: 0.17199981, y: 0.55861497}
+      - {x: 0.08689654, y: 0.50359225}
+      - {x: -0.08542371, y: 0.47461224}
+      - {x: -0.13218069, y: 0.34572017}
+      - {x: -0.25484645, y: 0.20811701}
+      - {x: -0.28339827, y: 0.17312121}
+      - {x: -0.45656097, y: 0.043733835}
+      - {x: -0.37507975, y: -0.076364756}
+      - {x: -0.32524693, y: -0.17529559}
+      - {x: -0.21433425, y: -0.21696424}
+      - {x: -0.10609639, y: -0.34539008}
+      - {x: -0.05247605, y: -0.48168755}
+      - {x: 0.042228103, y: -0.43181562}
+      - {x: 0.19191706, y: -0.42496586}
+      - {x: 0.24242008, y: -0.38159704}
+      - {x: 0.3210857, y: -0.43636465}
+      - {x: 0.43538558, y: -0.35158062}
+      - {x: 0.32865, y: -0.18861747}
+      - {x: 0.21970928, y: -0.08988905}
+      - {x: 0.20949066, y: 0.0025503635}
+      - {x: 0.31838393, y: 0.056349993}
+      - {x: 0.421031, y: 0.14042044}
+      - {x: 0.54168665, y: 0.24148}
+      - {x: 0.5908642, y: 0.27643394}
+      - {x: 0.6764552, y: 0.4706838}
+      - {x: 0.61861396, y: 0.51532626}
+      - {x: 0.65958655, y: 0.60068846}
+      - {x: 0.7620462, y: 0.6649337}
 --- !u!4 &1878267514
 Transform:
   m_ObjectHideFlags: 0
@@ -5465,7 +5946,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1878267511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.64, y: -2.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1360337259}
@@ -5500,20 +5981,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 86495166}
+  - {fileID: 327674344}
+  - {fileID: 1614432576}
+  - {fileID: 981335872}
+  - {fileID: 1878267512}
+  - {fileID: 692391729}
+  - {fileID: 753788252}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &1947158352
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5538,23 +6021,51 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.06841148, y: 0.02232296}
-      - {x: -0.074978955, y: 0.1859389}
-      - {x: -0.47635344, y: 0.010300244}
-      - {x: -0.73789686, y: -0.25764745}
-      - {x: -1.6687163, y: -0.51575583}
-      - {x: -1.3841358, y: -0.8444409}
-      - {x: -1.0681491, y: -0.9067173}
-      - {x: -1.1912231, y: -1.1215476}
-      - {x: -1.2859775, y: -1.521881}
-      - {x: -1.2304655, y: -1.623079}
-      - {x: -0.7183883, y: -1.439451}
-      - {x: -0.5857354, y: -1.1603256}
-      - {x: -0.3532308, y: -0.98623693}
-      - {x: 0.19397162, y: -1.0196257}
-      - {x: 0.34723115, y: -0.71050954}
-      - {x: 0.27715686, y: -0.4448315}
-      - {x: -0.28074735, y: -0.3336631}
+    - - {x: 0.7038403, y: 0.6203735}
+      - {x: 0.635206, y: 0.76903874}
+      - {x: 0.40536377, y: 0.671272}
+      - {x: 0.24799797, y: 0.6602246}
+      - {x: 0.10356742, y: 0.48947784}
+      - {x: 0.051646292, y: 0.3688642}
+      - {x: -0.100687206, y: 0.39584407}
+      - {x: -0.1815167, y: 0.32166618}
+      - {x: -0.3573168, y: 0.2751802}
+      - {x: -0.48358864, y: 0.29167396}
+      - {x: -0.61444896, y: 0.24631691}
+      - {x: -0.6553963, y: 0.15340257}
+      - {x: -0.8109533, y: 0.15655977}
+      - {x: -0.9463758, y: 0.16213807}
+      - {x: -0.9398703, y: 0.054745257}
+      - {x: -0.7155562, y: -0.09462464}
+      - {x: -0.61088854, y: -0.17451274}
+      - {x: -0.4641742, y: -0.19387501}
+      - {x: -0.40367562, y: -0.2595014}
+      - {x: -0.40088183, y: -0.40158433}
+      - {x: -0.5245922, y: -0.46984679}
+      - {x: -0.5250992, y: -0.62620944}
+      - {x: -0.50217587, y: -0.78183657}
+      - {x: -0.60712737, y: -0.86563534}
+      - {x: -0.49373227, y: -0.9033541}
+      - {x: -0.30205792, y: -0.8374459}
+      - {x: -0.24491805, y: -0.7026872}
+      - {x: -0.20603883, y: -0.6996997}
+      - {x: -0.19975495, y: -0.81201917}
+      - {x: -0.02771157, y: -0.72861236}
+      - {x: 0.035728514, y: -0.53818303}
+      - {x: 0.118466556, y: -0.4258055}
+      - {x: 0.21337697, y: -0.36403817}
+      - {x: 0.37464795, y: -0.30866677}
+      - {x: 0.87205136, y: -0.3291303}
+      - {x: 0.9641881, y: -0.19869423}
+      - {x: 0.97484666, y: -0.09057373}
+      - {x: 1.0309098, y: -0.041507483}
+      - {x: 0.9467691, y: 0.03577596}
+      - {x: 0.96995604, y: 0.1500591}
+      - {x: 0.79949814, y: 0.18395096}
+      - {x: 0.6612075, y: 0.11181009}
+      - {x: 0.5462797, y: 0.25787798}
+      - {x: 0.40767547, y: 0.26714566}
+      - {x: 0.42943755, y: 0.43632746}
 --- !u!4 &1947158353
 Transform:
   m_ObjectHideFlags: 0
@@ -5562,7 +6073,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1947158350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.67, y: -0.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1360337259}
@@ -5592,7 +6103,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2016518033}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.56791687, y: -0.30665588, z: 20.83395}
+  m_LocalPosition: {x: 0.068, y: 0.125, z: 20.83395}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1308027967}
@@ -5610,17 +6121,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 598365400}
+  - {fileID: 1542553878}
+  - {fileID: 1780868308}
+  - {fileID: 1679474072}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &2016518036
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5645,14 +6158,29 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.00026333332, y: 0.6331902}
-      - {x: -0.22088346, y: 0.85}
-      - {x: -0.8945843, y: 0.97177523}
-      - {x: -1.3614404, y: 0.7726514}
-      - {x: -1.1414629, y: 0.3488041}
-      - {x: -1.375289, y: 0.15642162}
-      - {x: -1.3593948, y: 0.027070075}
-      - {x: 0.048232436, y: 0.16530265}
+    - - {x: 0.4885428, y: 0.21225956}
+      - {x: 0.3179075, y: 0.43468207}
+      - {x: -0.1200721, y: 0.37685978}
+      - {x: -0.35681927, y: 0.5032559}
+      - {x: -0.8932271, y: 0.29972032}
+      - {x: -0.8776801, y: 0.25900543}
+      - {x: -0.7278713, y: 0.2573987}
+      - {x: -0.5502653, y: -0.0063382834}
+      - {x: -0.4838593, y: -0.08517812}
+      - {x: -0.6757416, y: -0.2181192}
+      - {x: -0.89594835, y: -0.35412687}
+      - {x: -0.8187119, y: -0.4146996}
+      - {x: -0.64824814, y: -0.32522517}
+      - {x: -0.5453938, y: -0.3271702}
+      - {x: -0.47771347, y: -0.2470086}
+      - {x: -0.31250525, y: -0.257809}
+      - {x: -0.17827475, y: -0.2893638}
+      - {x: -0.043143317, y: -0.2864311}
+      - {x: -0.0068908706, y: -0.3069986}
+      - {x: 0.1283712, y: -0.2914173}
+      - {x: 0.2097276, y: -0.2537404}
+      - {x: 0.3087811, y: -0.2728786}
+      - {x: 0.53651154, y: -0.24440299}
 --- !u!1 &2123362917
 GameObject:
   m_ObjectHideFlags: 0
@@ -5783,8 +6311,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2147128322}
-  - component: {fileID: 2147128321}
   - component: {fileID: 2147128320}
+  - component: {fileID: 2147128321}
   m_Layer: 0
   m_Name: Storm's End
   m_TagString: Untagged
@@ -5804,18 +6332,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighborhood:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 753788252}
+  - {fileID: 815135055}
+  - {fileID: 969885559}
+  - {fileID: 715937113}
+  - {fileID: 1614432576}
   tropasNormais: []
   tropasGrandes:
-  - {fileID: 1038752578}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   tropasSelecionadas: []
   Tropa: {fileID: 1842806794537102, guid: 46ce0cc7824ce3e4b80cb42559a1cce0, type: 2}
+  player: 0
+  index: 0
 --- !u!60 &2147128321
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5840,23 +6370,44 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.93147963, y: 1.1297975}
-      - {x: 0.7809197, y: 1.0963897}
-      - {x: 0.15673527, y: 0.5715925}
-      - {x: -0.57489336, y: 0.5806905}
-      - {x: -0.6713769, y: 0.31947243}
-      - {x: -0.55813175, y: 0.3015797}
-      - {x: -0.40583226, y: 0.441034}
-      - {x: -0.23801415, y: 0.41094655}
-      - {x: -0.21189564, y: 0.27610394}
-      - {x: -0.32092306, y: 0.15478036}
-      - {x: -0.13319343, y: -0.014893964}
-      - {x: -0.053245597, y: 0.12183065}
-      - {x: 0.3014093, y: 0.09791204}
-      - {x: 0.7975292, y: 0.21484874}
-      - {x: 0.8209654, y: 0.56822115}
-      - {x: 1.0918127, y: 0.66014606}
-      - {x: 1.1809347, y: 0.95685345}
+    - - {x: 0.64160585, y: 0.6474694}
+      - {x: 0.55503124, y: 0.55755377}
+      - {x: 0.55503124, y: 0.57870567}
+      - {x: 0.5131664, y: 0.6222224}
+      - {x: 0.43058807, y: 0.5403955}
+      - {x: 0.34526044, y: 0.4253233}
+      - {x: 0.15152246, y: 0.37337428}
+      - {x: 0.08131975, y: 0.2853592}
+      - {x: -0.023810998, y: 0.12900323}
+      - {x: -0.23242092, y: 0.079440296}
+      - {x: -0.4006957, y: 0.07432985}
+      - {x: -0.64894277, y: 0.07456529}
+      - {x: -0.83555704, y: 0.10342491}
+      - {x: -0.92285407, y: -0.12812102}
+      - {x: -0.74279535, y: -0.13612625}
+      - {x: -0.65710837, y: -0.05897218}
+      - {x: -0.58167744, y: -0.02832231}
+      - {x: -0.46946257, y: -0.06923738}
+      - {x: -0.48984182, y: -0.179331}
+      - {x: -0.57293296, y: -0.2555708}
+      - {x: -0.4044699, y: -0.41418257}
+      - {x: -0.30972704, y: -0.36880845}
+      - {x: -0.15744115, y: -0.30597675}
+      - {x: 0.110738635, y: -0.3246809}
+      - {x: 0.16967782, y: -0.22927254}
+      - {x: 0.3344183, y: -0.24473882}
+      - {x: 0.46871394, y: -0.2624768}
+      - {x: 0.4925931, y: -0.19427131}
+      - {x: 0.48366928, y: -0.08663872}
+      - {x: 0.55724025, y: 0.018147528}
+      - {x: 0.50773567, y: 0.11775136}
+      - {x: 0.49612755, y: 0.24152446}
+      - {x: 0.628724, y: 0.16734684}
+      - {x: 0.6593074, y: 0.28264546}
+      - {x: 0.86392695, y: 0.26481384}
+      - {x: 0.8032443, y: 0.32515132}
+      - {x: 0.8004505, y: 0.41939378}
+      - {x: 0.84529775, y: 0.54168814}
 --- !u!4 &2147128322
 Transform:
   m_ObjectHideFlags: 0
@@ -5864,7 +6415,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2147128319}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.254, y: 0.444, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 213679792}

@@ -20,6 +20,7 @@ public class MenuController : MonoBehaviour {
     void StartGame  ()
     {
         Debug.Log("Jogar");
+        Permanente.Resete();
         //Application.LoadLevel(1);
         SceneManager.LoadScene(1);
     }
@@ -35,19 +36,31 @@ public class MenuController : MonoBehaviour {
         Debug.Log("Como Jogar");
     }
 
+    void ExitGame()
+	{
+	    #if UNITY_EDITOR
+	            UnityEditor.EditorApplication.isPlaying = false;
+	    #elif UNITY_WEBPLAYER
+	                Application.OpenURL(webplayerQuitURL);
+	    #else
+	                Application.Quit();
+	    #endif
+	}
+
     void ChangeToCredits()
     {
+        /*
         foreach (var item in canvasGroup)
         {
             item.alpha = 0;
             item.blocksRaycasts = false;
         }
-
+        */
         var cG = credits.GetComponent<CanvasGroup>() as CanvasGroup;
-        cG.alpha = 1;
-        cG.blocksRaycasts = true;
-        var sR = credits.GetComponent<SpriteRenderer>() as SpriteRenderer;
-        sR.enabled = true;
+        cG.alpha = cG.alpha == 1? 0 : 1;
+        //cG.blocksRaycasts = true;
+        //var sR = credits.GetComponent<SpriteRenderer>() as SpriteRenderer;
+        //sR.enabled = true;
 
     }
 
