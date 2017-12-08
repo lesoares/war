@@ -3,9 +3,15 @@
   Elaborado para um trabalho.
   
  ## Executando
- Atualmente, não possui uma versão somente executável (jogável). 
- 
- Para executar, é necessário ter instalado o Unity (preferencialmente versão 2017.1). 
+
+Execute o arquivo `Versão3.2.exe` para executar o jogo.
+
+Se quiser jogar com uma quantidade diferente de jogadores (até 8), execute:
+`Versão3.2.exe IA PLAYER`
+
+Por exemplo, para 3 IAs e 2 jogadores:
+`Versão3.2.exe 3 2`
+
  
  ## Construção
  Este projeto foi construído utilizando o Unity 2017.1 e C#.

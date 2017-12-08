@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour {
     public List<CanvasGroup> canvasGroup;
     public GameObject credits;
+    public GameObject instructions;
     // Use this for initialization
     void Start () {
                
@@ -34,6 +35,8 @@ public class MenuController : MonoBehaviour {
     void HowToPlay()
     {
         Debug.Log("Como Jogar");
+        SendMessage("ChangeToInstructions");
+
     }
 
     void ExitGame()
@@ -49,19 +52,18 @@ public class MenuController : MonoBehaviour {
 
     void ChangeToCredits()
     {
-        /*
-        foreach (var item in canvasGroup)
-        {
-            item.alpha = 0;
-            item.blocksRaycasts = false;
-        }
-        */
         var cG = credits.GetComponent<CanvasGroup>() as CanvasGroup;
         cG.alpha = cG.alpha == 1? 0 : 1;
-        //cG.blocksRaycasts = true;
-        //var sR = credits.GetComponent<SpriteRenderer>() as SpriteRenderer;
-        //sR.enabled = true;
+        var iG = instructions.GetComponent<CanvasGroup>() as CanvasGroup;
+        iG.alpha = 0;
+    }
 
+    void ChangeToInstructions()
+    {
+        var iG = instructions.GetComponent<CanvasGroup>() as CanvasGroup;
+        iG.alpha = iG.alpha == 1 ? 0 : 1;
+        var cG = credits.GetComponent<CanvasGroup>() as CanvasGroup;
+        cG.alpha = 0;
     }
 
     void ChangeToMenu()
