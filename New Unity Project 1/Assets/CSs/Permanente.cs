@@ -47,7 +47,18 @@ public class Permanente : MonoBehaviour {
     {
         num = 0;
         color = Color.clear;
-        iaCount = 8;
-        playerCount = 0;
+        iaCount = 1;
+        playerCount = 1;
+        string[] args = System.Environment.GetCommandLineArgs();
+        try {
+            if (args.Length == 3) {
+                iaCount = Convert.ToInt32(args[1]);
+                playerCount = Convert.ToInt32(args[2]);
+            }
+        } catch {
+
+        }
+        
+        
     }
 }
